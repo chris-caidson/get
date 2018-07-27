@@ -4,16 +4,72 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <ion-content>
+    <div id="getFreeDiv">
+      <!--<img src="assets/imgs/misc/get-free.png" alt="Get Free" (click)="openPage('HomePage')" menuClose />-->
+    </div>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+      <div *ngFor="let p of pages">
+        <div *ngIf="p.separatorLevel === 1" class="primary-separator">
+          <span>{{p.title}}</span>
+        </div>
+        <div *ngIf="p.separatorLevel === 2" class="secondary-separator">
+          <span>{{p.title}}</span>
+        </div>
+        <div *ngIf="p.separatorLevel === 3" class="tertiary-separator">
+          <span>{{p.title}}</span>
+        </div>
+        <button *ngIf="p.component !== null" menuClose ion-item (click)="openPage(p.component)" no-lines class="menu-button">
+          <i *ngIf="p.icon !== null" item-start class="fa fa-{{p.icon}} space-right fixed-width"></i>
+          <span *ngIf="p.stepNumber !== null" item-start class="step-number space-right">{{p.stepNumber}}</span>
+          <span>{{p.title}}</span>
+        </button>
+      </div>
     </ion-list>
   </ion-content>
-
 </ion-menu>
+
+<nav id="mainNav">
+  <!--<img src="../assets/imgs/misc/get-free-lg.png" alt="Get Free" (click)="openPage('HomePage')" class="pointer" />-->
+  <div id="navigationDiv" class="uppercase">
+    <span id="homeSpan" (click)="openPage('HomePage')">Home</span>
+    <div class="dropdown">
+      <div class="main-menu">Get Started</div>
+      <div class="dropdown-content">
+        <p (click)="openPage('Step_1Page')">Step 1</p>
+        <p (click)="openPage('Step_2Page')">Step 2</p>
+        <p (click)="openPage('Step_3Page')">Step 3</p>
+        <p (click)="openPage('Step_4Page')">Step 4</p>
+        <p (click)="openPage('Step_5Page')">Step 5</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">Get Success</div>
+      <div class="dropdown-content">
+        <p (click)="openPage('Step_1Page')">[Page 1]</p>
+        <p (click)="openPage('Step_2Page')">[Page 2]</p>
+        <p (click)="openPage('Step_3Page')">[Page 3]</p>
+        <p (click)="openPage('Step_4Page')">[Page 4]</p>
+        <p (click)="openPage('Step_5Page')">[Page 5]</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">Live Calls</div>
+      <div class="dropdown-content">
+        <p (click)="openPage('DailyCallsPage')">Daily Calls</p>
+        <p (click)="openPage('LeadershipCallsPage')">Leadership Calls</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">Elevate</div>
+      <div id="elevateSubMenu" class="dropdown-content">
+        <p (click)="openPage('BooksPage')">Books</p>
+        <p (click)="openPage('PodcastsPage')">Podcasts</p>
+        <p (click)="openPage('VideosPage')">Videos</p>
+      </div>
+    </div>
+  </div>
+</nav>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

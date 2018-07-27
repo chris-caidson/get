@@ -3,16 +3,32 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      <i class="fa fa-home fixed-width space-right"></i>
+      <span>Home</span>
+    </ion-title>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content>
+  <header role="banner">
+    <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
+      assets/imgs/main-background/main-background_400.jpg 400w,
+      assets/imgs/main-background/main-background_916.jpg 916w,
+      assets/imgs/main-background/main-background_1285.jpg 1285w,
+      assets/imgs/main-background/main-background_1600.jpg 1600w" src="assets/imgs/main-background/main-background_1600.jpg"
+      alt="Global Exec Team">
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Welcome!</h1>
+      <section id="whyIsaSection">
+        <img id="whyIsa" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()"
+          sizes="(max-width: 1280px) 100vw" alt="Why Isagenix" class="video-thumb" srcset="
+            assets/imgs/why-isagenix/why-isagenix_400.jpg 400w,
+            assets/imgs/why-isagenix/why-isagenix_1045.jpg 1045w,
+            assets/imgs/why-isagenix/why-isagenix_1280.jpg 1280w" />
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
 </ion-content>

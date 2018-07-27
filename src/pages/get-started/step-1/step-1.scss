@@ -4,6 +4,10 @@ page-step-1 {
     grid-template-columns: auto;
   }
 
+  p {
+    text-align: left;
+  }
+
   @media(min-width: 640px) {
     .grid-container {
       grid-template-columns: auto auto;

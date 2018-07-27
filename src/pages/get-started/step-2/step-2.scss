@@ -1,3 +1,37 @@
 page-step-2 {
+  p {
+    text-align: left;
+  }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .blurb {
+    display: block;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subtext {
+    font-size: smaller;
+    color: #777;
+  }
+
+  @media(min-width: 800px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+
+      section {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      #teamSites {
+        margin-top: 30px;
+      }
+    }
+  }
 }

@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>Welcome Text</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <header role="banner">
+    <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
+      assets/imgs/main-background/main-background_400.jpg 400w,
+      assets/imgs/main-background/main-background_916.jpg 916w,
+      assets/imgs/main-background/main-background_1285.jpg 1285w,
+      assets/imgs/main-background/main-background_1600.jpg 1600w" src="assets/imgs/main-background/main-background_1600.jpg"
+      alt="Global Exec Team">
+  </header>
+
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Three Simple Steps to Welcome Your New Customer</h1>
+      <div class="grid-container">
+        <section>
+          <h3>1. Simply Cut and Paste This Message ⬇</h3>
+          <p>
+            Hi _________!
+            <br /> I’m so excited to welcome you to Isagenix!
+          </p>
+          <p>
+            Click
+            <a href="https://backoffice.isagenix.com/login.aspx">here</a> to login into your online account.
+          </p>
+          <p>
+            Your username:
+            <br /> Password:
+            <br /> Autoship date:
+          </p>
+          <p>
+            Before your box arrives make sure to visit
+            <a href="www.globalexecteam.com/step-1/">www.globalexecteam.com/step-1/</a> to learn all about your new system, download meal plans, recipes and more.
+          </p>
+          <p>
+            Can’t wait for you to get your box and go over everything with you. You’re going to love this!
+          </p>
+        </section>
+        <div>
+          <section>
+            <h3>2. Add Your New Customer's Information</h3>
+            <p>User Name</p>
+            <p>Password</p>
+            <p>Autoship Date</p>
+          </section>
+          <section>
+            <h3>3. Send by Your Customer's Preferred Method of Communication</h3>
+            <p>Text</p>
+            <p>Direct Message</p>
+            <p>Email</p>
+          </section>
+        </div>
+      </div>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

@@ -11,4 +11,7 @@ export class Step_3Page {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  openPage(pageName) {
+    this.navCtrl.push(pageName);
+  }
 }

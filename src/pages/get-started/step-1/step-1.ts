@@ -16,6 +16,10 @@ export class Step_1Page {
     private modalCtrl: ModalController
   ) { }
 
+  openPage(pageName) {
+    this.navCtrl.push(pageName);
+  }
+
   openVideoModal(video: string) {
     var data: any;
 
@@ -42,7 +46,7 @@ export class Step_1Page {
           url:
             "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2FHow-to-Do-a-Cleanse-Day.mp4?alt=media&token=3a06ca1d-84a7-4270-826c-6de65aaf9d1a"
         };
-        break; 
+        break;
     }
 
     const myModal = this.modalCtrl.create("VideoModalPage", data);

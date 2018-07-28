@@ -1,3 +1,29 @@
 page-step-4 {
+  p {
+    text-align: left;
+  }
 
+  h3 {
+    margin-bottom: 50px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  @media (min-width: 640px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+
+      section {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      #linkSection {
+        margin-top: -25px;
+      }
+    }
+  }
 }

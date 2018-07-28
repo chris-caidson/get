@@ -21,33 +21,32 @@
 
   <main role="main">
     <article>
-      <h1 class="centered uppercase">Get Started - Step 1</h1>
-      <h3 class="centered uppercase">Use the Products and Feel Amazing</h3>
+      <h1 class="centered uppercase">Get Started - Step 1: Use the Products and Feel Amazing</h1>
       <div class="grid-container">
         <section>
-          <h4>1. Unpack Your Box</h4>
+          <h3>1. Unpack Your Box</h3>
           <img src="assets/imgs/isa-box/isa-box_640.jpg" (click)="openVideoModal('isa-box')"
             sizes="(max-width: 640px) 100vw" alt="What's in Your Box?" class="video-thumb" srcset="
             assets/imgs/isa-box/isa-box_400.jpg 400w,
             assets/imgs/isa-box/isa-box_640.jpg 640w" />
         </section>
         <section>
-          <h4>2. Download Your Tools</h4>
-          <p><a href="https://www.isagenix.com/isalife/landing">IsaLife App</a> - Personal fitness tracker, coach &amp; product ordering platform available from your app store.</p>
-          <p><a href="#">Shake Day Tracker</a> - Daily Checklist for your Shake Days</p>
-          <p><a href="#">Cleanse Day Schedule</a> - Hourly Schedule to Make Cleanse Days a Breeze</p>
-          <p><a href="#">Four-Week Meal Plan</a> - Takes All the Guesswork Out of What to Eat and When</p>
-          <p><a href="#">Build-A-Meal Guide</a> - Simple Meal Planning Tool For Quick Lunches or Dinners</p>
+          <h3>2. Download Your Tools</h3>
+          <p><a target="_blank" href="https://www.isagenix.com/isalife/landing">IsaLife App</a> - Personal fitness tracker, coach &amp; product ordering platform available from your app store.</p>
+          <p><a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/images%2Fshakedaytracker.jpg?alt=media&token=ce028cf6-7f05-4179-be6b-3c10cda31a30">Shake Day Tracker</a> - Daily Checklist for your Shake Days</p>
+          <p><span class="link-span" (click)="openPage('CleanseDayTrackerPage')">Cleanse Day Schedule</span> - Hourly Schedule to Make Cleanse Days a Breeze</p>
+          <p><span class="link-span" (click)="pdfProvider.openPdf('Four-Week Meal Plan', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2FFour-Week-Meal-Plan.pdf?alt=media&token=ed785524-658e-4e79-9d27-25112d562f56')">Four-Week Meal Plan</span> - Takes All the Guesswork Out of What to Eat and When</p>
+          <p><span class="link-span" (click)="pdfProvider.openPdf('Build-A-Meal Guide', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2F400-600-Calorie-Meals.pdf?alt=media&token=c7025725-08e2-4c75-a991-5d7cfe940a95')">Build-A-Meal Guide</span> - Simple Meal Planning Tool For Quick Lunches or Dinners</p>
         </section>
         <section>
-          <h4>3. Rock Out Your Shake Days</h4>
+          <h3>3. Rock Out Your Shake Days</h3>
           <img src="assets/imgs/shake-day/shake-day_640.jpg" (click)="openVideoModal('shake-day')"
             sizes="(max-width: 640px) 100vw" alt="What's in Your Box?" class="video-thumb" srcset="
             assets/imgs/shake-day/shake-day_400.jpg 400w,
             assets/imgs/shake-day/shake-day_640.jpg 640w" />
-        </section> 
+        </section>
         <section>
-          <h4>4. You'll Love Your Cleanse Days</h4>
+          <h3>4. You'll Love Your Cleanse Days</h3>
           <img src="assets/imgs/cleanse-day/cleanse-day_640.jpg" (click)="openVideoModal('cleanse-day')"
             sizes="(max-width: 640px) 100vw" alt="What's in Your Box?" class="video-thumb" srcset="
             assets/imgs/cleanse-day/cleanse-day_400.jpg 400w,

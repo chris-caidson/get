@@ -1,0 +1,25 @@
+page-welcome-text {
+  p {
+    text-align: left;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  @media (min-width: 800px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+
+      section {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>Order Form</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <header role="banner">
+    <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
+      assets/imgs/main-background/main-background_400.jpg 400w,
+      assets/imgs/main-background/main-background_916.jpg 916w,
+      assets/imgs/main-background/main-background_1285.jpg 1285w,
+      assets/imgs/main-background/main-background_1600.jpg 1600w" src="assets/imgs/main-background/main-background_1600.jpg"
+      alt="Global Exec Team">
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Order Form</h1>
+      <section>
+        <p>
+          <em>Note: Manually write down your new Associate’s information before entering it into the system.</em>
+        </p>
+        <p>
+          Follow the questions in order on this page and use the form at the bottom of the page. Please shred all personal information
+          once the order is in!
+        </p>
+        <p>
+          FULL NAME:______________________________________________________________
+        </p>
+        <p>
+          BILLING/SHIPPING ADDRESS:__________________________________________________________________
+        </p>
+        <p>
+          EMAIL: ___________________________________________
+        </p>
+        <p>
+          TEL# __________________
+        </p>
+        <p>
+          VISA/MC/AMEX/DISC: _____________________________EXP: _________ CVV: _________
+        </p>
+        <p>
+          PACK TO ORDER: ____________________________________________________________
+        </p>
+        <p>
+          SHAKE FLAVORS: ________________________________________CANISTERS/PACKETS
+        </p>
+        <p>
+          SNACKS: __________________________________
+        </p>
+        <p>
+          IONIX: CANISTER / BOTTLE
+        </p>
+        <p>
+          CLEANSE: POWDER / LIQUID
+        </p>
+        <p>
+          BARS: ____________________________________
+        </p>
+        <p>
+          ISADELIGHTS: ____________________
+        </p>
+        <p>
+          WHEY THINS: _____________________
+        </p>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <p>What shake flavors would you like? Canisters OR Packets? You can choose between:</p>
+            <ul>
+              <li>
+                IsaLean Shakes : Strawberry, Vanilla, Chocolate or Chocolate Mint
+              </li>
+              <li>
+                Vegan IsaLean Shakes ($4 more per box): Vanilla Chai or Chocolate
+              </li>
+              <li>
+                IsaLean Pro (higher protein content and $9 more per box): Chocolate, Vanilla, French Vanilla, Strawberry
+              </li>
+            </ul>
+          </li>
+          <li>Next are IsaSnacks which are yummy little wafers. Do you want Chocolate, Vanilla or Dairy Free Wild Berry? My favorite
+            is _______.</li>
+          <li>If they have a Value Pak: You have a choice of bars: Lemon Passion ,Oatmeal Raisin, Salted Caramel Cashew, Chocolate
+            Decadence, Chocolate Cream Crisp or Chocolate Peanut Butter and Vegan Bar Options($4 more per box): Chocolate
+            Peanut Butter, Chocolate Berry Bliss or Chocolate Coconut Almond.</li>
+          <li>If they have a Value Pak: You also have a choice of Whey Thins chips. They taste amazing and you can use them on
+            cleanse days too! They come in Barbecue, Sour Cream & Onion or White Cheddar. My favorite is ______________.</li>
+          <li>(Get their preference, then ask) For your IsaDelights, do you prefer plain Dark Chocolate, Dark Chocolate Mint,
+            plain Milk Chocolate or Milk Chocolate with Salted Caramel? </li>
+          <li>
+            If they have a basic Getting Started Pak: “I highly recommend adding a box of IsaDelight Chocolates. They’re amazing on cleanse
+            days and only $36.00 more. Seriously, I couldn’t live without them! Would you like to add those?” (Retention
+            is 50% higher when IsaDelights are ordered with their first system.)
+            <p>Flavor Options:</p>
+            <ul>
+              <li>Dark Chocolate​</li>
+              <li>Dark Chocolate Mint</li>
+              <li>Milk Chocolate</li>
+              <li>Milk Chocolate Sea Salt Caramel</li>
+            </ul>
+          </li>
+          <li>
+            Where would you like your box shipped? (Repeat the address back)
+          </li>
+          <li>
+            Is your billing address the same as your shipping address?
+          </li>
+          <li>
+            What’s your email?
+          </li>
+          <li>
+            Is this the best number to reach you at?
+          </li>
+          <li>
+            Which credit card would you like to use? Exp date & CVV? (Repeat the #’s back)
+          </li>
+          <li>
+            Okay, so here’s what going to happen next, you’re going to receive an email confirmation from the company that’s going to
+            have your receipt and tracking info. You’re also going to get a second email with notification about autoship.
+            Make sure to write down the date that’s in the email so no orders ever get sent without you wanting them. Once
+            your box arrives and you’ve gone through it, we’ll hop back on a call so I can answer any questions you have,
+            and at that time I’ll also show you how to manage your autoship.
+          </li>
+          <li>
+            I’m also going to add you to a private group on Facebook so you can experience the support of our amazing community. How
+            does that sound?
+          </li>
+        </ul>
+        <p>
+            (Book your next appointment to walk them through their back office and show them <a href="#">GlobalExecTeam.com</a>.)
+        </p>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

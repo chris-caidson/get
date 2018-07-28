@@ -15,12 +15,67 @@
       assets/imgs/get-started-step-5/get-started-step-5_400.jpg 400w,
       assets/imgs/get-started-step-5/get-started-step-5_916.jpg 916w,
       assets/imgs/get-started-step-5/get-started-step-5_1285.jpg 1285w,
-      assets/imgs/get-started-step-5/get-started-step-5_1600.jpg 1600w"
-      src="assets/imgs/get-started-step-5/get-started-step-5_1600.jpg" alt="Global Exec Team">
+      assets/imgs/get-started-step-5/get-started-step-5_1600.jpg 1600w" src="assets/imgs/get-started-step-5/get-started-step-5_1600.jpg"
+      alt="Global Exec Team">
   </header>
   <main role="main">
     <article>
-      <h1 class="centered uppercase">Get Started - Step 5</h1>
+      <h1 class="centered uppercase">Get Started - Step 5: Get Them Started Right</h1>
+      <div class="grid-container">
+        <section id="section1">
+          <h3>1. Collect Their Information</h3>
+          <p>
+            Don’t know what comes in each pack or what to ask for? Don’t worry! We have you covered with our easy
+            <span class="link-span"
+              (click)="openPage('OrderFormPage')">Order Form</span>.
+          </p>
+        </section>
+        <section id="section2">
+          <h3>2. Open Their Account</h3>
+          <p>
+            <span class="link-span" (click)="openPage('EnrollmentInstructionsPage')">Step-by-step instructions</span> to ensure your friends get everything they need to succeed.</p>
+        </section>
+        <section id="section3">
+          <h3>3. Connect Them to Our Team</h3>
+          <p>
+            Add and welcome them to the Facebook team groups (Global Exec Team, Get Fit, and Get Free) and do a
+            <span class="link-span"
+              (click)="openPage('WelcomeCallPage')">Welcome Call</span> with another team member.
+          </p>
+        </section>
+        <section id="section4">
+          <h3>4. Send Their
+            <span class="link-span" id="welcomeText" (click)="openPage('WelcomeTextPage')">Welcome Text</span>
+          </h3>
+          <p>This text includes their user name, password and autoship date. It also directs them to our
+              <span class="link-span" (click)="openPage('Step_1Page')">Product Resource Page</span>
+            to review videos and print trackers to review as they await their system’s arrival.</p>
+        </section>
+        <section id="section5">
+          <h3>5. Set Up a 20-Minute
+            <span class="link-span" id="launchCall" (click)="openPage('LaunchCallPage')">Launch Call</span>
+          </h3>
+          <p>During this call you’ll show them their Back Office, the IsaBody Challenge, the Contagious NRG Training site and
+            answer any questions they have about their system.</p>
+          <p>The
+            <span class="link-span" (click)="openPage('LaunchCallPage')">Launch Call Template</span> can be split over one to three calls depending on the customer. Our goal is to make
+            sure they are given all the information they need to manage their account and enroll their friends and accountability
+            partners.
+          </p>
+        </section>
+        <section id="section6">
+          <h3>6. Check on Their Progress</h3>
+          <p>
+            Check in daily by text or phone for the first 14 days. Ask how their first shake was and when they plan to do their first
+            cleanse. Check in on their cleanse day to cheer them on. Check in 5 days before their autoship to help them adjust
+            their next order. Our goal is to help them feel supported and get their best results.
+          </p>
+          <p>
+            After their first two day cleanse use the
+            <span class="link-span" (click)="openPage('FollowUpScriptPage')">Day 5 Follow-Up Script</span> to encourage them to Text A Few friends and get their next box paid for.
+          </p>
+        </section>
+      </div>
     </article>
   </main>
   <get-footer></get-footer>

@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>Launch Call</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <header role="banner">
+    <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
+      assets/imgs/main-background/main-background_400.jpg 400w,
+      assets/imgs/main-background/main-background_916.jpg 916w,
+      assets/imgs/main-background/main-background_1285.jpg 1285w,
+      assets/imgs/main-background/main-background_1600.jpg 1600w" src="assets/imgs/main-background/main-background_1600.jpg"
+      alt="Global Exec Team">
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Launch Call</h1>
+      <section>
+        <h3>
+          The Step-by-Step Launch Process
+        </h3>
+        <p>Launching a new Associate is a step by step process that consists of 2 to 3 Launch Calls.</p>
+        <p>Follow the steps below and use the language when applicable. Keep a record of where you are with your Associate using
+          the New Customer Checklist.</p>
+        <ol>
+          <li>
+            Have your new Customer visit Isagenix.com and log in to their back office.
+          </li>
+          <li>
+            <p>Show them the purple “Click Here to Become an Associate” button.</p>
+            <ul>
+              <li>For Customers not ready to share: “When people start asking you about it and you would like to earn cash for
+                their referrals, you’re going to click here. It takes 5 minutes and it’s very simple.”</li>
+              <li>For those ready to share: “Knowing that you’re interested in getting the company to cover the cost of your
+                products, go ahead and click the button on the left side of your screen that says “Click Here to Become an
+                Associate.” It’s a simple process that requires you to watch a 3 minute video. I’ll just stay on mute while
+                you watch it and let me know when you’re done.”</li>
+            </ul>
+          </li>
+          <li>
+            <p>Show them their AutoShip.</p>
+            <ul>
+              <li>
+                Have them put their AutoShip date on their calendar and put a reminder in their phone to contact you 3 days before that date
+                to see where they are in their goals and make a recommendation of how to go forward.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Show them the Place Order button in case they need a partial order during the month.
+          </li>
+          <li>
+            <p>NEW ASSOCIATES ONLY** Show them their Placement Tree</p>
+            <ul>
+              <li>“Go to Team at the top and click View Placement Tree. Go to the bottom where it looks like a family tree. This
+                is your team. When you get somebody started this is where they’re going to go. Have you noticed you have
+                (2) people already on your team?”</li>
+              <li>They will say “How did this happen?”</li>
+              <li><p>“That is the beauty of the compensation plan. Have you seen the compensation plan video?”</p>
+                <ul>
+                  <li>If no: “On our GlobalExecTeam.com website there is a Get Paid To Share tab. I’ll send you a direct link
+                    to it so you have it in your inbox. You definitely want to check that out after our call.” </li>
+                  <li> If yes: “Do you remember what you saw in the video? Well, those (2) people are pat of your team and you
+                    will be paid on their orders forever.”</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Show them
+            <a href="#">www.globalexecteam.com</a>.
+          </li>
+          <li>
+            Help them make their list – The Home Plate Tab (typically Launch Call #2)
+          </li>
+          <li>
+            Help them refine their list – (Launch Call #3 – or #2 if they did the FB Post and List in Call #1)
+          </li>
+          <li>
+            Inoculate Your Associate
+          </li>
+        </ol>
+      </section>
+      <section id="videoSection">
+        <h3>Watch This Video to Learn More About the Launch Calls</h3>
+        <img class="video-thumb" sizes="(max-width: 566px) 100vw, 566px" (click)="openVideoModal()" srcset="
+      assets/imgs/launch-associate/launch-associate_200.jpg 200w,
+      assets/imgs/launch-associate/launch-associate_465.jpg 465w,
+      assets/imgs/launch-associate/launch-associate_566.jpg 566w" src="assets/imgs/launch-associate/launch-associate_566.jpg"
+      alt="">
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

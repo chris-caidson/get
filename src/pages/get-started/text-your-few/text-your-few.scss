@@ -1,0 +1,28 @@
+page-text-your-few {
+  #sampleImg1, #sampleImg2 {
+    max-width: 250px;
+  }
+
+  #sampleImg1 {
+    display: none;
+  }
+
+  #sampleImg2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 640px) {
+    #sampleImg1 {
+      float: right;
+      display: inherit;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    #sampleImg2 {
+      display: none;
+    }
+  }
+}

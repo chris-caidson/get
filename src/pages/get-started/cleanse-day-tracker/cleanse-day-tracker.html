@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>Cleanse Day Tracker</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <header role="banner">
+    <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
+      assets/imgs/main-background/main-background_400.jpg 400w,
+      assets/imgs/main-background/main-background_916.jpg 916w,
+      assets/imgs/main-background/main-background_1285.jpg 1285w,
+      assets/imgs/main-background/main-background_1600.jpg 1600w" src="assets/imgs/main-background/main-background_1600.jpg"
+      alt="Global Exec Team">
+  </header>
+
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Cleanse Day Tracker</h1>
+      <section>
+        <p>
+          If weight loss is your goal, we recommend you cleanse at least twice a month. You can cleanse a third week in a month for
+          accelerated results, but you must take the fourth week off.
+        </p>
+        <p>
+          You may choose your days according to the following guidelines:
+        </p>
+        <ol>
+          <li>You will cleanse 2 days back to back. (Tues / Wed, Wed / Thurs, Sat / Sun – you get the idea). You will do the
+            same two days the following week.</li>
+          <li>You will choose either week 1 and week 2 OR week 2 and week 3.</li>
+          <li>You will follow the cleanse schedule at
+            <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/images%2Fcleanse-day.jpg?alt=media&token=324dbabc-c1b7-47d3-8b7c-48166665eb8e">this link</a>. Don’t use the one in the guide that came in your box. This one is much friendlier and will give
+            you better results.</li>
+          <li>You may substitute 4 (yes, only FOUR!) Whey Thin crackers or 2 Isagenix Snacks wafers for an IsaDelight Chocolate
+            square if you are opposed to eating chocolate or want something different.</li>
+          <li>The snacks wafers are not replaceable. They are necessary to preserve muscle during cleansing. Do not eat whole
+            food snacks such as eggs, nuts, or fruit on a cleanse day. "Snacks" refer to the wafers in the bottle only.</li>
+          <li>
+            <strong>VERY IMPORTANT!!!</strong> Your first meal after your cleanse days will always be an IsaLean Shake. This will
+            replenish your body with the nutrition it needs immediately following a cleanse cycle.</li>
+        </ol>
+        <p>
+          Once you have achieved your goal weight you can begin cleansing one day per week or even one day every two weeks. Cleansing
+          is like cleaning your pool. It needs to be done regularly to combat the environment we live in. Wondering what
+          cleanse schedule to follow? Just ask your enrolling sponsor. We are here to help!
+        </p>
+      </section>
+      <section>
+        <img id="cleanseImg" sizes="(max-width: 639px) 100vw, 639px" srcset="
+      assets/imgs/perfect-cleanse-day/perfect-cleanse-day_400.jpg 400w,
+      assets/imgs/perfect-cleanse-day/perfect-cleanse-day_610.jpg 610w,
+      assets/imgs/perfect-cleanse-day/perfect-cleanse-day_639.jpg 639w" src="assets/imgs/perfect-cleanse-day/perfect-cleanse-day_639.jpg"
+          alt="Perfect Cleanse Day">
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

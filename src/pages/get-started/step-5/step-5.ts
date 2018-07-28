@@ -12,4 +12,7 @@ export class Step_5Page {
   constructor(public navCtrl: NavController, public navParams: NavParams, public pdfProvider: PdfProvider,) {
   }
 
+  openPage(pageName) {
+    this.navCtrl.push(pageName);
+  }
 }

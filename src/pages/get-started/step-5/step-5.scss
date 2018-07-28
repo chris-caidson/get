@@ -1,3 +1,23 @@
 page-step-5 {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  #welcomeText, #launchCall {
+    font-size: 22px;
+  }
+
+  @media(min-width: 800px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+
+      section {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+      }
+    }
+  }
 
 }

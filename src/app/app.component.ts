@@ -41,11 +41,11 @@ export class MyApp {
 
       // Get Success
       { title: "Get Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "[Page 1]", component: "Step_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
-      { title: "[Page 2]", component: "Step_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
-      { title: "[Page 3]", component: "Step_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
-      { title: "[Page 4]", component: "Step_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
-      { title: "[Page 5]", component: "Step_5Page", separatorLevel: 4, icon: null, stepNumber: "5" },
+      { title: "Step 1", component: "GetSuccessStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
+      { title: "Step 2", component: "GetSuccessStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
+      { title: "Step 3", component: "GetSuccessStep_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
+      { title: "Step 4", component: "GetSuccessStep_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
+      { title: "Step 5", component: "GetSuccessStep_5Page", separatorLevel: 4, icon: null, stepNumber: "5" },
 
       // Live Calls
       { title: "Live Calls", component: null, separatorLevel: 2, icon: null, stepNumber: null },

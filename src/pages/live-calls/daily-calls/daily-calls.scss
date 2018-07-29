@@ -2,24 +2,27 @@ page-daily-calls {
   .grid-container {
     display: grid;
     grid-template-columns: auto;
+    align-items: end;
   }
 
   audio {
     width: 100%;
+    margin-left: -5px;
   }
 
   h4 {
     font-size: 12pt;
-    margin-top: 35px;
   }
 
   section {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1100px) {
     .grid-container {
-      grid-template-columns: auto auto;
+      grid-template-columns: 500px 500px;
+      max-width: 1200px;
+      margin-left: 90px;
 
       section {
         margin-left: 30px;

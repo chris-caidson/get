@@ -1,3 +1,42 @@
 page-podcasts {
-
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  section {
+    margin-bottom: 50px;
+  }
+  @media (min-width: 640px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+      section {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      img {
+        max-width: 250px;
+      }
+    }
+  }
+  @media(min-width: 800px) {
+    .grid-container {
+      section img {
+        max-width: 300px !important;
+      }
+    }
+  }
+  @media(min-width: 1000px) {
+    .grid-container {
+      section img {
+        max-width: 375px !important;
+      }
+    }
+  }
+  @media(min-width: 1200px) {
+    .grid-container {
+      section img {
+        max-width: 450px !important;
+      }
+    }
+  }
 }

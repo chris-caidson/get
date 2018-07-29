@@ -1,3 +1,56 @@
 page-videos {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
 
+    section {
+      margin-bottom: 50px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .video-thumb {
+    width: 300px;
+    height: 225px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  @media (min-width: 500px) {
+    .video-thumb {
+      width: 400px;
+      height: 300px;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+
+      section {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      h3 {
+        text-align: left;
+      }
+    }
+
+    .video-thumb {
+      width: 300px;
+      height: 225px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .video-thumb {
+      width: 400px;
+      height: 300px;
+    }
+  }
 }

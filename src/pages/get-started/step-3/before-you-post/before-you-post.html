@@ -1,0 +1,129 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-cogs fixed-width space-right"></i>
+      <span>Before You Post</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+    <login></login>
+  </ion-content>
+  <ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
+      assets/imgs/main-background/main-background_400.jpg 400w,
+      assets/imgs/main-background/main-background_916.jpg 916w,
+      assets/imgs/main-background/main-background_1285.jpg 1285w,
+      assets/imgs/main-background/main-background_1600.jpg 1600w" src="assets/imgs/main-background/main-background_1600.jpg"
+      alt="Global Exec Team">
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Before You Post</h1>
+      <p class="centered blurb">Social Media allows us to reach thousands of people with our message and vision. In order to maximize your reach and
+        exposure, make sure you have the following Privacy settings in place.</p>
+      <section>
+        <h3>A. Change Facebook Settings to Public</h3>
+        <p>
+          Step 1: On the blue tool bar, click on the upside down arrow in the upper right hand corner of Facebook.
+        </p>
+        <p>
+          Step 2: From “SETTINGS,” click PRIVACY on the left hand side of the screen.
+        </p>
+        <p>
+          Make sure to have your privacy set to PUBLIC.
+        </p>
+        <p>
+          Who can see my stuff? PUBLIC
+        </p>
+        <p>
+          Step 3: Click on FOLLOWERS on the left hand side of the screen.
+        </p>
+        <p>
+          Make sure you have your follower preferences set to EVERYBODY.
+        </p>
+        <p>
+          Follower Comments: Who can comment on your public posts? EVERYBODY
+        </p>
+      </section>
+      <section>
+        <img id="setting1" sizes="(max-width: 800px) 100vw, 800px" srcset="
+          assets/imgs/setting1/setting1_200.png 200w,
+          assets/imgs/setting1/setting1_465.png 465w,
+          assets/imgs/setting1/setting1_656.png 656w,
+          assets/imgs/setting1/setting1_800.png 800w" src="assets/imgs/setting1/setting1_800.png" alt="">
+      </section>
+      <section>
+        <h3>B. Properly Linking Instagram to Facebook</h3>
+        <ol>
+          <li>On Facebook, go to >>>> Settings</li>
+          <li>Left side of screen click >>>> Apps
+            <br />
+            <img id="setting2" sizes="(max-width: 784px) 100vw, 784px" srcset="
+            assets/imgs/setting2/setting2_200.png 200w,
+            assets/imgs/setting2/setting2_429.png 429w,
+            assets/imgs/setting2/setting2_646.png 646w,
+            assets/imgs/setting2/setting2_784.png 784w" src="assets/imgs/setting2/setting2_784.png" alt="">
+          </li>
+          <li>
+            Find and select >>>> Instagram
+            <br />
+            <img id="setting3" sizes="(max-width: 800px) 100vw, 800px" srcset="
+            assets/imgs/setting3/setting3_200.png 200w,
+            assets/imgs/setting3/setting3_455.png 455w,
+            assets/imgs/setting3/setting3_630.png 630w,
+            assets/imgs/setting3/setting3_800.png 800w" src="assets/imgs/setting3/setting3_800.png" alt="">
+          </li>
+          <li>Click >>>> Edit Settings</li>
+          <li>Under ‘App Visibility and Post Audience,’ select Public</li>
+          <li>Hit ‘Save’ and you’re all set!
+            <br />
+            <img id="setting4" sizes="(max-width: 800px) 100vw, 800px" srcset="
+            assets/imgs/setting4/setting4_200.png 200w,
+            assets/imgs/setting4/setting4_390.png 455w,
+            assets/imgs/setting4/setting4_536.png 630w,
+            assets/imgs/setting4/setting4_659.png 800w" src="assets/imgs/setting4/setting4_659.png" alt="">
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h3>C. Tagging Settings</h3>
+        <p>
+          Step 1: Go to Settings
+        </p>
+        <p>
+          Step 2: Select “Timeline and Tagging”
+        </p>
+        <p>
+          Make sure the following are set:
+        </p>
+        <p>
+          Who can add things to my timeline?
+        </p>
+        <p>
+          – Review posts friends tag you in before they appear on your timeline? ON
+        </p>
+        <p>
+          How can I manage tags people add and tagging suggestions?
+        </p>
+        <p>
+          – Review tags people add to your own posts before these tags appear on Facebook? ON
+        </p>
+      </section>
+      <section>
+          <img id="setting5" sizes="(max-width: 800px) 100vw, 800px" srcset="
+          assets/imgs/setting5/setting5_200.png 200w,
+          assets/imgs/setting5/setting5_472.png 472w,
+          assets/imgs/setting5/setting5_668.png 668w,
+          assets/imgs/setting5/setting5_800.png 800w" src="assets/imgs/setting5/setting5_800.png" alt="">
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

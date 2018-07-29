@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { AuthProvider } from './../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
@@ -8,7 +9,8 @@ import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angu
 })
 export class LaunchCallPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public modalCtrl: ModalController, public auth: AuthProvider) {
   }
 
   openVideoModal() {

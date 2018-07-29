@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { PdfProvider } from '../../../providers/pdf/pdf';
+import { AuthProvider } from './../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
@@ -13,7 +14,8 @@ export class Step_1Page {
     public navCtrl: NavController,
     public navParams: NavParams,
     public pdfProvider: PdfProvider,
-    private modalCtrl: ModalController
+    private modalCtrl: ModalController,
+    public auth: AuthProvider
   ) { }
 
   openPage(pageName) {

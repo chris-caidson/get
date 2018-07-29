@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header *ngIf="this.auth.loggedIn">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -9,7 +9,10 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
+<ion-content *ngIf="!this.auth.loggedIn">
+    <login></login>
+  </ion-content>
+  <ion-content *ngIf="this.auth.loggedIn">
   <header role="banner">
     <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
       assets/imgs/get-started-step-3/get-started-step-3_400.jpg 400w,
@@ -44,8 +47,8 @@
               (click)="openPage('BeforeYouPostPage')">these simple steps.</span>
           </p>
           <p>
-            Then copy &amp; paste
-            <span class="link-span" (click)="openPage('PostOnFacebookPage')">THIS SIMPLE POST</span> &amp; follow the template when friends start commenting.
+            Then copy and paste
+            <span class="link-span" (click)="openPage('PostOnFacebookPage')">THIS SIMPLE POST</span> and follow the template when friends start commenting.
           </p>
         </section>
       </div>

@@ -1,13 +1,14 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "Global Exec Team",
+  "short_name": "GET",
   "start_url": "index.html",
-  "display": "standalone",
+  "display": "browser",
+  "lang": "en-US",
   "icons": [{
     "src": "assets/imgs/logo.png",
     "sizes": "512x512",
     "type": "image/png"
   }],
-  "background_color": "#4e8ef7",
-  "theme_color": "#4e8ef7"
+  "background_color": "#12B6F2",
+  "theme_color": "#8cc831"
 }

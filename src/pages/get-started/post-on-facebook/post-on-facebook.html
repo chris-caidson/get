@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header *ngIf="this.auth.loggedIn">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -9,7 +9,10 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
+<ion-content *ngIf="!this.auth.loggedIn">
+    <login></login>
+  </ion-content>
+  <ion-content *ngIf="this.auth.loggedIn">
   <header role="banner">
     <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
     assets/imgs/main-background/main-background_400.jpg 400w,
@@ -216,7 +219,7 @@
         </p>
       </section>
       <section>
-        <a href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2FPost-On-Facebook.pdf?alt=media&token=44a76dca-70cf-4a0a-b8b0-86a442ab1a39">Download this script to laminate as a reference</a>
+        <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2FPost-On-Facebook.pdf?alt=media&token=44a76dca-70cf-4a0a-b8b0-86a442ab1a39">Download this script to laminate as a reference</a>
       </section>
     </article>
   </main>

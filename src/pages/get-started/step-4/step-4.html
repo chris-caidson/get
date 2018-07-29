@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header *ngIf="this.auth.loggedIn">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -9,7 +9,10 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
+<ion-content *ngIf="!this.auth.loggedIn">
+    <login></login>
+  </ion-content>
+  <ion-content *ngIf="this.auth.loggedIn">
   <header role="banner">
     <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
       assets/imgs/get-started-step-4/get-started-step-4_400.jpg 400w,
@@ -32,16 +35,16 @@
       </section>
       <section id="linkSection">
         <p>
-          <a href="#">GET PAID</a> - Watch "Become an ASSOCIATE" in your back office. Username and Password are in your Welcome Email.
+          <a target="_blank" href="https://www.isagenix.com/en-us/opportunity/become-an-associate">GET PAID</a> - Watch "Become an ASSOCIATE" in your back office. Username and Password are in your Welcome Email.
         </p>
         <p>
-          <a href="#">ENROLL Two Friends</a> - Ask Sponsor for placement assistance.
+          <a target="_blank" href="https://www.isagenix.com/en-us/resource-center/you-share-they-share">ENROLL Two Friends</a> - Ask Sponsor for placement assistance.
         </p>
         <p>
-          <a href="#">IsaBody Challenge</a> - Register $200 Free Product.
+          <a target="_blank" href="https://www.isagenix.com/isabody-challenge">IsaBody Challenge</a> - Register $200 Free Product.
         </p>
         <p>
-          <a href="#">FREE Vitamins</a> - Enroll 5 people.
+          <a target="_blank" href="https://www.isagenix.com/-/media/promotion/team-builders-club/team-builders-club-flyer/us-en-team-builders-club-flyer.ashx">FREE Vitamins</a> - Enroll 5 people.
         </p>
       </section>
     </div>

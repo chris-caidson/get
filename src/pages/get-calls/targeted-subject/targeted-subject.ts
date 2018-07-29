@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from './../../../providers/auth/auth';
+import { AuthProvider } from '../../../providers/auth/auth';
 
 @IonicPage()
-@Component({
-  selector: 'page-leadership-calls',
-  templateUrl: 'leadership-calls.html',
+@Component({ 
+  selector: 'page-targeted-subject',
+  templateUrl: 'targeted-subject.html',
 })
-export class LeadershipCallsPage {
+export class TargetedSubjectPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public auth: AuthProvider) {
   }

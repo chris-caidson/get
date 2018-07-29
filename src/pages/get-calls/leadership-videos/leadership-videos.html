@@ -1,0 +1,147 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-film fixed-width space-right"></i>
+      <span>Leadership Videos</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
+      assets/imgs/main-background/main-background_400.jpg 400w,
+      assets/imgs/main-background/main-background_916.jpg 916w,
+      assets/imgs/main-background/main-background_1285.jpg 1285w,
+      assets/imgs/main-background/main-background_1600.jpg 1600w" src="assets/imgs/main-background/main-background_1600.jpg"
+      alt="Global Exec Team">
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Leadership Videos</h1>
+      <p class="centered note">These are large video files - please be patient when loading them.</p>
+      <div class="grid-container">
+        <section>
+          <h3>Adrienne Donovan &amp; Nancy Baxter</h3>
+          <h4>July 25, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-07-25.jpg" (click)="openVideoModal('2018-07-25')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Susan Miller, Liz Lima &amp; Susan Lee</h3>
+          <h4>July 18, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-07-18.jpg" (click)="openVideoModal('2018-07-18')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Carol Elizabeth &amp; Tavia Rogerson</h3>
+          <h4>July 11, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-07-11.jpg" (click)="openVideoModal('2018-07-11')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Susan Miller &amp; MaryEllen Clark</h3>
+          <h4>June 27, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-06-27.jpg" (click)="openVideoModal('2018-06-27')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Jessica Johnston &amp; Colin Brown</h3>
+          <h4>June 20, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-06-20.jpg" (click)="openVideoModal('2018-06-20')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Susan Miller &amp; Jennifer Barry</h3>
+          <h4>June 13, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-06-13.jpg" (click)="openVideoModal('2018-06-13')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Jessica Johnston, Jill Alt &amp; Shelly Balbaugh</h3>
+          <h4>June 6, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-06-06.jpg" (click)="openVideoModal('2018-06-06')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Jessica Johnston, Carol Elizabeth &amp; Jennifer Oyarzun</h3>
+          <h4>May 30, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-05-30.jpg" (click)="openVideoModal('2018-05-30')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Carol Elizabeth &amp; Staci Friedman</h3>
+          <h4>May 23, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-05-23.jpg" (click)="openVideoModal('2018-05-23')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Susan Miller, Carol Elizabeth &amp; Murray Miller</h3>
+          <h4>May 16, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-05-16.jpg" (click)="openVideoModal('2018-05-16')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Jessica Johnston &amp; Courtney Aldridge</h3>
+          <h4>May 9, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-05-09.jpg" (click)="openVideoModal('2018-05-09')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Carol Elizabeth &amp; Andrea Labouchere</h3>
+          <h4>April 25, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-04-25.jpg" (click)="openVideoModal('2018-04-25')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Susan Miller &amp; Adrienne Donovan</h3>
+          <h4>April 18, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-04-18.jpg" (click)="openVideoModal('2018-04-18')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Jessica Johnston &amp; Jennifer Towkaniuk</h3>
+          <h4>April 11, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-04-11.jpg" (click)="openVideoModal('2018-04-11')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Chelsea Miller LIVE from Bali</h3>
+          <h4>April 4, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-04-04.jpg" (click)="openVideoModal('2018-04-04')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Carol Elizabeth, Susan Miller &amp; Jessica Johnston</h3>
+          <h4>March 28, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-03-28.jpg" (click)="openVideoModal('2018-03-28')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Melissa Henault</h3>
+          <h4>March 21, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-03-21.jpg" (click)="openVideoModal('2018-03-21')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Susan Miller</h3>
+          <h4>March 14, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-03-14.jpg" (click)="openVideoModal('2018-03-14')" alt="" class="video-thumb"
+          />
+        </section>
+        <section>
+          <h3>Jessica Johnston LEADERSHIP KICKOFF</h3>
+          <h4>March 7, 2018</h4>
+          <img src="assets/imgs/leadership-videos/2018-03-07.jpg" (click)="openVideoModal('2018-03-07')" alt="" class="video-thumb"
+          />
+        </section>
+      </div>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

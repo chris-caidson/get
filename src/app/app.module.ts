@@ -5,7 +5,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { MyApp } from './app.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+//import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { PdfProvider } from '../providers/pdf/pdf';
 import { AuthProvider } from '../providers/auth/auth';
 

@@ -2,7 +2,7 @@ import { Component, ViewChild } from "@angular/core";
 import { Nav, Platform } from "ionic-angular";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
-import { AuthProvider } from './../providers/auth/auth';
+import { AuthProvider } from '../providers/auth/auth';
 
 @Component({
   templateUrl: "app.html"
@@ -31,7 +31,7 @@ export class MyApp {
     this.pages = [
       { title: "Home", component: "HomePage", separatorLevel: 4, icon: "home", stepNumber: null },
 
-      // Get Started
+      // GET Started
       { title: "Get Started", component: null, separatorLevel: 2, icon: null, stepNumber: null },
       { title: "Step 1", component: "Step_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
       { title: "Step 2", component: "Step_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
@@ -39,7 +39,7 @@ export class MyApp {
       { title: "Step 4", component: "Step_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
       { title: "Step 5", component: "Step_5Page", separatorLevel: 4, icon: null, stepNumber: "5" },
 
-      // Get Success
+      // GET Success
       { title: "Get Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
       { title: "Step 1", component: "GetSuccessStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
       { title: "Step 2", component: "GetSuccessStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
@@ -47,13 +47,14 @@ export class MyApp {
       { title: "Step 4", component: "GetSuccessStep_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
       { title: "Step 5", component: "GetSuccessStep_5Page", separatorLevel: 4, icon: null, stepNumber: "5" },
 
-      // Live Calls
-      { title: "Live Calls", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "Daily Calls", component: "DailyCallsPage", separatorLevel: 4, icon: "phone", stepNumber: null },
-      { title: "Leadership Calls", component: "LeadershipCallsPage", separatorLevel: 4, icon: "user", stepNumber: null },
+      // GET Calls
+      { title: "GET Calls", component: null, separatorLevel: 2, icon: null, stepNumber: null },
+      { title: "Daily M-F", component: "DailyCallsPage", separatorLevel: 4, icon: "phone", stepNumber: null },
+      { title: "Leadership", component: "LeadershipVideosPage", separatorLevel: 4, icon: "film", stepNumber: null },
+      { title: "Targeted Subject", component: "TargetedSubjectPage", separatorLevel: 4, icon: "user", stepNumber: null },
 
-      // Elevate
-      { title: "Elevate", component: null, separatorLevel: 2, icon: null, stepNumber: null },
+      // GET Elevated
+      { title: "Get Elevated", component: null, separatorLevel: 2, icon: null, stepNumber: null },
       { title: "Books", component: "BooksPage", separatorLevel: 4, icon: "book", stepNumber: null },
       { title: "Podcasts", component: "PodcastsPage", separatorLevel: 4, icon: "podcast", stepNumber: null },
       { title: "Videos", component: "VideosPage", separatorLevel: 4, icon: "video-camera", stepNumber: null },

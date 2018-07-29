@@ -1,0 +1,43 @@
+page-leadership-videos {
+  .note {
+    font-size: smaller;
+    margin-top: -20px !important;
+    margin-bottom: 40px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: end;
+
+    section {
+      margin-bottom: 50px;
+
+      h3, h4 {
+        text-align: center;
+      }
+
+      h4 {
+        margin-top: -8px;
+      }
+
+      img {
+        display: block;
+        width: 275px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+
+      section {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

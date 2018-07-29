@@ -1,4 +1,8 @@
 page-books {
+  header img {
+    max-height: 700px;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: auto;

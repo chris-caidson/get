@@ -1,33 +1,77 @@
 <ion-header *ngIf="this.auth.loggedIn">
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-list-ol fixed-width space-right"></i>
-        <span>Step 1</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content *ngIf="!this.auth.loggedIn">
-      <login></login>
-    </ion-content>
-    <ion-content *ngIf="this.auth.loggedIn">
-    <header role="banner">
-        <img alt="Leaving Legacies" sizes="(max-width: 1400px) 100vw" src="assets/imgs/susan-quote/susan-quote-1400.jpg" srcset="assets/imgs/susan-quote/susan-quote-400.jpg 400w,
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>Step 1</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img alt="Leaving Legacies" sizes="(max-width: 1400px) 100vw" src="assets/imgs/susan-quote/susan-quote-1400.jpg" srcset="assets/imgs/susan-quote/susan-quote-400.jpg 400w,
         assets/imgs/susan-quote/susan-quote-849.jpg 849w,
         assets/imgs/susan-quote/susan-quote-1177.jpg 1177w,
         assets/imgs/susan-quote/susan-quote-1400.jpg 1400w">
-    </header>
-
-    <main role="main">
-      <article>
-        <h1 class="centered uppercase">Get Success - Step 1</h1>
-        <div class="grid-container">
-          <section>
-          </section>
-        </div>
-      </article>
-    </main>
-    <get-footer></get-footer>
-  </ion-content>
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Get Success - Step 1</h1>
+      <div class="grid-container">
+        <section>
+          <h3 class="centered">Make Your LIST and Develop Your STORY</h3>
+          <h4 class="centered">What Excites YOU
+            <span>by Peta Kelly-Coover</span>
+          </h4>
+          <audio controls>
+            <source src="//rec001.freeconferencecalling.com/mp3/1182865/257064/LAF3494_03122018050145812_1192988.mp3">
+            <p>Your device does not support native audio.</p>
+          </audio>
+          <div>
+            <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Identify YOUR Why</span>
+            <ul>
+              <li>Set YOUR goals</li>
+              <li>Share with your Team Leader</li>
+            </ul>
+          </div>
+          <div>
+            <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Develop YOUR 30-Second Story</span>
+            <ul>
+              <li>Practice, Practice, Practice</li>
+              <li>
+                <span class="highlight">Videotape and Post</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Who Do YOU Know?</span>
+            <ul>
+              <li>Identify Your <span class="highlight">Networks</span></li>
+              <li>Write Down <span class="highlight">100 Names</span></li>
+              <li>Highlight Your <span class="highlight">Top 20 "A Team"</span></li>
+            </ul>
+          </div>
+        </section>
+        <section id="secondSection">
+          <img id="freeToBeMeImg" alt="Free to Be Me" sizes="(max-width: 452px) 100vw" src="assets/imgs/free-to-be-me/free-to-be-me_452.png"
+            srcset="assets/imgs/free-to-be-me/free-to-be-me_200.png 200w,
+                      assets/imgs/free-to-be-me/free-to-be-me_301.png 301w,
+                      assets/imgs/free-to-be-me/free-to-be-me_387.png 387w,
+                      assets/imgs/free-to-be-me/free-to-be-me_452.png 452w">
+          <img id="knowYourWhyVideo" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()" sizes="(max-width: 1280px) 100vw"
+            alt="Why Isagenix" class="video-thumb" srcset="
+                        assets/imgs/why-isagenix/why-isagenix_400.jpg 400w,
+                        assets/imgs/why-isagenix/why-isagenix_1045.jpg 1045w,
+                        assets/imgs/why-isagenix/why-isagenix_1280.jpg 1280w" />
+          <h3 class="centered">“The future Belongs to those Who BELIEVE in the BEAUTY Of their DREAMS”</h3>
+        </section>
+      </div>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

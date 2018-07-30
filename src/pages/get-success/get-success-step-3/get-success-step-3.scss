@@ -1,3 +1,68 @@
 page-get-success-step-3 {
-
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  audio {
+    width: 100%;
+  }
+  .highlight {
+    color: #E46C0A;
+  }
+  .pdf {
+    display: block;
+    margin-top: 10px;
+  }
+  ul {
+    margin-bottom: 40px;
+  }
+  h4 {
+    margin-top: 40px;
+    span {
+      color: darken($tertiary-color, 20%);
+      font-size: smaller;
+    }
+  }
+  h5 {
+    color: $accent-color;
+    margin-left: 25px;
+  }
+  p {
+    margin-left: 25px;
+  }
+  #tryProduct {
+    margin-left: 50px;
+  }
+  .diamond {
+    height: 15px;
+    margin-right: 10px;
+  }
+  #basesImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 45vw;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  #virtualFranchiseVideo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+  @media (min-width: 640px) {
+    .grid-container {
+      grid-template-columns: 50% 50%;
+    }
+    section {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #secondSection {
+      border-left: 4px solid #4F81BD;
+      padding-left: 20px;
+    }
+  }
 }

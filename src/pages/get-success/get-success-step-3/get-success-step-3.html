@@ -1,33 +1,65 @@
 <ion-header *ngIf="this.auth.loggedIn">
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-list-ol fixed-width space-right"></i>
-        <span>Step 3</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content *ngIf="!this.auth.loggedIn">
-      <login></login>
-    </ion-content>
-    <ion-content *ngIf="this.auth.loggedIn">
-    <header role="banner">
-        <img alt="Leaving Legacies" sizes="(max-width: 1400px) 100vw" src="assets/imgs/susan-quote/susan-quote-1400.jpg" srcset="assets/imgs/susan-quote/susan-quote-400.jpg 400w,
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>Step 3</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img alt="Leaving Legacies" sizes="(max-width: 1400px) 100vw" src="assets/imgs/susan-quote/susan-quote-1400.jpg" srcset="assets/imgs/susan-quote/susan-quote-400.jpg 400w,
         assets/imgs/susan-quote/susan-quote-849.jpg 849w,
         assets/imgs/susan-quote/susan-quote-1177.jpg 1177w,
         assets/imgs/susan-quote/susan-quote-1400.jpg 1400w">
-    </header>
-
-    <main role="main">
-      <article>
-        <h1 class="centered uppercase">Get Success - Step 3</h1>
-        <div class="grid-container">
-          <section>
-          </section>
-        </div>
-      </article>
-    </main>
-    <get-footer></get-footer>
-  </ion-content>
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Get Success - Step 3</h1>
+      <div class="grid-container">
+        <section>
+          <h3 class="centered">LEARN the Duplication System</h3>
+          <h4 class="centered highlight">
+            <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Income Producing Activity</h4>
+          <h4 class="centered">Basic ACTION Steps that keep the proven process Simple for mass duplication is the KEY to Success</h4>
+          <h5 class="uppercase">Connect</h5>
+          <p><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Share Your Story <span class="highlight">(Scripts)</span></p>
+          <p><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Send Video from <span class="highlight">(GETfree.Global)</span></p>
+          <p><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Follow-up <span class="highlight">(Scripts)</span></p>
+          <h5 class="uppercase">Validate</h5>
+          <p><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Add to <span class="highlight">GETFIT</span> and <span class="highlight">GETFREE</span> Facebook Pages</p>
+          <p><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />3 Way Intro with Up-line Leader (Text, IM, Call)</p>
+          <h5 class="uppercase">Enroll</h5>
+          <p id="tryProduct">“YOUR NEXT STEP IS to try the product”</p>
+          <p><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Send Video on <span class="highlight">Value Pack</span> by Melissa Henault</p>
+          <h5 class="uppercase">Educate</h5>
+          <p><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Welcome to <span class="highlight">Globalexecteam.com</span></p>
+          <p><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Add to <span class="highlight">Global Exec Team</span> Facebook Page</p>
+          <p><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Attend Next Local and <span class="highlight">Corporate Event</span></p>
+        </section>
+        <section id="secondSection">
+          <h4 class="centered">A Virtual Franchise
+            <span>by Chelsea Miller</span>
+          </h4>
+          <img id="virtualFranchiseVideo" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()" sizes="(max-width: 1280px) 100vw"
+            alt="Why Isagenix" class="video-thumb" srcset="
+                                assets/imgs/why-isagenix/why-isagenix_400.jpg 400w,
+                                assets/imgs/why-isagenix/why-isagenix_1045.jpg 1045w,
+                                assets/imgs/why-isagenix/why-isagenix_1280.jpg 1280w" />
+          <img id="basesImg" alt="GET Duplication System" sizes="(max-width: 874px) 100vw" src="assets/imgs/load-the-bases/load-the-bases_874.png"
+            srcset="assets/imgs/load-the-bases/load-the-bases_400.png 400w,
+                        assets/imgs/load-the-bases/load-the-bases_567.png 567w,
+                        assets/imgs/load-the-bases/load-the-bases_686.png 686w,
+                        assets/imgs/load-the-bases/load-the-bases_874.png 874w">
+        </section>
+      </div>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

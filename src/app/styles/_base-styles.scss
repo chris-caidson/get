@@ -67,6 +67,10 @@ p {
   text-align: justify;
 }
 
+a {
+  color: $bright-accent-color;
+}
+
 // Classes
 
 .centered {
@@ -96,12 +100,12 @@ p {
 
 .link-span {
   text-decoration: underline;
-  color: $primary-color;
+  color: $bright-accent-color;
   cursor: pointer;
 }
 
 .link-span:hover {
-  color: lighten($primary-color, 15%);
+  color: lighten($bright-accent-color, 15%);
 }
 
 .blurb {

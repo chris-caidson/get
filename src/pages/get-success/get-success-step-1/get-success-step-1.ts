@@ -16,7 +16,7 @@ export class GetSuccessStep_1Page {
 
   openVideoModal() {
     const myModal = this.modalCtrl.create("VideoModalPage", {
-      name: "Why Isagenix",
+      name: "Know YOUR Why",
       url:
         "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2FWhy-Isagenix-Promo.mp4?alt=media&token=903beebd-f2d1-4e80-9386-8cb764d56cf8"
     });

@@ -41,11 +41,12 @@ export class MyApp {
 
       // GET Success
       { title: "Get Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
+      { title: "Welcome", component: "WelcomePage", separatorLevel: 4, icon: "bullhorn", stepNumber: null },
       { title: "Step 1", component: "GetSuccessStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
       { title: "Step 2", component: "GetSuccessStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
       { title: "Step 3", component: "GetSuccessStep_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
       { title: "Step 4", component: "GetSuccessStep_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
-      { title: "Step 5", component: "GetSuccessStep_5Page", separatorLevel: 4, icon: null, stepNumber: "5" },
+      { title: "Recap", component: "RecapPage", separatorLevel: 4, icon: "check-circle", stepNumber: null },
 
       // GET Calls
       { title: "GET Calls", component: null, separatorLevel: 2, icon: null, stepNumber: null },

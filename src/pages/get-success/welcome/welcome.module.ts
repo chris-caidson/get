@@ -1,15 +1,15 @@
 import { ComponentsModule } from '../../../components/components.module';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { GetSuccessStep_5Page } from './get-success-step-5';
+import { WelcomePage } from './welcome';
 
 @NgModule({
   declarations: [
-    GetSuccessStep_5Page,
+    WelcomePage,
   ],
   imports: [
     ComponentsModule,
-    IonicPageModule.forChild(GetSuccessStep_5Page),
+    IonicPageModule.forChild(WelcomePage),
   ],
 })
-export class GetSuccessStep_5PageModule {}
+export class WelcomePageModule {}

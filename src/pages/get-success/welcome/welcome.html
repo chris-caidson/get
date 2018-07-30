@@ -1,0 +1,44 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-bullhorn fixed-width space-right"></i>
+      <span>Get Success - Welcome</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+    <login></login>
+  </ion-content>
+  <ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+      <img alt="Leaving Legacies" sizes="(max-width: 1400px) 100vw" src="assets/imgs/susan-quote/susan-quote-1400.jpg" srcset="assets/imgs/susan-quote/susan-quote-400.jpg 400w,
+      assets/imgs/susan-quote/susan-quote-849.jpg 849w,
+      assets/imgs/susan-quote/susan-quote-1177.jpg 1177w,
+      assets/imgs/susan-quote/susan-quote-1400.jpg 1400w">
+  </header>
+
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Get Success - Welcome</h1>
+        <section>
+            <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
+            assets/imgs/tribe/tribe_400.png 400w,
+            assets/imgs/tribe/tribe_635.png 635w,
+            assets/imgs/tribe/tribe_832.png 832w,
+            assets/imgs/tribe/tribe_960.png 960w" src="assets/imgs/tribe/tribe_960.png"
+            alt="Find Your Tribe. Love Them Hard.">
+        </section>
+        <section id="videoSection">
+            <img id="welcomeVideo" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()"
+            sizes="(max-width: 700px) 100vw" alt="Why Isagenix" class="video-thumb" srcset="
+              assets/imgs/why-isagenix/why-isagenix_400.jpg 400w,
+              assets/imgs/why-isagenix/why-isagenix_1045.jpg 1045w,
+              assets/imgs/why-isagenix/why-isagenix_1280.jpg 1280w" />
+        </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

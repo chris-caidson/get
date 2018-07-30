@@ -1,62 +1,66 @@
 page-get-success-step-1 {
-  .grid-container {
+  #outerGrid {
     display: grid;
     grid-template-columns: auto;
   }
 
-  audio {
-    margin-left: -5px;
+  #firstSection, #secondSection {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: flex-start;
+  }
+
+  #quote {
+    color: $bright-accent-color;
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
     margin-bottom: 40px;
   }
 
-  .highlight {
-    color: #E46C0A;
+  audio {
+    margin-bottom: 20px;
   }
 
   .pdf {
-    display: block;
-    margin-top: 10px;
+    margin-top: 30px;
+    padding-top: 8px;
   }
 
   ul {
+    list-style-type: none;
     margin-bottom: 40px;
-  }
 
-  h4 {
-    margin-top: 40px;
-
-    span {
-      color: darken($tertiary-color, 20%);
-      font-size: smaller;
+    li {
+      margin-left: -40px;
+      margin-bottom: 10px;
     }
   }
 
-  #freeToBeMeImg {
+  #img {
     display: block;
+    width: 75vw;
     margin-left: auto;
     margin-right: auto;
-    max-width: 452px;
-    margin-bottom: 40px;
   }
 
-  #knowYourWhyVideo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-  }
+  @media (min-width: 800px) {
+    #outerGrid {
+      grid-template-columns: 1fr 1fr;
+    }
 
-  @media (min-width: 640px) {
-    .grid-container {
-      grid-template-columns: 50% 50%;
+    #firstSection {
+      justify-content: center;
+      margin-right: 40px;
+      padding-right: 40px;
     }
-    section {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+
     #secondSection {
+      justify-items: center;
       border-left: 4px solid #4F81BD;
-      padding-left: 20px;
+      margin-left: 40px;
+      padding-left: 40px;
     }
   }
 }

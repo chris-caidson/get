@@ -22,8 +22,8 @@
   <main role="main">
     <article>
       <h1 class="centered uppercase">Get Success - Step 1</h1>
-      <div class="grid-container">
-        <section>
+      <div id="outerGrid" class="grid-container">
+        <section id="firstSection">
           <h3>Make Your LIST and Develop Your STORY</h3>
           <h4>What Excites YOU
             <span>by Peta Kelly-Coover</span>
@@ -32,30 +32,32 @@
             <source src="//rec001.freeconferencecalling.com/mp3/1182865/257064/LAF3494_03122018050145812_1192988.mp3">
             <p>Your device does not support native audio.</p>
           </audio>
-          <div>
-            <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Identify YOUR Why</span>
-            <ul>
-              <li>Set YOUR goals</li>
-              <li>Share with your Team Leader</li>
-            </ul>
-          </div>
-          <div>
-            <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Develop YOUR 30-Second Story</span>
-            <ul>
-              <li>Practice, Practice, Practice</li>
-              <li>
-                <span class="highlight">Videotape and Post</span>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Who Do YOU Know?</span>
-            <ul>
-              <li>Identify Your <span class="highlight">Networks</span></li>
-              <li>Write Down <span class="highlight">100 Names</span></li>
-              <li>Highlight Your <span class="highlight">Top 20 "A Team"</span></li>
-            </ul>
-          </div>
+          <ul>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Identify YOUR Why</span>
+            </li>
+            <li>Set YOUR goals</li>
+            <li>Share with your Team Leader</li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Develop YOUR 30-Second Story</span>
+            </li>
+            <li>Practice, Practice, Practice</li>
+            <li>
+              <a>Videotape and Post</a>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Who Do YOU Know?</span>
+            </li>
+            <li>Identify Your
+              <a>Networks</a>
+            </li>
+            <li>Write Down
+              <a>100 Names</a>
+            </li>
+            <li>Highlight Your
+              <a>Top 20 "A Team"</a>
+            </li>
+          </ul>
         </section>
         <section id="secondSection">
           <img id="freeToBeMeImg" alt="Free to Be Me" sizes="(max-width: 452px) 100vw" src="assets/imgs/free-to-be-me/free-to-be-me_452.png"
@@ -63,13 +65,15 @@
                       assets/imgs/free-to-be-me/free-to-be-me_301.png 301w,
                       assets/imgs/free-to-be-me/free-to-be-me_387.png 387w,
                       assets/imgs/free-to-be-me/free-to-be-me_452.png 452w">
-          <h4>Know Your Why <span>by Jessica Johnston</span></h4>
-          <img id="knowYourWhyVideo" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()" sizes="(max-width: 1280px) 100vw"
+          <h4 id="knowYourWhy">Know Your Why
+            <span>by Jessica Johnston</span>
+          </h4>
+          <img id="img" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()" sizes="(max-width: 1280px) 100vw"
             alt="Why Isagenix" class="video-thumb" srcset="
                         assets/imgs/why-isagenix/why-isagenix_400.jpg 400w,
                         assets/imgs/why-isagenix/why-isagenix_1045.jpg 1045w,
                         assets/imgs/why-isagenix/why-isagenix_1280.jpg 1280w" />
-          <h3 class="centered">“The future Belongs to those Who BELIEVE in the BEAUTY Of their DREAMS”</h3>
+          <h5 id="quote">“The Future Belongs to Those Who BELIEVE in the BEAUTY of Their DREAMS.”</h5>
         </section>
       </div>
     </article>

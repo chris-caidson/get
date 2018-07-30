@@ -1,68 +1,109 @@
 <ion-header *ngIf="this.auth.loggedIn">
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-list-ol fixed-width space-right"></i>
-        <span>Step 4</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content *ngIf="!this.auth.loggedIn">
-      <login></login>
-    </ion-content>
-    <ion-content *ngIf="this.auth.loggedIn">
-    <header role="banner">
-        <img alt="Leaving Legacies" sizes="(max-width: 1400px) 100vw" src="assets/imgs/susan-quote/susan-quote-1400.jpg" srcset="assets/imgs/susan-quote/susan-quote-400.jpg 400w,
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>Step 4</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img alt="Leaving Legacies" sizes="(max-width: 1400px) 100vw" src="assets/imgs/susan-quote/susan-quote-1400.jpg" srcset="assets/imgs/susan-quote/susan-quote-400.jpg 400w,
         assets/imgs/susan-quote/susan-quote-849.jpg 849w,
         assets/imgs/susan-quote/susan-quote-1177.jpg 1177w,
         assets/imgs/susan-quote/susan-quote-1400.jpg 1400w">
-    </header>
-    <main role="main">
-      <article>
-        <h1 class="centered uppercase">Get Success - Step 4</h1>
-        <div class="grid-container">
-          <section>
-            <h3 class="centered">Master the Marketing Plan</h3>
-            <h4 class="centered highlight"><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Income Producing Activity</h4>
-            <h5 class="uppercase">Get Your Product for Free</h5>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Duplicate <span class="highlight">Eat It, Love It, Share It</span></p>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Enroll 2 a Week - <span class="highlight">Double PIB's</span></p>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Join <span class="highlight">IsaBody Challenge</span> - $200</p>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Enroll 5 People - <span class="highlight">FREE Vitamins</span></p>
-            <h5 class="uppercase">Compensation Plan</h5>
-            <p id="compPlan" class="highlight">Global Compensation Plan</p>
-            <p id="dictionary" class="highlight">Dictionary of Terms</p>
-            <h5 class="uppercase">Road to Exec - <span class="highlight">$10,550 USD</span></h5>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" /><span class="highlight uppercase">Create Consultants</span> - $2000 ($100 x 20)</p>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" /><span class="highlight uppercase">Consultants</span> (You + 2) $50</p>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" /><span class="highlight uppercase">Manager</span> (Them + 2) $250</p>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" /><span class="highlight uppercase">Director</span> (You + 4 More) $750</p>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" /><span class="highlight uppercase">Executive</span> (You + 4 More) $1000</p>
-            <h5 class="uppercase">Monthly Pools</h5>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" /><span class="highlight">Director Pools</span> $2500</p>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" /><span class="highlight">One-Star Executive Pools</span> $5000</p>
-            <p><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" /><span class="highlight">Two-Star Executive Pools</span> and Above $125k</p>
-          </section>
-          <section id="secondSection">
-              <h4 class="centered">Show Me the Money
-                <span>by Adrienne Cross Donovan and Erin Brauer</span>
-              </h4>
-              <img id="showMeTheMoneyVideo" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()" sizes="(max-width: 1280px) 100vw"
-                alt="Show Me the Money" class="video-thumb" srcset="
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Get Success - Step 4</h1>
+      <div id="outerGrid" class="grid-container">
+        <section id="firstSection">
+          <h3 class="centered">Master the Marketing Plan</h3>
+          <h4 class="centered highlight">
+            <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Income Producing Activity</h4>
+          <ul>
+            <li>
+              <h5 class="uppercase">Get Your Product for Free</h5>
+            </li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Duplicate
+              <a>Eat It, Love It, Share It</a>
+            </li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Enroll 2 a Week -
+              <a>Double PIB's</a>
+            </li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Join
+              <a>IsaBody Challenge</a> - $200</li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Enroll 5 People -
+              <a>FREE Vitamins</a>
+            </li>
+            <li>
+              <h5 class="uppercase">Compensation Plan</h5>
+            </li>
+            <li id="compPlan"><a>Global Compensation Plan</a></li>
+            <li id="dictionary"><a>Dictionary of Terms</a></li>
+            <li>
+              <h5 class="uppercase">Road to Exec -
+                <a>$10,550 USD</a>
+              </h5>
+            </li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
+              <a class="uppercase">Create Consultants</a> - $2000 ($100 x 20)</li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
+              <a class="uppercase">Consultants</a> (You + 2) $50</li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
+              <a class="uppercase">Manager</a> (Them + 2) $250</li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
+              <a class="uppercase">Director</a> (You + 4 More) $750</li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
+              <a class="uppercase">Executive</a> (You + 4 More) $1000</li>
+            <li>
+              <h5 class="uppercase">Monthly Pools</h5>
+            </li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
+              <a>Director Pools</a> $2500</li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
+              <a>One-Star Executive Pools</a> $5000</li>
+            <li>
+              <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
+              <a>Two-Star Executive Pools</a> and Above $125k</li>
+          </ul>
+        </section>
+        <section id="secondSection">
+          <h4 class="centered">Show Me the Money
+            <span>by Adrienne Cross Donovan and Erin Brauer</span>
+          </h4>
+          <img id="showMeTheMoneyVideo" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()" sizes="(max-width: 1280px) 100vw"
+            alt="Show Me the Money" class="video-thumb" srcset="
                                     assets/imgs/why-isagenix/why-isagenix_400.jpg 400w,
                                     assets/imgs/why-isagenix/why-isagenix_1045.jpg 1045w,
                                     assets/imgs/why-isagenix/why-isagenix_1280.jpg 1280w" />
-              <img id="goalImg" alt="Goal" sizes="(max-width: 651px) 100vw" src="assets/imgs/goal/goal_651.png"
-                srcset="assets/imgs/goal/goal_200.png 200w,
+          <img id="img" alt="Goal" sizes="(max-width: 651px) 100vw" src="assets/imgs/goal/goal_651.png" srcset="assets/imgs/goal/goal_200.png 200w,
                         assets/imgs/goal/goal_386.png 386w,
                         assets/imgs/goal/goal_526.png 526w,
                         assets/imgs/goal/goal_651.png 651w">
-              <h3 class="centered">“You cant hit a target you can't see<br />…You need to have GOALS!”<br />~ Zig Ziglar</h3>
-            </section>
-        </div>
-      </article>
-    </main>
-    <get-footer></get-footer>
-  </ion-content>
+          <h3 class="centered">“You can't hit a target you can't see
+            <br />…You need to have GOALS!”
+            <br />~ Zig Ziglar</h3>
+        </section>
+      </div>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

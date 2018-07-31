@@ -32,7 +32,7 @@ export class MyApp {
       { title: "Home", component: "HomePage", separatorLevel: 4, icon: "home", stepNumber: null },
 
       // GET Started
-      { title: "Get Started", component: null, separatorLevel: 2, icon: null, stepNumber: null },
+      { title: "GET Started", component: null, separatorLevel: 2, icon: null, stepNumber: null },
       { title: "Step 1", component: "Step_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
       { title: "Step 2", component: "Step_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
       { title: "Step 3", component: "Step_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
@@ -40,7 +40,7 @@ export class MyApp {
       { title: "Step 5", component: "Step_5Page", separatorLevel: 4, icon: null, stepNumber: "5" },
 
       // GET Success
-      { title: "Get Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
+      { title: "GET Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
       { title: "Welcome", component: "WelcomePage", separatorLevel: 4, icon: "bullhorn", stepNumber: null },
       { title: "Step 1", component: "GetSuccessStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
       { title: "Step 2", component: "GetSuccessStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
@@ -54,7 +54,7 @@ export class MyApp {
       { title: "Targeted Subject", component: "TargetedSubjectPage", separatorLevel: 4, icon: "user", stepNumber: null },
 
       // GET Elevated
-      { title: "Get Elevated", component: null, separatorLevel: 2, icon: null, stepNumber: null },
+      { title: "GET Elevated", component: null, separatorLevel: 2, icon: null, stepNumber: null },
       { title: "Books", component: "BooksPage", separatorLevel: 4, icon: "book", stepNumber: null },
       { title: "Podcasts", component: "PodcastsPage", separatorLevel: 4, icon: "podcast", stepNumber: null },
       { title: "Videos", component: "VideosPage", separatorLevel: 4, icon: "video-camera", stepNumber: null },

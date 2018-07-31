@@ -5,7 +5,7 @@
     </button>
     <ion-title>
       <i class="fa fa-check-circle fixed-width space-right"></i>
-      <span>Get Success Recap</span>
+      <span>GET Success Recap</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -13,16 +13,10 @@
     <login></login>
   </ion-content>
   <ion-content *ngIf="this.auth.loggedIn">
-  <header role="banner">
-      <img alt="Leaving Legacies" sizes="(max-width: 1400px) 100vw" src="assets/imgs/susan-quote/susan-quote-1400.jpg" srcset="assets/imgs/susan-quote/susan-quote-400.jpg 400w,
-      assets/imgs/susan-quote/susan-quote-849.jpg 849w,
-      assets/imgs/susan-quote/susan-quote-1177.jpg 1177w,
-      assets/imgs/susan-quote/susan-quote-1400.jpg 1400w">
-  </header>
-
   <main role="main">
+    <site-nav></site-nav>
     <article>
-      <h1 class="centered uppercase">Get Success - Recap</h1>
+      <h1 class="centered uppercase">GET Success - Recap</h1>
       <div class="grid-container">
           <section id="videoSection">
               <img id="recapVideo" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()"

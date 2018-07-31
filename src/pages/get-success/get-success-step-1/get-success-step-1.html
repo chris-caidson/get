@@ -5,7 +5,7 @@
     </button>
     <ion-title>
       <i class="fa fa-list-ol fixed-width space-right"></i>
-      <span>Step 1</span>
+      <span>GET Success - Step 1</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -13,40 +13,35 @@
   <login></login>
 </ion-content>
 <ion-content *ngIf="this.auth.loggedIn">
-  <header role="banner">
-    <img alt="Leaving Legacies" sizes="(max-width: 1400px) 100vw" src="assets/imgs/susan-quote/susan-quote-1400.jpg" srcset="assets/imgs/susan-quote/susan-quote-400.jpg 400w,
-        assets/imgs/susan-quote/susan-quote-849.jpg 849w,
-        assets/imgs/susan-quote/susan-quote-1177.jpg 1177w,
-        assets/imgs/susan-quote/susan-quote-1400.jpg 1400w">
-  </header>
   <main role="main">
+    <site-nav></site-nav>
     <article>
-      <h1 class="centered uppercase">Get Success - Step 1</h1>
+      <h1 class="centered uppercase">GET Success - Step 1</h1>
       <div id="outerGrid" class="grid-container">
         <section id="firstSection">
           <h3>Make Your LIST and Develop Your STORY</h3>
-          <h4>What Excites YOU
+          <h4>Establishing Your Why
             <span>by Peta Kelly-Coover</span>
           </h4>
           <audio controls>
-            <source src="//rec001.freeconferencecalling.com/mp3/1182865/257064/LAF3494_03122018050145812_1192988.mp3">
+            <source src="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/mp3s%2Fpeta-kelly-establishing-your-why.mp3?alt=media&token=08083ae3-2232-46b4-9f46-78e1eb6b4df1">
             <p>Your device does not support native audio.</p>
           </audio>
           <ul>
             <li>
-              <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Identify YOUR Why</span>
+              <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fidentify-your-why.pdf?alt=media&token=24f5ef6a-3d07-47af-ad13-32c269f4b83c')">Identify YOUR Why</span>
             </li>
             <li>Set YOUR goals</li>
             <li>Share with your Team Leader</li>
             <li>
-              <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Develop YOUR 30-Second Story</span>
+              <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fdevelop-your-30-second-story.pdf?alt=media&token=6f9dbbc6-16e2-4e6c-9f4f-bf5fd6e5ddb8')">Develop YOUR 30-Second Story</span>
             </li>
             <li>Practice, Practice, Practice</li>
             <li>
               <a>Videotape and Post</a>
             </li>
             <li>
-              <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', '')">Who Do YOU Know?</span>
+              <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fwho-do-you-know.pdf?alt=media&token=236ec3f7-66ee-4be8-89e9-95ddf4f0c424')">Who Do YOU Know?</span>
             </li>
             <li>Identify Your
               <a>Networks</a>

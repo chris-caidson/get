@@ -13,15 +13,8 @@
     <login></login>
   </ion-content>
   <ion-content *ngIf="this.auth.loggedIn">
-  <header role="banner">
-    <img sizes="(max-width: 960px) 100vw, 960px" srcset="
-      assets/imgs/global-exec-sunglasses/global-exec-sunglasses_400.jpg 400w,
-      assets/imgs/global-exec-sunglasses/global-exec-sunglasses_548.jpg 548w,
-      assets/imgs/global-exec-sunglasses/global-exec-sunglasses_680.jpg 680w,
-      assets/imgs/global-exec-sunglasses/global-exec-sunglasses_960.jpg 960w" src="assets/imgs/global-exec-sunglasses/global-exec-sunglasses_960.jpg"
-      alt="Global Exec Team">
-  </header>
   <main role="main">
+    <site-nav></site-nav>
     <article>
       <h1 class="centered uppercase">Welcome!</h1>
       <section id="whyIsaSection">

@@ -1,5 +1,4 @@
 // Elements
-
 * {
   color: $default-text-color;
   font-family: "Montserrat", sans-serif;
@@ -51,8 +50,6 @@ h5 {
 }
 
 header {
-  margin-bottom: $large-margin;
-
   img {
     width: 100%;
   }
@@ -72,7 +69,6 @@ a {
 }
 
 // Classes
-
 .centered {
   text-align: center;
 }

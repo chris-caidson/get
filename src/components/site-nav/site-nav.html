@@ -1,0 +1,45 @@
+<nav id="mainNav">
+  <!--<img src="../assets/imgs/misc/get-free-lg.png" alt="Get Free" (click)="openPage('HomePage')" class="pointer" />-->
+  <div id="getContainer">
+    <img id="getLogoPageTitle" src="assets/imgs/misc/get-lg.png" alt="Global Exec Team" (click)="openPage('HomePage')" />
+  </div>
+  <div id="navigationDiv" class="uppercase">
+    <!-- <span id="homeSpan" (click)="openPage('HomePage')">Home</span> -->
+    <div class="dropdown">
+      <div class="main-menu">GET Started</div>
+      <div class="dropdown-content">
+        <p (click)="openPage('Step_1Page')">Step 1</p>
+        <p (click)="openPage('Step_2Page')">Step 2</p>
+        <p (click)="openPage('Step_3Page')">Step 3</p>
+        <p (click)="openPage('Step_4Page')">Step 4</p>
+        <p (click)="openPage('Step_5Page')">Step 5</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">GET Success</div>
+      <div class="dropdown-content">
+        <p (click)="openPage('WelcomePage')">Welcome</p>
+        <p (click)="openPage('GetSuccessStep_1Page')">Step 1</p>
+        <p (click)="openPage('GetSuccessStep_2Page')">Step 2</p>
+        <p (click)="openPage('GetSuccessStep_3Page')">Step 3</p>
+        <p (click)="openPage('GetSuccessStep_4Page')">Step 4</p>
+        <p (click)="openPage('RecapPage')">Recap</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">GET Calls</div>
+      <div class="dropdown-content">
+        <p (click)="openPage('DailyCallsPage')">Daily M-F</p>
+        <p (click)="openPage('TargetedSubjectPage')">Targeted Subject</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">GET Elevated</div>
+      <div id="elevateSubMenu" class="dropdown-content">
+        <p (click)="openPage('BooksPage')">Books</p>
+        <p (click)="openPage('PodcastsPage')">Podcasts</p>
+        <p (click)="openPage('VideosPage')">Videos</p>
+      </div>
+    </div>
+  </div>
+</nav>

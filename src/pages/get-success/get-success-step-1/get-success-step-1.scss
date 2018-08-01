@@ -1,5 +1,4 @@
 page-get-success-step-1 {
-
   #outerGrid {
     display: grid;
     grid-template-columns: auto;
@@ -7,8 +6,6 @@ page-get-success-step-1 {
 
   #firstSection, #secondSection {
     display: grid;
-    justify-content: center;
-    justify-items: center;
     align-content: flex-start;
   }
 
@@ -18,6 +15,10 @@ page-get-success-step-1 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  #divider {
+    display: none;
   }
 
   audio {
@@ -42,26 +43,21 @@ page-get-success-step-1 {
   #img {
     display: block;
     width: 75vw;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media (min-width: 800px) {
     #outerGrid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 4px 1fr;
+      column-gap: 40px;
     }
 
-    #firstSection {
-      justify-content: center;
-      margin-right: 40px;
-      padding-right: 40px;
+    #divider {
+      display: inherit;
+      background-color: #4F81BD;
     }
 
     #secondSection {
       justify-items: center;
-      border-left: 4px solid #4F81BD;
-      margin-left: 40px;
-      padding-left: 40px;
     }
   }
 }

@@ -10,28 +10,24 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
     <nav-get-success></nav-get-success>
     <article>
-      <h1 class="centered uppercase">GET Success - Welcome</h1>
-        <section>
-            <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
+      <h1>GET Success</h1>
+      <h2>Welcome</h2>
+      <section>
+        <img sizes="(max-width: 1600px) 100vw, 1600px" srcset="
             assets/imgs/tribe/tribe_400.png 400w,
             assets/imgs/tribe/tribe_635.png 635w,
             assets/imgs/tribe/tribe_832.png 832w,
-            assets/imgs/tribe/tribe_960.png 960w" src="assets/imgs/tribe/tribe_960.png"
-            alt="Find Your Tribe. Love Them Hard.">
-        </section>
-        <section id="videoSection">
-            <img id="welcomeVideo" src="assets/imgs/why-isagenix/why-isagenix_1015.jpg" (click)="openVideoModal()"
-            sizes="(max-width: 700px) 100vw" alt="Why Isagenix" class="video-thumb" srcset="
-              assets/imgs/why-isagenix/why-isagenix_400.jpg 400w,
-              assets/imgs/why-isagenix/why-isagenix_742.jpg 742w,
-              assets/imgs/why-isagenix/why-isagenix_1015.jpg 1015w" />
-        </section>
+            assets/imgs/tribe/tribe_960.png 960w" src="assets/imgs/tribe/tribe_960.png" alt="Find Your Tribe. Love Them Hard.">
+      </section>
+      <section id="videoSection">
+        <img id="welcomeVideo" src="assets/imgs/why-isagenix/why-isagenix.jpg" (click)="openVideoModal()" alt="Why Isagenix" class="video-thumb" />
+      </section>
     </article>
   </main>
   <get-footer></get-footer>

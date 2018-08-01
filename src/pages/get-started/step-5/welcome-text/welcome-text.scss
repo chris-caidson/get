@@ -7,19 +7,15 @@ page-welcome-text {
     margin-bottom: 50px;
   }
 
-  .grid-container {
+  #container {
     display: grid;
     grid-template-columns: auto;
   }
 
   @media (min-width: 800px) {
-    .grid-container {
-      grid-template-columns: auto auto;
-
-      section {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
+    #container {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 40px;
     }
   }
 }

@@ -10,16 +10,23 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
     <nav-get-started></nav-get-started>
     <article>
-      <h1 class="centered uppercase">GET Started - Step 3: Who Do You Want to Help?</h1>
-      <p class="centered blurb">You feel amazing and know a lot of people who would benefit from using the Isagenix system. Here are some simple ways
-        to reach out and ask them to take a look.</p>
-      <div class="grid-container">
+      <div id="container">
+        <div id="headers">
+          <h1>GET Started - Step Three</h1>
+          <h2>Who Do You Want to Help?</h2>
+        </div>
+        <div id="blurb">
+          <span>
+            You feel amazing and know a lot of people who would benefit from using the Isagenix system. Here are some simple ways to
+            reach out and ask them to take a look.
+          </span>
+        </div>
         <section>
           <h3>1. Text a Few Friends</h3>
           <p>We all have those friends who will jump in the fun with us. This text template was designed to ask them to join
@@ -36,8 +43,7 @@
           </p>
           <p>
             First adjust your Facebook Settings to make sure your post will be visible by following
-            <span class="link-span"
-              (click)="openPage('BeforeYouPostPage')">these simple steps.</span>
+            <span class="link-span" (click)="openPage('BeforeYouPostPage')">these simple steps.</span>
           </p>
           <p>
             Then copy and paste

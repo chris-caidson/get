@@ -10,37 +10,36 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
     <nav-get-started></nav-get-started>
     <article>
-      <h1 class="centered uppercase">GET Started - Step 4: Eat for Free</h1>
+      <h1>GET Started - Step Four</h1>
+      <h2>Eat for Free</h2>
+      <div id="container">
+        <section>
+          <img (click)="openVideoModal()" class="video-thumb" src="assets/imgs/misc/you-share-they-share-repeat.jpg"
+            alt="You Share, They Share, Repeat Video">
+          <h3>You Share, They Share, Repeat</h3>
+        </section>
+        <section id="linkSection">
+          <p>
+            <a target="_blank" href="https://www.isagenix.com/en-us/opportunity/become-an-associate">GET PAID</a> - Watch "Become an ASSOCIATE" in your back office. Username and Password are in your Welcome Email.
+          </p>
+          <p>
+            <a target="_blank" href="https://www.isagenix.com/en-us/resource-center/you-share-they-share">ENROLL Two Friends</a> - Ask Sponsor for placement assistance.
+          </p>
+          <p>
+            <a target="_blank" href="https://www.isagenix.com/isabody-challenge">IsaBody Challenge</a> - Register $200 Free Product.
+          </p>
+          <p>
+            <a target="_blank" href="https://www.isagenix.com/-/media/promotion/team-builders-club/team-builders-club-flyer/us-en-team-builders-club-flyer.ashx">FREE Vitamins</a> - Enroll 5 people.
+          </p>
+        </section>
+      </div>
     </article>
-    <div class="grid-container">
-      <section>
-        <img (click)="openVideoModal()" class="video-thumb" sizes="(max-width: 800px) 100vw, 800px" srcset="
-      assets/imgs/you-share-they-share-repeat/you-share-they-share-repeat_200.jpg 200w,
-      assets/imgs/you-share-they-share-repeat/you-share-they-share-repeat_800.jpg 800w" src="assets/imgs/you-share-they-share-repeat/you-share-they-share-repeat_800.jpg"
-          alt="You Share, They Share, Repeat Video">
-          <h3 class="centered">You Share, They Share, Repeat</h3>
-      </section>
-      <section id="linkSection">
-        <p>
-          <a target="_blank" href="https://www.isagenix.com/en-us/opportunity/become-an-associate">GET PAID</a> - Watch "Become an ASSOCIATE" in your back office. Username and Password are in your Welcome Email.
-        </p>
-        <p>
-          <a target="_blank" href="https://www.isagenix.com/en-us/resource-center/you-share-they-share">ENROLL Two Friends</a> - Ask Sponsor for placement assistance.
-        </p>
-        <p>
-          <a target="_blank" href="https://www.isagenix.com/isabody-challenge">IsaBody Challenge</a> - Register $200 Free Product.
-        </p>
-        <p>
-          <a target="_blank" href="https://www.isagenix.com/-/media/promotion/team-builders-club/team-builders-club-flyer/us-en-team-builders-club-flyer.ashx">FREE Vitamins</a> - Enroll 5 people.
-        </p>
-      </section>
-    </div>
   </main>
   <get-footer></get-footer>
 </ion-content>

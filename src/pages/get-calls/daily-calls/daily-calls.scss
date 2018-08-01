@@ -1,31 +1,69 @@
 page-daily-calls {
-  .grid-container {
+  #topics {
+    display: none;
+  }
+
+  #contentSection {
     display: grid;
-    grid-template-columns: auto;
-    align-items: end;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
   }
 
-  audio {
-    width: 100%;
-    margin-bottom: 35px;
-    margin-left: -5px;
+  .call-container {
+    display: grid;
+    grid-template-columns: auto 100px 1fr;
+    cursor: pointer;
+    column-gap: 25px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+    span {
+      font-size: 11pt;
+    }
   }
 
-  h4 {
-    font-size: 12pt;
+  .call-container:hover {
+    background-color: #FFEDE1;
   }
 
-  section {
-    margin-bottom: 50px;
+  // .call-container span:hover {
+  //   color: #FF6600 !important;
+  // }
+
+  .call-container span i {
+    color: #FF6600 !important;
   }
 
-  @media (min-width: 1000px) {
-    .grid-container {
-      grid-template-columns: auto auto;
+  @media (min-width: 640px) {
+    .call-container {
+      grid-template-columns: auto 150px 1fr;
+    }
+  }
 
-      section {
-        margin-left: 30px;
-        margin-right: 30px;
+  @media (min-width: 950px) {
+    #topics {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-content: stretch;
+      column-gap: 40px;
+      .weekday {
+        font-size: 12pt;
+        color: #777;
+      }
+      .topic {
+        border-top: 1px solid #FF6600;
+        font-size: 12pt;
+        padding-top: 5px;
+        margin-top: -2px;
+      }
+    }
+
+    .call-container {
+      grid-template-columns: auto 225px 1fr;
+
+      span {
+        font-size: 12pt;
       }
     }
   }

@@ -3,36 +3,33 @@ get-footer {
     background-color: $footer-bg-color;
     padding-top: 20px;
   }
-
   footer img {
     display: block;
     width: 85vw;
     margin: auto;
     max-width: 800px;
   }
-
   footer div {
     text-align: center;
     margin-top: 10px;
   }
-
   footer div span {
     color: $light-color;
     font-style: italic;
   }
-
   footer div img {
     display: block;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     max-width: 50vw;
   }
-
+  .grid-container {
+    display: none;
+  }
   .simple-lbl {
     display: inline-block;
     color: #777;
   }
-
   #copyright {
     display: inline-block;
     font-weight: normal;
@@ -41,7 +38,6 @@ get-footer {
     padding-bottom: 30px;
     color: #777;
   }
-
   #getQuote {
     margin: auto;
     margin-top: 35px;
@@ -49,75 +45,72 @@ get-footer {
     width: 85vw;
     max-width: 600px;
   }
-
   a img {
     width: 50vw;
     max-width: 200px;
   }
-
   #getImg {
     max-width: 213px !important;
     max-height: 91px !important;
   }
-
   @media (min-width: 640px) {
+    .grid-container {
+      display: grid;
+      width: 100%;
+      justify-content: center;
+      grid-template-columns: auto auto;
+
+      img {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+
     a img {
       width: 40vw;
     }
-
     #getImg {
       max-width: 213px !important;
       max-height: 91px !important;
     }
-
     #getQuote {
       width: 75vw;
     }
-
     .simple-lbl {
       font-size: large;
     }
   }
-
   @media (min-width: 700px) {
     footer div span {
       font-size: large;
     }
-
     footer div img {
       display: block;
       margin: auto;
       max-width: 25vw;
     }
-
     a img {
       max-width: 25vw !important;
     }
-
     #getImg {
       max-width: 213px !important;
       max-height: 91px !important;
     }
-
     #getQuote {
       width: 50vw;
     }
-
     .simple-lbl {
       font-size: x-large;
     }
   }
-
   @media (min-width: 1200px) {
     a img {
       max-width: 15vw !important;
     }
-
     #getImg {
       max-width: 213px !important;
       max-height: 91px !important;
     }
-
     #getQuote {
       width: 40vw;
     }

@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import * as firebase from "firebase";
+import { firebaseConfig } from "../../app/app.module";
 
 @Injectable()
 export class AuthProvider {
@@ -11,14 +12,7 @@ export class AuthProvider {
   count: number = 0;
 
   constructor() {
-    firebase.initializeApp({
-      apiKey: "AIzaSyARQPX3omAdWHmnJaCeV6o0MMYdBKxxvdY",
-      authDomain: "globalexecteam-17cfa.firebaseapp.com",
-      databaseURL: "https://globalexecteam-17cfa.firebaseio.com",
-      projectId: "globalexecteam-17cfa",
-      storageBucket: "globalexecteam-17cfa.appspot.com",
-      messagingSenderId: "471879347646"
-    });
+    firebase.initializeApp(firebaseConfig);
   }
 
   public login(password: string) {

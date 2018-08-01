@@ -1,0 +1,38 @@
+nav-get-calls {
+  #logoContainer {
+    display: block;
+    max-width: 478px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #getLogoPageTitle {
+    cursor: pointer;
+    display: inline-block;
+    max-width: 478px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  #menuItems {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 75px;
+    justify-content: center;
+    justify-items: center;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding: 18px 0 18px 0;
+    margin: 20px 0 40px 0;
+
+    div {
+      cursor: pointer;
+    }
+
+    div:hover {
+      color: $bright-accent-color;
+    }
+  }
+}

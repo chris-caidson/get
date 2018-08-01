@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the AdminPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import * as firebase from "firebase/app";
+import 'firebase/firestore';
 
 @IonicPage()
 @Component({
@@ -14,12 +9,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'admin.html',
 })
 export class AdminPage {
+  items: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+   
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AdminPage');
   }
-
 }

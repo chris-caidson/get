@@ -10,19 +10,16 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
-    <site-nav></site-nav>
+    <nav-main></nav-main>
     <article>
-      <h1 class="centered uppercase">Welcome!</h1>
+      <h1>Welcome</h1>
       <section id="whyIsaSection">
-        <img id="whyIsa" src="assets/imgs/why-isagenix/why-isagenix_1280.jpg" (click)="openVideoModal()"
-          sizes="(max-width: 1280px) 100vw" alt="Why Isagenix" class="video-thumb" srcset="
-            assets/imgs/why-isagenix/why-isagenix_400.jpg 400w,
-            assets/imgs/why-isagenix/why-isagenix_1045.jpg 1045w,
-            assets/imgs/why-isagenix/why-isagenix_1280.jpg 1280w" />
+        <img id="whyIsa" src="assets/imgs/why-isagenix/why-isagenix.jpg" (click)="openVideoModal()"
+          alt="Why Isagenix" class="video-thumb" />
       </section>
     </article>
   </main>

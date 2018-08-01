@@ -9,13 +9,22 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { PdfProvider } from '../providers/pdf/pdf';
 import { AuthProvider } from '../providers/auth/auth';
 
+export const firebaseConfig = {
+  apiKey: "AIzaSyARQPX3omAdWHmnJaCeV6o0MMYdBKxxvdY",
+  authDomain: "globalexecteam-17cfa.firebaseapp.com",
+  databaseURL: "https://globalexecteam-17cfa.firebaseio.com",
+  projectId: "globalexecteam-17cfa",
+  storageBucket: "globalexecteam-17cfa.appspot.com",
+  messagingSenderId: "471879347646"
+};
+
 @NgModule({
   declarations: [
     MyApp,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [

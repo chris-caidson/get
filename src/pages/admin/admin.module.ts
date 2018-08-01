@@ -7,7 +7,9 @@ import { AdminPage } from './admin';
     AdminPage,
   ],
   imports: [
-    IonicPageModule.forChild(AdminPage),
+    IonicPageModule.forChild(AdminPage)
   ],
+  providers: [
+  ]
 })
 export class AdminPageModule {}

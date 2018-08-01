@@ -34,7 +34,7 @@ $colors: (
   dark: #211f21
 );
 
-$primary-color: #8cc831;
+$primary-color: #FF6600;
 $darker-primary-color: darken($primary-color, 10%);
 
 $secondary-color: #12b6f2;
@@ -44,7 +44,7 @@ $accent-color: #4059D8;
 $lighter-accent-color: lighten($accent-color, 20%);
 $darker-accent-color: darken($accent-color, 20%);
 
-$bright-accent-color: #E46C0A;
+$bright-accent-color: #FF6600;
 
 $tertiary-color: #ccc;
 $darker-tertiary-color: darken($tertiary-color, 10%);
@@ -55,8 +55,8 @@ $darker-light-color: darken($light-color, 10%);
 $dark-color: #211f21;
 $darker-dark-color: darken($dark-color, 10%);
 
-$default-text-color: #676767;
-$primary-header-color: #81d742;
+$default-text-color: #222;
+$primary-header-color: #FF6600;
 
 $video-shadow: 0px 0px 10px black;
 $text-shadow: 1px 1px 2px $darker-tertiary-color;
@@ -65,7 +65,7 @@ $image-border: 8px 8px solid $tertiary-color;
 $image-border-radius: 8px;
 
 $letter-spacing: 0.05em;
-$base-font-size: 14pt;
+$base-font-size: 12pt;
 
 $default-border-radius: 4px;
 $default-border-size: 4px;

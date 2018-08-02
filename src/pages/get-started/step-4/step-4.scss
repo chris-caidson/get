@@ -18,6 +18,7 @@ page-step-4 {
     #container {
       grid-template-columns: 1fr 1fr;
       column-gap: 40px;
+	  grid-column-gap: 40px;
 
       h3 {
         text-align: center;

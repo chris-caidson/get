@@ -22,6 +22,7 @@ page-daily-calls {
     grid-template-columns: auto 100px 1fr;
     cursor: pointer;
     column-gap: 25px;
+    grid-column-gap: 25px;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 
@@ -51,6 +52,7 @@ page-daily-calls {
       grid-template-rows: 1fr 1fr;
       justify-content: stretch;
       column-gap: 40px;
+      grid-column-gap: 40px;
       .weekday {
         font-size: 12pt;
         color: #777;

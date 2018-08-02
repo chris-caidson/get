@@ -3,6 +3,7 @@ page-step-1 {
     display: grid;
     grid-template-rows: auto auto auto auto auto;
     row-gap: 20px;
+    grid-row-gap: 20px;
   }
 
   @media (min-width: 800px) {
@@ -10,8 +11,10 @@ page-step-1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      column-gap: 40px;
+	  column-gap: 40px;
+	  grid-column-gap: 40px;
       row-gap: 40px;
+      grid-row-gap: 40px;
       align-content: stretch;
     }
   }

@@ -20,6 +20,7 @@ nav-get-calls {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 75px;
+    grid-column-gap: 75px;
     justify-content: center;
     justify-items: center;
     border-top: 1px solid #555;

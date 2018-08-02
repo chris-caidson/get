@@ -51,7 +51,8 @@ page-get-success-step-3 {
   @media (min-width: 800px) {
     #outerGrid {
       grid-template-columns: 1fr 4px 1fr;
-      column-gap: 40px;
+	  column-gap: 40px;
+	  grid-column-gap: 40px;
     }
 
     #divider {

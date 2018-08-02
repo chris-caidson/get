@@ -2,25 +2,22 @@ page-step-3 {
   #container {
     display: grid;
     row-gap: 20px;
+    grid-row-gap: 20px;
     margin-top: -27px;
   }
-
   p {
     text-align: left;
   }
-
   .subtext {
     font-size: smaller;
     color: #777;
   }
-
   #blurb {
     span {
       color: #777;
       font-style: italic;
     }
   }
-
   @media(min-width: 1000px) {
     #container {
       display: grid;
@@ -28,8 +25,9 @@ page-step-3 {
       align-content: flex-start;
       align-items: flex-start;
       row-gap: 5px;
+      grid-row-gap: 5px;
       column-gap: 40px;
-
+      grid-column-gap: 40px;
       #blurb {
         align-self: flex-end;
         margin-bottom: 13px;

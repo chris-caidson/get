@@ -12,14 +12,6 @@ import "firebase/firestore";
 export class TargetedSubjectPage {
   public categories: any[] = [];
   public calls: any[] = [];
-
-  // public healthItems: any[] = [];
-  // public understandingTheIndustryItems: any[] = [];
-  // public connectingItems: any[] = [];
-  // public performanceAthletesItems: any[] = [];
-  // public compensationItems: any[] = [];
-  // public personalDevelopmentItems: any[] = [];
-
   public loaded: boolean = false;
 
   constructor(

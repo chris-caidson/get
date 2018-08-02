@@ -17,10 +17,14 @@
       <i class="fa fa-close fixed-width"></i>
     </button>
   </div>
-  <div id="contentDiv">
-    <audio controls autoplay>
-      <source src="{{url}}">
-      <p>Your device does not support native audio.</p>
-    </audio>
-  </div>
+  <section>
+    <div id="contentDiv">
+      <div id="recordedDiv">{{recorded}}</div>
+      <div id="subjectDiv">{{subject}}</div>
+      <audio controls autoplay>
+        <source src="{{url}}">
+        <p>Your device does not support native audio.</p>
+      </audio>
+    </div>
+  </section>
 </ion-content>

@@ -1,13 +1,33 @@
 page-audio-modal {
-  #contentDiv {
+  section {
     background-image: url("../assets/imgs/misc/green-isa-bg.jpg");
     height: 100%;
   }
+
+  #contentDiv {
+    display: grid;
+    padding-top: 70px;
+    margin: 0px 25px 25px 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: center;
+    align-items: center;
+  }
+
+  #recordedDiv {
+    font-size: 16pt;
+    font-weight: 600;
+  }
+
+  #subjectDiv {
+    font-size: 22pt;
+    font-weight: 600;
+  }
+
   audio {
     min-width: 200px;
     width: 95%;
-    margin-top: 75px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

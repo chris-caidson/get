@@ -3,60 +3,55 @@ page-get-success-step-3 {
     display: grid;
     grid-template-columns: auto;
   }
-
-  #firstSection, #secondSection {
+  #firstSection,
+  #secondSection {
     display: grid;
     align-content: flex-start;
   }
-
   #tryProduct {
     margin-left: -12px;
   }
-
   ul {
     list-style-type: none;
     margin-bottom: 40px;
-
     li {
       margin-left: -40px;
       margin-bottom: 10px;
     }
   }
-
   h5 {
     color: #4F81BD;
     font-weight: bold;
   }
-
   .diamond {
     height: 15px;
     margin-right: 10px;
   }
-
   .highlight {
     color: $bright-accent-color;
   }
-
   #divider {
     display: none;
   }
-
   #img {
     display: block;
     width: 75vw;
     margin-top: 40px;
     margin-bottom: 40px;
   }
-
   @media (min-width: 800px) {
     #outerGrid {
       grid-template-columns: 1fr 4px 1fr;
-	  column-gap: 40px;
-	  grid-column-gap: 40px;
     }
-
+    #firstSection {
+      margin-right: 40px;
+    }
+    #secondSection {
+      margin-left: 40px;
+    }
     #divider {
       display: inherit;
+      width: 4px;
       background-color: #4F81BD;
     }
   }

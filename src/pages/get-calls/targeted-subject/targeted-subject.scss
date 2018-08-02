@@ -25,12 +25,12 @@ page-targeted-subject {
     display: grid;
     grid-template-columns: auto 1fr;
     cursor: pointer;
-    column-gap: 25px;
-    grid-column-gap: 25px;
     padding: 10px;
     border-bottom: 1px solid #ccc;
     span {
       font-size: 11pt;
+      margin-left: 12px;
+      margin-right: 12px;
     }
   }
   .call-container:hover {

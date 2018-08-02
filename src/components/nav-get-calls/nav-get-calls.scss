@@ -19,8 +19,6 @@ nav-get-calls {
   #menuItems {
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 75px;
-    grid-column-gap: 75px;
     justify-content: center;
     justify-items: center;
     border-top: 1px solid #555;
@@ -30,6 +28,8 @@ nav-get-calls {
 
     div {
       cursor: pointer;
+      margin-left: 38px;
+      margin-right: 38px;
     }
 
     div:hover {

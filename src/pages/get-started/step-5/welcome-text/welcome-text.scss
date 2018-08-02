@@ -12,8 +12,8 @@ page-welcome-text {
   @media (min-width: 800px) {
     #container {
       grid-template-columns: 1fr 1fr;
-      column-gap: 40px;
-      grid-column-gap: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 }

@@ -2,7 +2,6 @@ page-daily-calls {
   #topics {
     display: none;
   }
-
   #loadingDiv {
     height: 5%;
     width: 5%;
@@ -10,49 +9,41 @@ page-daily-calls {
     max-height: 50px;
     margin-top: 40px;
   }
-
   #contentSection {
     display: grid;
     margin-top: 50px;
     border-top: 1px solid #ccc;
   }
-
   .call-container {
     display: grid;
     grid-template-columns: auto 100px 1fr;
     cursor: pointer;
-    column-gap: 25px;
-    grid-column-gap: 25px;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-
     span {
       font-size: 11pt;
+      margin-left: 12px;
+      margin-right: 12px;
     }
   }
-
   .call-container:hover {
     background-color: #FFEDE1;
   }
-
   .call-container span i {
     color: #FF6600 !important;
   }
-
   @media (min-width: 640px) {
     .call-container {
       grid-template-columns: auto 150px 1fr;
     }
   }
-
   @media (min-width: 950px) {
     #topics {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       justify-content: stretch;
-      column-gap: 40px;
-      grid-column-gap: 40px;
+      justify-items: center;
       .weekday {
         font-size: 12pt;
         color: #777;
@@ -64,10 +55,8 @@ page-daily-calls {
         margin-top: -2px;
       }
     }
-
     .call-container {
       grid-template-columns: auto 225px 1fr;
-
       span {
         font-size: 12pt;
       }

@@ -50,11 +50,19 @@ page-get-success-step-1 {
   @media (min-width: 800px) {
     #outerGrid {
       grid-template-columns: 1fr 4px 1fr;
-      column-gap: 40px;
+
+      #firstSection {
+        margin-right: 40px;
+      }
+
+      #secondSection {
+        margin-left: 40px;
+      }
     }
 
     #divider {
       display: inherit;
+      width: 4px;
       background-color: #4F81BD;
     }
 

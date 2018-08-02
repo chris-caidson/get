@@ -6,7 +6,6 @@ nav-main {
     margin-left: auto;
     margin-right: auto;
   }
-
   #getLogoPageTitle {
     cursor: pointer;
     display: inline-block;
@@ -15,23 +14,20 @@ nav-main {
     margin-right: auto;
     margin-bottom: 15px;
   }
-
   #menuItems {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    column-gap: 75px;
-    grid-column-gap: 75px;
     justify-content: center;
     justify-items: center;
     border-top: 1px solid #555;
     border-bottom: 1px solid #555;
     padding: 18px 0 18px 0;
     margin: 20px 0 40px 0;
-
     div {
       cursor: pointer;
+      margin-left: 38px;
+      margin-right: 38px;
     }
-
     div:hover {
       color: $bright-accent-color;
     }

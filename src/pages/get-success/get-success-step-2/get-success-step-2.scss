@@ -25,6 +25,10 @@ page-get-success-step-2 {
     color: #4F81BD;
   }
 
+  #secondSection h4 {
+    color: $default-text-color;
+  }
+
   ul {
     list-style-type: none;
     margin-bottom: 40px;
@@ -51,20 +55,23 @@ page-get-success-step-2 {
 
   @media (min-width: 800px) {
     #outerGrid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 4px 1fr;
     }
 
     #firstSection {
       justify-content: center;
       margin-right: 40px;
-      padding-right: 40px;
+    }
+
+    #divider {
+      display: inherit;
+      width: 4px;
+      background-color: #4F81BD;
     }
 
     #secondSection {
       justify-items: center;
-      border-left: 4px solid #4F81BD;
       margin-left: 40px;
-      padding-left: 40px;
     }
   }
 }

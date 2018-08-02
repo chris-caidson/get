@@ -12,7 +12,7 @@ export class AdminPage {
   items: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-   
-
   }
+
+  
 }

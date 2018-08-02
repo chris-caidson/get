@@ -16,57 +16,19 @@
   <main role="main">
     <nav-get-calls></nav-get-calls>
     <article>
+      <h1 class="centered uppercase">Targeted Subject Calls</h1>
       <div id="loadingDiv" *ngIf="!this.loaded">
         <img src="assets/imgs/misc/loading.gif" />
       </div>
       <section id="contentSection" *ngIf="this.loaded">
-        <h1 class="centered uppercase">Targeted Subject Calls</h1>
-        <h3 class="centered" id="healthSection">Health</h3>
-        <div class="call-container" *ngFor="let item of healthItems" (click)="openAudioModal(item.category, item.subject, item.url)">
-          <span class="icon">
-            <i class="fa fa-headphones"></i>
-          </span>
-          <span class="subject">{{item.subject}}</span>
-        </div>
-
-        <h3 class="centered">Understanding the Industry</h3>
-        <div class="call-container" *ngFor="let item of understandingTheIndustryItems" (click)="openAudioModal(item.category, item.subject, item.url)">
-          <span class="icon">
-            <i class="fa fa-headphones"></i>
-          </span>
-          <span class="subject">{{item.subject}}</span>
-        </div>
-
-        <h3 class="centered">Connecting</h3>
-        <div class="call-container" *ngFor="let item of connectingItems" (click)="openAudioModal(item.category, item.subject, item.url)">
-          <span class="icon">
-            <i class="fa fa-headphones"></i>
-          </span>
-          <span class="subject">{{item.subject}}</span>
-        </div>
-
-        <h3 class="centered">Performance &amp; Athletes</h3>
-        <div class="call-container" *ngFor="let item of performanceAthletesItems" (click)="openAudioModal(item.category, item.subject, item.url)">
-          <span class="icon">
-            <i class="fa fa-headphones"></i>
-          </span>
-          <span class="subject">{{item.subject}}</span>
-        </div>
-
-        <h3 class="centered">Compensation</h3>
-        <div class="call-container" *ngFor="let item of compensationItems" (click)="openAudioModal(item.category, item.subject, item.url)">
-          <span class="icon">
-            <i class="fa fa-headphones"></i>
-          </span>
-          <span class="subject">{{item.subject}}</span>
-        </div>
-
-        <h3 class="centered">Personal Development</h3>
-        <div class="call-container" *ngFor="let item of personalDevelopmentItems" (click)="openAudioModal(item.category, item.subject, item.url)">
-          <span class="icon">
-            <i class="fa fa-headphones"></i>
-          </span>
-          <span class="subject">{{item.subject}}</span>
+        <div *ngFor="let cat of categories">
+          <h3 class="centered">{{cat.category}}</h3>
+          <div class="call-container" *ngFor="let call of cat.calls" (click)="openAudioModal(call.category, call.subject, call.url)">
+              <span class="icon">
+                <i class="fa fa-headphones"></i>
+              </span>
+              <span class="subject">{{call.subject}}</span>
+            </div>
         </div>
       </section>
     </article>

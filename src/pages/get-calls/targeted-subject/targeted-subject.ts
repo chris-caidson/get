@@ -10,12 +10,16 @@ import "firebase/firestore";
   templateUrl: "targeted-subject.html"
 })
 export class TargetedSubjectPage {
-  public healthItems: any[] = [];
-  public understandingTheIndustryItems: any[] = [];
-  public connectingItems: any[] = [];
-  public performanceAthletesItems: any[] = [];
-  public compensationItems: any[] = [];
-  public personalDevelopmentItems: any[] = [];
+  public categories: any[] = [];
+  public calls: any[] = [];
+
+  // public healthItems: any[] = [];
+  // public understandingTheIndustryItems: any[] = [];
+  // public connectingItems: any[] = [];
+  // public performanceAthletesItems: any[] = [];
+  // public compensationItems: any[] = [];
+  // public personalDevelopmentItems: any[] = [];
+
   public loaded: boolean = false;
 
   constructor(
@@ -26,42 +30,28 @@ export class TargetedSubjectPage {
   ) {
     var self = this;
 
-    firebase
+    firebase.firestore().collection("targeted-subject-categories").orderBy("order").get().then(categories => {
+      categories.forEach(cat => {
+        self.categories.push(cat.data());
+      });
+
+      firebase
       .firestore()
       .collection("targeted-subject-calls")
       .orderBy("order")
       .get()
       .then(querySnapshot => {
         querySnapshot.forEach(doc => {
-          switch (doc.data().category) {
-            case "Health":
-              self.healthItems.push(doc.data());
-              break;
-
-            case "Understanding the Industry":
-              self.understandingTheIndustryItems.push(doc.data());
-              break;
-
-            case "Connecting":
-              self.connectingItems.push(doc.data());
-              break;
-
-            case "Performance Athletes":
-              self.performanceAthletesItems.push(doc.data());
-              break;
-
-            case "Compensation":
-              self.compensationItems.push(doc.data());
-              break;
-
-            case "Personal Development":
-              self.personalDevelopmentItems.push(doc.data());
-              break;
-          }
+          self.calls.push(doc.data());
         });
 
-        self.loaded = true;
+        self.categories.forEach(c => {
+          c.calls = self.calls.filter(call => call.category === c.category);
+        });
       });
+
+      self.loaded = true;
+    });
   }
 
   openAudioModal(category, subject, url) {

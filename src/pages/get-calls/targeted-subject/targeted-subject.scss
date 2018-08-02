@@ -1,31 +1,53 @@
 page-targeted-subject {
-  .grid-container {
+  #loadingDiv {
+    height: 5%;
+    width: 5%;
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 40px;
+  }
+  #contentSection {
     display: grid;
-    grid-template-columns: auto;
-    align-items: end;
+    margin-top: 30px;
   }
-
-  audio {
-    width: 100%;
-    margin-bottom: 35px;
-    margin-left: -5px;
+  h1 {
+    margin-top: -15px;
   }
-
-  h4 {
-    font-size: 12pt;
+  h3 {
+    margin-top: 40px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
   }
-
-  section {
-    margin-bottom: 50px;
+  #healthSection {
+    margin-top: 10px;
   }
-
-  @media (min-width: 1000px) {
-    .grid-container {
-      grid-template-columns: auto auto;
-
-      section {
-        margin-left: 30px;
-        margin-right: 30px;
+  .call-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    cursor: pointer;
+    column-gap: 25px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    span {
+      font-size: 11pt;
+    }
+  }
+  .call-container:hover {
+    background-color: #FFEDE1;
+  }
+  .call-container span i {
+    color: #FF6600 !important;
+  }
+  @media (min-width: 640px) {
+    .call-container {
+      grid-template-columns: auto 1fr;
+    }
+  }
+  @media (min-width: 950px) {
+    .call-container {
+      grid-template-columns: auto 1fr;
+      span {
+        font-size: 12pt;
       }
     }
   }

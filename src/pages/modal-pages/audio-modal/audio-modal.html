@@ -2,7 +2,8 @@
   <ion-navbar>
     <ion-title>
       <i class="fa fa-headphones fixed-width space-right"></i>
-      <span>{{recorded}}</span>
+      <span *ngIf="recorded">{{recorded}}</span>
+      <span *ngIf="category">{{category}}</span>
     </ion-title>
     <ion-buttons end>
       <button ion-button (click)="closeModal()">Close</button>
@@ -19,7 +20,8 @@
   </div>
   <section>
     <div id="contentDiv">
-      <div id="recordedDiv">{{recorded}}</div>
+      <div id="recordedDiv" *ngIf="recorded">{{recorded}}</div>
+      <div id="categoryDiv" *ngIf="category">{{category}}</div>
       <div id="subjectDiv">{{subject}}</div>
       <audio controls autoplay>
         <source src="{{url}}">

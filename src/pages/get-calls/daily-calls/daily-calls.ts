@@ -33,16 +33,17 @@ export class DailyCallsPage {
       .limit(60)
       .get()
       .then(querySnapshot => {
-        self.loaded = true;
-        
         querySnapshot.forEach(doc => {
           self.items.push(doc.data());
         });
+
+        self.loaded = true;
       });
   }
 
   openAudioModal(subject, recorded, url) {
     const myModal = this.modalCtrl.create("AudioModalPage", {
+      category: null,
       subject: subject,
       recorded: recorded,
       url: url

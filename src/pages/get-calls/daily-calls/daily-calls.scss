@@ -3,6 +3,14 @@ page-daily-calls {
     display: none;
   }
 
+  #loadingDiv {
+    height: 5%;
+    width: 5%;
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 40px;
+  }
+
   #contentSection {
     display: grid;
     margin-top: 50px;

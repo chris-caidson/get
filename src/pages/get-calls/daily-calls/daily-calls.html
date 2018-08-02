@@ -29,7 +29,10 @@
         <span class="topic">Rising Leader</span>
         <span class="topic">Compensation Plan</span>
       </section>
-      <section id="contentSection">
+      <div id="loadingDiv" *ngIf="!this.loaded">
+        <img src="assets/imgs/misc/loading.gif" />
+      </div>
+      <section id="contentSection" *ngIf="this.loaded">
         <div class="call-container" *ngFor="let item of items" (click)="openAudioModal(item.subject, item.recorded, item.url)">
           <span class="icon">
             <i class="fa fa-headphones"></i>

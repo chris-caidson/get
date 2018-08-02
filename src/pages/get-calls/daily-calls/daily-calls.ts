@@ -16,6 +16,7 @@ import "firebase/firestore";
 })
 export class DailyCallsPage {
   public items: any[] = [];
+  public loaded: boolean = false;
 
   constructor(
     public navCtrl: NavController,
@@ -32,6 +33,8 @@ export class DailyCallsPage {
       .limit(60)
       .get()
       .then(querySnapshot => {
+        self.loaded = true;
+        
         querySnapshot.forEach(doc => {
           self.items.push(doc.data());
         });

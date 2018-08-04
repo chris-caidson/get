@@ -62,7 +62,7 @@ export class MyApp {
 
       // Admin
       { title: "Admin", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "Weekday Calls", component: "AdminDailyCallsPage", separatorLevel: 4, icon: "wrench", stepNumber: null },
+      { title: "Weekday Calls", component: "AdminWeekdayCallsPage", separatorLevel: 4, icon: "wrench", stepNumber: null },
       { title: "Targeted Subject Calls", component: "AdminTargetedSubjectCallsPage", separatorLevel: 4, icon: "gear", stepNumber: null },
       { title: "Targeted Subject Categories", component: "AdminTargetedSubjectCategoriesPage", separatorLevel: 4, icon: "gears", stepNumber: null },
     ];

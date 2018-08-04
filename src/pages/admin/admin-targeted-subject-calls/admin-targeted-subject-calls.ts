@@ -7,6 +7,7 @@ import {
 } from "ionic-angular";
 import * as firebase from "firebase"
 import "firebase/firestore";
+import { AuthProvider } from '../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
@@ -26,7 +27,8 @@ export class AdminTargetedSubjectCallsPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public toastCtrl: ToastController
+    public toastCtrl: ToastController,
+    public auth: AuthProvider
   ) {
     this.loadData();
   }

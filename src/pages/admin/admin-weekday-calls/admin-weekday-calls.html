@@ -9,7 +9,10 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
+<ion-content *ngIf="!this.auth.loggedInAsAdmin">
+  <admin-login></admin-login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedInAsAdmin">
   <main role="main">
     <nav-admin></nav-admin>
     <article>

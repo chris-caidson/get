@@ -9,6 +9,7 @@ import { NavGetSuccessComponent } from './nav-get-success/nav-get-success';
 import { NavGetCallsComponent } from './nav-get-calls/nav-get-calls';
 import { NavGetElevatedComponent } from './nav-get-elevated/nav-get-elevated';
 import { NavAdminComponent } from './nav-admin/nav-admin';
+import { AdminLoginComponent } from './admin-login/admin-login';
 
 @NgModule({
 	declarations: [
@@ -19,7 +20,8 @@ import { NavAdminComponent } from './nav-admin/nav-admin';
     NavGetSuccessComponent,
     NavGetCallsComponent,
     NavGetElevatedComponent,
-    NavAdminComponent],
+    NavAdminComponent,
+    AdminLoginComponent],
 	imports: [FormsModule, CommonModule],
 	exports: [GetFooterComponent,
     LoginComponent,
@@ -28,6 +30,7 @@ import { NavAdminComponent } from './nav-admin/nav-admin';
     NavGetSuccessComponent,
     NavGetCallsComponent,
     NavGetElevatedComponent,
-    NavAdminComponent]
+    NavAdminComponent,
+    AdminLoginComponent]
 })
 export class ComponentsModule {}

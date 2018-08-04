@@ -5,7 +5,7 @@ import {
   NavParams,
   ToastController
 } from "ionic-angular";
-import * as firebase from "firebase/app";
+import * as firebase from "firebase"
 import "firebase/firestore";
 
 @IonicPage()
@@ -167,6 +167,14 @@ export class AdminTargetedSubjectCallsPage {
 
         toast.present();
       });
+  }
+
+  public confirmDelete(index: number) {
+    this.items[index].deleting = true;
+  }
+
+  public cancelDelete(index: number) {
+    this.items[index].deleting = false;
   }
 
   public deleteData(id: string, subject: string) {

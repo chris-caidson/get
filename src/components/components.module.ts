@@ -3,7 +3,6 @@ import { GetFooterComponent } from './get-footer/get-footer';
 import { LoginComponent } from './login/login';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { SiteNavComponent } from './site-nav/site-nav';
 import { NavMainComponent } from './nav-main/nav-main';
 import { NavGetStartedComponent } from './nav-get-started/nav-get-started';
 import { NavGetSuccessComponent } from './nav-get-success/nav-get-success';
@@ -15,7 +14,6 @@ import { NavAdminComponent } from './nav-admin/nav-admin';
 	declarations: [
     GetFooterComponent,
     LoginComponent,
-    SiteNavComponent,
     NavMainComponent,
     NavGetStartedComponent,
     NavGetSuccessComponent,
@@ -25,7 +23,6 @@ import { NavAdminComponent } from './nav-admin/nav-admin';
 	imports: [FormsModule, CommonModule],
 	exports: [GetFooterComponent,
     LoginComponent,
-    SiteNavComponent,
     NavMainComponent,
     NavGetStartedComponent,
     NavGetSuccessComponent,

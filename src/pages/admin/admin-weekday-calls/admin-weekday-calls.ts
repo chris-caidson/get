@@ -10,16 +10,17 @@ import "firebase/firestore";
 
 @IonicPage()
 @Component({
-  selector: "page-admin-targeted-subject-categories",
-  templateUrl: "admin-targeted-subject-categories.html"
+  selector: "page-admin-weekday-calls",
+  templateUrl: "admin-weekday-calls.html"
 })
-export class AdminTargetedSubjectCategoriesPage {
-  private collectionName: string = "targeted-subject-categories";
+export class AdminWeekdayCallsPage {
+  private collectionName: string = "daily-calls";
 
   public items: any[] = [];
   public loaded: boolean = false;
-  public newOrder: number = null;
-  public newCategory: string = null;
+  public newRecorded: string = null;
+  public newSubject: string = null;
+  public newUrl: string = null;
 
   constructor(
     public navCtrl: NavController,
@@ -38,15 +39,16 @@ export class AdminTargetedSubjectCategoriesPage {
     firebase
       .firestore()
       .collection(self.collectionName)
-      .orderBy("order")
+      .orderBy("recorded")
       .get()
-      .then(categories => {
-        categories.forEach(cat => {
-          let data = cat.data();
+      .then(calls => {
+        calls.forEach(c => {
+          let data = c.data();
           self.items.push({
-            id: cat.id,
-            order: data.order,
-            category: data.category
+            id: c.id,
+            recorded: data.recorded,
+            subject: data.subject,
+            url: data.url
           });
         });
 
@@ -54,12 +56,20 @@ export class AdminTargetedSubjectCategoriesPage {
       });
   }
 
-  public updateData(id: string, order: number, category: string) {
+  public confirmDelete(index: number) {
+    this.items[index].deleting = true;
+  }
+
+  public cancelDelete(index: number) {
+    this.items[index].deleting = false;
+  }
+
+  public updateData(id: string, recorded: string, subject: string, url: string) {
     let self = this;
 
-    if (!order || !category) {
+    if (!recorded || !subject || !url) {
       let toast = this.toastCtrl.create({
-        message: "Order and Category are both required.",
+        message: "All fields are required.",
         duration: 2000,
         position: "middle"
       });
@@ -73,15 +83,16 @@ export class AdminTargetedSubjectCategoriesPage {
       .collection(self.collectionName)
       .doc(id)
       .set({
-        order: +order,
-        category: category.trim()
+        recorded: recorded.trim(),
+        subject: subject.trim(),
+        url: url
+          .trim()
+          .replace("http:", "")
+          .replace("https:", "")
       })
       .then(() => {
         let toast = this.toastCtrl.create({
-          message:
-            "'" +
-            category +
-            "' targeted subject category updated successfully.",
+          message: "'" + subject + "' weekday call updated successfully.",
           duration: 2000,
           showCloseButton: true,
           position: "middle"
@@ -101,12 +112,16 @@ export class AdminTargetedSubjectCategoriesPage {
       });
   }
 
-  public addData(order: number, category: string) {
+  public addData(
+    recorded: string,
+    subject: string,
+    url: string
+  ) {
     let self = this;
 
-    if (!order || !category) {
+    if (!recorded || !subject || !url) {
       let toast = this.toastCtrl.create({
-        message: "Order and Category are both required.",
+        message: "All fields are required.",
         duration: 2000,
         position: "middle"
       });
@@ -119,19 +134,24 @@ export class AdminTargetedSubjectCategoriesPage {
       .firestore()
       .collection(self.collectionName)
       .add({
-        order: +order,
-        category: category.trim()
+        recorded: recorded,
+        subject: subject.trim(),
+        url: url
+          .trim()
+          .replace("http:", "")
+          .replace("https:", "")
       })
       .then(docRef => {
         let toast = this.toastCtrl.create({
           message:
-            "'" + category + "' targeted subject category added successfully.",
+            "'" + subject + "' weekday call added successfully.",
           duration: 2000,
           position: "middle"
         });
 
-        self.newOrder = null;
-        self.newCategory = null;
+        self.newRecorded = null;
+        self.newSubject = null;
+        self.newUrl = null;
 
         this.loadData();
         toast.present();
@@ -147,15 +167,7 @@ export class AdminTargetedSubjectCategoriesPage {
       });
   }
 
-  public confirmDelete(index: number) {
-    this.items[index].deleting = true;
-  }
-
-  public cancelDelete(index: number) {
-    this.items[index].deleting = false;
-  }
-
-  public deleteData(id: string, category: string) {
+  public deleteData(id: string, subject: string) {
     let self = this;
 
     firebase
@@ -166,9 +178,7 @@ export class AdminTargetedSubjectCategoriesPage {
       .then(() => {
         let toast = this.toastCtrl.create({
           message:
-            "'" +
-            category +
-            "' targeted subject category deleted successfully.",
+            "'" + subject + "' weekday call deleted successfully.",
           duration: 2000,
           showCloseButton: false,
           position: "middle"

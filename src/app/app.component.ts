@@ -59,6 +59,12 @@ export class MyApp {
       { title: "Books", component: "BooksPage", separatorLevel: 4, icon: "book", stepNumber: null },
       { title: "Podcasts", component: "PodcastsPage", separatorLevel: 4, icon: "podcast", stepNumber: null },
       { title: "Videos", component: "VideosPage", separatorLevel: 4, icon: "video-camera", stepNumber: null },
+
+      // Admin
+      { title: "Admin", component: null, separatorLevel: 2, icon: null, stepNumber: null },
+      { title: "Weekday Calls", component: "AdminDailyCallsPage", separatorLevel: 4, icon: "wrench", stepNumber: null },
+      { title: "Targeted Subject Calls", component: "AdminTargetedSubjectCallsPage", separatorLevel: 4, icon: "gear", stepNumber: null },
+      { title: "Targeted Subject Categories", component: "AdminTargetedSubjectCategoriesPage", separatorLevel: 4, icon: "gears", stepNumber: null },
     ];
   }
 

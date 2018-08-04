@@ -1,4 +1,11 @@
 page-admin-targeted-subject-categories {
+  #smallScreens {
+    display: inherit;
+    margin-top: 40px;
+  }
+  #largeScreens {
+    display: none;
+  }
   #loadingDiv {
     height: 5%;
     width: 5%;
@@ -9,7 +16,46 @@ page-admin-targeted-subject-categories {
   #contentSection {
     margin-top: 20px;
   }
-  button {
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .item-container {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .input-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin-bottom: 5px;
+
+    label {
+      margin-right: 10px;
+      margin-top: 5px;
+      text-align: right;
+    }
+
+    input {
+      text-align: left;
+    }
+  }
+  .buttons-div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-end;
+    justify-items: flex-end;
+  }
+  .order-input,
+  .category-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background-color: #FFF7F1;
+    box-shadow: 2px 2px 10px #FFD5B9 inset;
+    text-align: center;
+  }
+  article button {
     border-radius: 10px !important;
     height: 30px;
     border: 1px solid #777 !important;
@@ -18,8 +64,15 @@ page-admin-targeted-subject-categories {
     background: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+    margin-left: 6px !important;
   }
   @media (min-width: 800px) {
+    #smallScreens {
+      display: none;
+    }
+    #largeScreens {
+      display: inherit;
+    }
     #columnHeaders {
       margin-top: -10px;
       margin-bottom: 0px;
@@ -54,12 +107,19 @@ page-admin-targeted-subject-categories {
         background-color: #FFF7F1;
         box-shadow: 2px 2px 10px #FFD5B9 inset;
         width: 100%;
+        text-align: left;
       }
       button {
         border: 1px solid #777;
         height: 30px;
         margin-left: 10px;
       }
+    }
+
+    .item-container {
+      border-bottom: none;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
     }
   }
 }

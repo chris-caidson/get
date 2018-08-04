@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <i class="fa fa-gears fixed-width space-right"></i>
+      <i class="fa fa-gear fixed-width space-right"></i>
       <span>Admin - Targeted Subject Calls</span>
     </ion-title>
   </ion-navbar>
@@ -18,36 +18,100 @@
       <div id="loadingDiv" *ngIf="!this.loaded">
         <img src="assets/imgs/misc/loading.gif" />
       </div>
-      <section id="contentSection" *ngIf="this.loaded">
-        <div id="columnHeaders" class="form-grid">
-          <h3 class="order-heading">Order</h3>
-          <h3 class="category-heading">Category</h3>
-          <h3 class="subject-heading">Subject</h3>
-          <h3 class="url-heading">URL</h3>
-        </div>
-        <div class="item-container" *ngFor="let item of items; let i=index">
-          <div class="form-grid">
-            <input class="order-input" id="order-{{i}}" name="order-{{i}}" required [value]="item.order" (input)="item.order = $event.target.value"
-            />
-            <input class="category-input" id="category-{{i}}" name="category-{{i}}" required [value]="item.category" (input)="item.category = $event.target.value"
-            />
-            <input class="subject-input" id="subject-{{i}}" name="subject-{{i}}" required [value]="item.subject" (input)="item.subject = $event.target.value"
-            />
-            <input class="url-input" id="url-{{i}}" name="url-{{i}}" required [value]="item.url" (input)="item.url = $event.target.value"
-            />
-            <button ion-button outline type="submit" (click)="updateData(item.id, item.order, item.category, item.subject, item.url)">Save</button>
-            <button ion-button outline type="submit" (click)="deleteData(item.id, item.subject)">Delete</button>
+      <div id="smallScreens">
+        <section id="contentSection" *ngIf="this.loaded">
+          <div class="item-container" *ngFor="let item of items; let i=index">
+            <div class="input-grid">
+              <label for="order-{{i}}">Order:</label>
+              <input class="order-input" id="order-{{i}}" name="order-{{i}}" required [value]="item.order" (input)="item.order = $event.target.value"
+              />
+            </div>
+            <div class="input-grid">
+              <label for="order-{{i}}">Category:</label>
+              <input class="category-input" id="category-{{i}}" name="category-{{i}}" required [value]="item.category" (input)="item.category = $event.target.value"
+              />
+            </div>
+            <div class="input-grid">
+              <label for="subject-{{i}}">Subject:</label>
+              <input class="subject-input" id="subject-{{i}}" name="subject-{{i}}" required [value]="item.subject" (input)="item.subject = $event.target.value"
+              />
+            </div>
+            <div class="input-grid">
+              <label for="url-{{i}}">URL:</label>
+              <input class="url-input" id="url-{{i}}" name="url-{{i}}" required [value]="item.url" (input)="item.url = $event.target.value"
+              />
+            </div>
+            <div class="buttons-div">
+              <button ion-button outline *ngIf="!item.deleting" type="submit" (click)="updateData(item.id, item.order, item.category, item.subject, item.url)">Save</button>
+              <button class="delete-btn" *ngIf="!item.deleting" ion-button outline type="submit" (click)="confirmDelete(i)">Delete</button>
+              <button class="yes-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="deleteData(item.id, item.category)">Confirm</button>
+              <button class="no-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="cancelDelete(i)">Cancel</button>
+            </div>
           </div>
-        </div>
-        <div class="form-grid">
-          <input class="order-input" id="order-new" name="order-new" required [value]="newOrder" (input)="newOrder = $event.target.value" />
-          <input class="category-input" id="category-new" name="category-new" required [value]="newCategory" (input)="newCategory = $event.target.value" />
-          <input class="subject-input" id="subject-new" name="subject-new" required [value]="newSubject" (input)="newSubject = $event.target.value" />
-          <input class="url-input" id="url-new" name="url-new" required [value]="newUrl" (input)="newUrl = $event.target.value" />
-          <button ion-button outline type="submit" (click)="addData(newOrder, newCategory, newSubject, newUrl)">Save</button>
-          <button ion-button outline type="submit" class="not-visible">Delete</button>
-        </div>
-      </section>
+          <div class="item-container">
+            <div class="input-grid">
+              <label for="order-input">Order:</label>
+              <input class="order-input" id="order-new" name="order-new" required [value]="newOrder" (input)="newOrder = $event.target.value"
+              />
+            </div>
+            <div class="input-grid">
+              <label for="category-input">Category:</label>
+              <input class="category-input" id="category-new" name="category-new" required [value]="newCategory" (input)="newCategory = $event.target.value"
+              />
+            </div>
+            <div class="input-grid">
+              <label for="subject-input">Subjecct:</label>
+              <input class="subject-input" id="subject-new" name="subject-new" required [value]="newSubject" (input)="newSubject = $event.target.value"
+              />
+            </div>
+            <div class="input-grid">
+              <label for="url-input">URL:</label>
+              <input class="url-input" id="url-new" name="url-new" required [value]="newUrl" (input)="newUrl = $event.target.value"
+              />
+            </div>
+            <div class="buttons-div">
+              <button ion-button outline type="submit" (click)="addData(newOrder, newCategory, newSubject, newUrl)">Save</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="largeScreens">
+        <section id="contentSection" *ngIf="this.loaded">
+          <div id="columnHeaders" class="form-grid">
+            <h3 class="order-heading">Order</h3>
+            <h3 class="category-heading">Category</h3>
+            <h3 class="subject-heading">Subject</h3>
+            <h3 class="url-heading">URL</h3>
+          </div>
+          <div class="item-container" *ngFor="let item of items; let i=index">
+            <div class="form-grid">
+              <input class="order-input" id="order-{{i}}" name="order-{{i}}" required [value]="item.order" (input)="item.order = $event.target.value"
+              />
+              <input class="category-input" id="category-{{i}}" name="category-{{i}}" required [value]="item.category" (input)="item.category = $event.target.value"
+              />
+              <input class="subject-input" id="subject-{{i}}" name="subject-{{i}}" required [value]="item.subject" (input)="item.subject = $event.target.value"
+              />
+              <input class="url-input" id="url-{{i}}" name="url-{{i}}" required [value]="item.url" (input)="item.url = $event.target.value"
+              />
+              <button ion-button outline *ngIf="!item.deleting" type="submit" (click)="updateData(item.id, item.order, item.category, item.subject, item.url)">Save</button>
+              <button class="delete-btn" *ngIf="!item.deleting" ion-button outline type="submit" (click)="confirmDelete(i)">Delete</button>
+              <button class="yes-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="deleteData(item.id, item.category)">Confirm</button>
+              <button class="no-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="cancelDelete(i)">Cancel</button>
+            </div>
+          </div>
+          <div class="form-grid">
+            <input class="order-input" id="order-new" name="order-new" required [value]="newOrder" (input)="newOrder = $event.target.value"
+            />
+            <input class="category-input" id="category-new" name="category-new" required [value]="newCategory" (input)="newCategory = $event.target.value"
+            />
+            <input class="subject-input" id="subject-new" name="subject-new" required [value]="newSubject" (input)="newSubject = $event.target.value"
+            />
+            <input class="url-input" id="url-new" name="url-new" required [value]="newUrl" (input)="newUrl = $event.target.value" />
+            <button ion-button outline type="submit" (click)="addData(newOrder, newCategory, newSubject, newUrl)">Save</button>
+            <button ion-button outline type="submit" class="not-visible">Delete</button>
+          </div>
+        </section>
+      </div>
     </article>
   </main>
   <get-footer></get-footer>

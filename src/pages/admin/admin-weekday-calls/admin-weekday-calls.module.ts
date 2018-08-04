@@ -1,15 +1,15 @@
 import { ComponentsModule } from '../../../components/components.module';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { AdminDailyCallsPage } from './admin-daily-calls';
+import { AdminWeekdayCallsPage } from './admin-weekday-calls';
 
 @NgModule({
   declarations: [
-    AdminDailyCallsPage,
+    AdminWeekdayCallsPage,
   ],
   imports: [
     ComponentsModule,
-    IonicPageModule.forChild(AdminDailyCallsPage),
+    IonicPageModule.forChild(AdminWeekdayCallsPage),
   ],
 })
-export class AdminDailyCallsPageModule {}
+export class AdminWeekdayCallsPageModule {}

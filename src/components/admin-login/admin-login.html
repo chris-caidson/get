@@ -10,7 +10,7 @@
     <img id="getLogo" src="assets/imgs/misc/get-lg.png" alt="Global Exec Team" />
     <div>
       <form (ngSubmit)="login()" #loginForm="ngForm" id="loginControls">
-        <label for="loginTextBox"><strong>Admin</strong> Password:</label>
+        <label for="loginTextBox">Admin Password:</label>
         <input id="loginTextBox" type="password" name="password" autofocus [(ngModel)]="password" required />
         <button id="submitButton" ion-button outline type="submit" [disabled]="!loginForm.form.valid">Login as Admin</button>
         <span id="incorrectSpan" *ngIf="this.authProvider.incorrectAdminPassword">Invalid password.</span>

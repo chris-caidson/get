@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-gears fixed-width space-right"></i>
+      <span>Admin - Daily Calls</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <main role="main">
+    <nav-admin></nav-admin>
+    <article>
+      <h1>Admin</h1>
+      <h2>Weekday Calls</h2>
+      <div id="loadingDiv" *ngIf="!this.loaded">
+        <img src="assets/imgs/misc/loading.gif" />
+      </div>
+      <div id="contentDiv" *ngIf="this.loaded">
+        
+      </div>
+      <!-- <form (ngSubmit)="" #loginForm="ngForm" id="loginControls">
+      <label for="subjectTextBox">Date:</label>
+      <input id="subjectTextBox" type="text" name="subjectTextBox" autofocus [(ngModel)]="subject" required />
+
+      <label for="subjectTextBox">Subject:</label>
+      <input id="subjectTextBox" type="text" name="subjectTextBox" autofocus [(ngModel)]="subject" required />
+
+      <label for="subjectTextBox">Subject:</label>
+      <input id="subjectTextBox" type="text" name="subjectTextBox" autofocus [(ngModel)]="subject" required />
+
+      <button id="submitButton" ion-button outline type="submit" [disabled]="!loginForm.form.valid">Submit</button>
+    </form> -->
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

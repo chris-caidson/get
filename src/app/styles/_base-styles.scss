@@ -68,7 +68,10 @@ a, .link-span {
   text-decoration: none;
 }
 
+
+
 // Classes
+
 .centered {
   text-align: center;
 }
@@ -112,6 +115,10 @@ a, .link-span {
   margin-left: auto;
   margin-right: auto;
   color: darken($tertiary-color, 20%);
+}
+
+.not-visible {
+  visibility: hidden;
 }
 
 .note {

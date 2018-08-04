@@ -51,8 +51,8 @@ export class MyApp {
       // GET Calls
       { title: "GET Calls", component: null, separatorLevel: 2, icon: null, stepNumber: null },
       { title: "Weekday Calls", component: "DailyCallsPage", separatorLevel: 4, icon: "phone", stepNumber: null },
-      { title: "Leadership Videos", component: "LeadershipVideosPage", separatorLevel: 4, icon: "film", stepNumber: null },
       { title: "Targeted Subject", component: "TargetedSubjectPage", separatorLevel: 4, icon: "user", stepNumber: null },
+      // { title: "Leadership Videos", component: "LeadershipVideosPage", separatorLevel: 4, icon: "film", stepNumber: null },
 
       // GET Elevated
       { title: "GET Elevated", component: null, separatorLevel: 2, icon: null, stepNumber: null },

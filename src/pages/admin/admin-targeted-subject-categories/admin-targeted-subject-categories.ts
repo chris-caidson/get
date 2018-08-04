@@ -14,6 +14,8 @@ import "firebase/firestore";
   templateUrl: "admin-targeted-subject-categories.html"
 })
 export class AdminTargetedSubjectCategoriesPage {
+  private collectionName: string = "targeted-subject-categories";
+
   public items: any[] = [];
   public loaded: boolean = false;
   public newOrder: number = null;
@@ -30,11 +32,12 @@ export class AdminTargetedSubjectCategoriesPage {
   public loadData() {
     var self = this;
 
-    this.items = [];
+    self.loaded = false;
+    self.items = [];
 
     firebase
       .firestore()
-      .collection("targeted-subject-categories")
+      .collection(self.collectionName)
       .orderBy("order")
       .get()
       .then(categories => {
@@ -52,6 +55,8 @@ export class AdminTargetedSubjectCategoriesPage {
   }
 
   public updateData(id: string, order: number, category: string) {
+    let self = this;
+
     if (!order || !category) {
       let toast = this.toastCtrl.create({
         message: "Order and Category are both required.",
@@ -65,7 +70,7 @@ export class AdminTargetedSubjectCategoriesPage {
 
     firebase
       .firestore()
-      .collection("targeted-subject-categories")
+      .collection(self.collectionName)
       .doc(id)
       .set({
         order: +order,
@@ -112,7 +117,7 @@ export class AdminTargetedSubjectCategoriesPage {
 
     firebase
       .firestore()
-      .collection("targeted-subject-categories")
+      .collection(self.collectionName)
       .add({
         order: +order,
         category: category.trim()
@@ -143,9 +148,11 @@ export class AdminTargetedSubjectCategoriesPage {
   }
 
   public deleteData(id: string, category: string) {
+    let self = this;
+
     firebase
       .firestore()
-      .collection("targeted-subject-categories")
+      .collection(self.collectionName)
       .doc(id)
       .delete()
       .then(() => {

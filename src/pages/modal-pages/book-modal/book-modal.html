@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <i class="fa fa-book fixed-width space-right"></i>
+      <span>{{bookName}}</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="modal-close-div">
+    <span>
+      <i class="fa fa-newspaper-o fixed-width space-right"></i>{{bookName}} by {{author}}</span>
+    <button class="modal-close-btn" outline round (click)="closeModal()">
+      <i class="fa fa-close fixed-width"></i>
+    </button>
+  </div>
+  <div id="contentArea">
+    <h1>{{bookName}}</h1>
+    <h3>{{author}}</h3>
+    <section id="bookImgSection">
+      <img id="bookImg" src="{{imgUrl}}" alt="{{bookName}}" />
+    </section>
+    <section id="bookSummarySection">
+      <div id="summaryDiv">
+        <p>{{summary1}}</p>
+        <p>{{summary2}}</p>
+        <p>{{summary3}}</p>
+      </div>
+    </section>
+  </div>
+</ion-content>

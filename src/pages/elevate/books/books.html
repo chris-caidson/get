@@ -16,219 +16,31 @@
   <main role="main">
     <nav-get-elevated></nav-get-elevated>
     <article>
-      <h1 class="centered uppercase">Books</h1>
+      <h1 class="centered">Books</h1>
+      <h5 class="centered note tap">(Tap an image to view details.)</h5>
+      <h5 class="centered note click">(Click an image to view details.)</h5>
       <div class="grid-container">
         <section>
-          <h3>Think and Grow Rich</h3>
-          <h4>Author: Napoleon Hill</h4>
-          <img src="assets/imgs/books/think-and-grow-rich.jpg" alt="Think and Grow Rich" class="book" />
-          <p>Think and Grow Rich has been called the "Granddaddy of All Motivational Literature." It was the first book to boldly
-            ask, "What makes a winner?" The man who asked and listened for the answer, Napoleon Hill, is now counted in the
-            top ranks of the world's winners himself. The most famous of all teachers of success spent "a fortune and the
-            better part of a lifetime of effort" to produce the "Law of Success" philosophy that forms the basis of his books
-            and that is so powerfully summarized in this one.
-          </p>
-          <p>
-            In the original Think and Grow Rich, published in 1937, Hill draws on stories of Andrew Carnegie, Thomas Edison, Henry Ford,
-            and other millionaires of his generation to illustrate his principles. In the updated version, Arthur R. Pell,
-            Ph.D., a nationally known author, lecturer, and consultant in human resources management and an expert in applying
-            Hill's thought, deftly interweaves anecdotes of how contemporary millionaires and billionaires, such as Bill
-            Gates, Mary Kay Ash, Dave Thomas, and Sir John Templeton, achieved their wealth. Outmoded or arcane terminology
-            and examples are faithfully refreshed to preclude any stumbling blocks to a new generation of readers.</p>
+          <h2>Think and Grow Rich</h2>
+          <h3>Napoleon Hill</h3>
+          <div>
+            <img src="assets/imgs/books/think-and-grow-rich.jpg" alt="Think and Grow Rich" class="book" (click)="openBookModal('ThinkAndGrowRich')"
+            />
+          </div>
         </section>
         <section>
-          <h3>The 7 Habits of Highly Effective People</h3>
-          <h4>Author: Stephen R. Covey</h4>
-          <img src="assets/imgs/books/the-seven-habits-of-highly-effective-people.jpg" alt="The Seven Habits of Highly Effective People"
-            class="book" />
-          <p>
-            What are the habits of successful people? The 7 Habits of Highly Effective People has captivated readers for 25 years. It
-            has transformed the lives of Presidents and CEOs, educators, parents, and students — in short, millions of people
-            of all ages and occupations have benefited from Dr. Covey's 7 Habits book. And, it can transform you.
-          </p>
-          <p>This 7 Habits book guides you through each habit step-by-step:</p>
-          <ul>
-            <li>Habit 1: Be Proactive</li>
-            <li>Habit 2: Begin With The End In Mind</li>
-            <li>Habit 3: Put First Things First</li>
-            <li>Habit 4: Think Win-Win</li>
-            <li>Habit 5: Seek First To Understand Then Be Understood</li>
-            <li>Habit 6: Synergize</li>
-            <li>Habit 7: Sharpen The Saw</li>
-          </ul>
-          <p>
-            Dr. Covey's 7 Habits book is one of the most inspiring and impactful books ever written. Now you can enjoy and learn critical
-            lessons about the habits of successful people that will enrich your life's experience. And, it's in an inforgraphics
-            format that makes it easy for you to learn and apply Dr. Covey's habits of successful people.
-          </p>
+          <h2>Go Pro</h2>
+          <h3>Eric Worre</h3>
+          <div>
+            <img src="assets/imgs/books/go-pro.jpg" alt="Go Pro" class="book" (click)="openBookModal('GoPro')" />
+          </div>
         </section>
         <section>
-          <h3>Breaking the Habit of Being Yourself</h3>
-          <h4>Author: Dr. Joe Dispenza</h4>
-          <img src="assets/imgs/books/breaking-the-habit-of-being-yourself.jpg" alt="Breaking the Habit of Being Yourself" class="book"
-          />
-          <p>
-            You are not doomed by your genes and hardwired to be a certain way for the rest of your life. A new science is emerging that
-            empowers all human beings to create the reality they choose. In Breaking the Habit of Being Yourself, renowned
-            author, speaker, researcher, and chiropractor Dr. Joe Dispenza combines the fields of quantum physics, neuroscience,
-            brain chemistry, biology, and genetics to show you what is truly possible.
-          </p>
-          <p>
-            Not only will you be given the necessary knowledge to change any aspect of yourself, but you will be taught the step-by-step
-            tools to apply what you learn in order to make measurable changes in any area of your life. Dr. Joe demystifies
-            ancient understandings and bridges the gap between science and spirituality. Through his powerful workshops and
-            lectures, thousands of people in 24 different countries have used these principles to change from the inside
-            out. Once you break the habit of being yourself and truly change your mind, your life will never be the same!
-          </p>
-        </section>
-        <section>
-          <h3>Building Your Network Marketing Business</h3>
-          <h4>Author: Jim Rohn</h4>
-          <img src="assets/imgs/books/building-your-network-marketing-business.jpg" alt="Building Your Network Marketing Business"
-            class="book" />
-          <p>
-            This is an ideal recruitment and retention tool with proven life- and business-building insights. It's all about the skills.
-            It's a simple truth: the best product and the finest support system in the world can't buy you the future. To
-            achieve greatness in your personal and business life, you need the skills that will allow you to change your
-            life and your lifestyle. Jim Rohn, the foremost business philosopher of our time, has shared his secrets for
-            success with top business executives around the globe. And now, the same proven methods and techniques for building
-            a successful network marketing business are available to you. With this book, anyone can learn the necessary
-            skills for living a good life and participating in "the miracle process." Jim teaches how to:
-          </p>
-          <ul>
-            <li>Share your message with recruiting techniques that allow you to be the bridge that helps people move from skepticism
-              to faith</li>
-            <li>Create magic by getting people to work together</li>
-            <li>Use ingenuity to represent your product and obtain customers</li>
-            <li>Strengthen your communication techniques in order to conduct meetings and affect people with words</li>
-            <li>Build an organization by working with the people who deserve your time and attention</li>
-            <li>Inspire people helping them see themselves as they are and transport them to the future to see their opportunities</li>
-          </ul>
-        </section>
-        <section>
-          <h3>The Four Agreements</h3>
-          <h4>Author: Don Miguel Ruiz</h4>
-          <img src="assets/imgs/books/the-four-agreements.jpg" alt="The Four Agreements" class="book" />
-          <p>
-            In The Four Agreements, bestselling author don Miguel Ruiz reveals the source of self-limiting beliefs that rob us of joy
-            and create needless suffering. Based on ancient Toltec wisdom, The Four Agreements offer a powerful code of conduct
-            that can rapidly transform our lives to a new experience of freedom, true happiness, and love.
-          </p>
-          <ul>
-            <li>A New York Times bestseller for over 8 years</li>
-            <li>Over 6 million copies sold in the U.S.</li>
-            <li>Translated into 40 languages worldwide</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Go Pro</h3>
-          <h4>Author: Eric Worre</h4>
-          <img src="assets/imgs/books/go-pro.jpg" alt="Go Pro" class="book" />
-          <p>
-            Over twenty years ago at a company convention, Eric Worre had an aha moment that changed his life forever. At that event
-            he made the decision to Go Pro and become a Network Marketing expert. Since that time, he has focused on developing
-            the skills to do just that. In doing so, Eric has touched and been touched by hundreds of thousands of people
-            around the world. Now he shares his wisdom in a guide that will ignite your passion for this profession and help
-            you make the decision to Go Pro and create the life of your dreams. In this definitive guidebook, you will learn
-            to:-Find prospects -Invite them to your product or opportunity -Present your product -Follow up with your prospects
-            -Help them become customers or distributors -Help them get started right -Grow your team by promoting events
-            -And much, much more. Eric's wish is for you to make the decision to become a Network Marketing Professional.
-            For you to truly Go Pro. Because it is a stone-cold fact that Network Marketing is a better way. Now let's go
-            tell the world.
-          </p>
-        </section>
-        <section>
-          <h3>How to Win Friends and Influence People</h3>
-          <h4>Author: Dale Carnegie</h4>
-          <img src="assets/imgs/books/how-to-win-friends-and-influence-people.jpg" alt="How to Win Friends and Influence People" class="book"
-          />
-          <p>
-            You can go after the job you want—and get it!
-          </p>
-          <p>
-            You can take the job you have—and improve it!
-          </p>
-          <p>
-            You can take any situation—and make it work for you!
-          </p>
-          <p>
-            Dale Carnegie’s rock-solid, time-tested advice has carried countless people up the ladder of success in their business and
-            personal lives. One of the most groundbreaking and timeless bestsellers of all time, How to Win Friends & Influence
-            People will teach you:
-          </p>
-          <ul>
-            <li>Six ways to make people like you</li>
-            <li>Twelve ways to win people to your way of thinking</li>
-            <li>Nine ways to change people without arousing resentment</li>
-          </ul>
-          <p>
-            And much more! Achieve your maximum potential—a must-read for the twenty-first century with more than 15 million copies sold!
-          </p>
-        </section>
-        <section>
-          <h3>The Miracle Morning for Network Marketers</h3>
-          <h4>Authors: Hal Elrod and Pat Petrini</h4>
-          <img src="assets/imgs/books/miracle-morning-for-network-marketers.jpg" alt="The Miracle Morning for Network Marketers" class="book"
-          />
-          <p>
-            Tried all the network marketing tricks without results? Transform your routine to break through your current ceiling! You've
-            read all the books on sales techniques, generating leads, and closing, but you aren't making the progress you'd
-            hoped for. What if you could make a few simple changes to increase your income, reduce your stress, and send
-            your fulfillment through the roof? Start the next chapter of your career with a system that's been time tested
-            by thousands of people worldwide.
-          </p>
-          <p>
-            The Miracle Morning for Network Marketers uses Hal Elrod's global phenomenon to show you habits you can adopt from the best
-            performers in your field. By changing your strategies, mindsets, and rituals to match the top 1% of network marketers,
-            you'll grow yourself and your business faster than you ever thought possible.
-          </p>
-          <p>
-            Once you've nailed down your Miracle Morning, Elrod and Petrini's book shows you exactly what you should be doing with "the
-            rest of your day." When you apply these fundamental business building skills to your own network marketing, you
-            won't just get to the top… you'll stay there.
-          </p>
-        </section>
-        <section>
-          <h3>The Secret</h3>
-          <h4>Author: Rhonda Byrne</h4>
-          <img src="assets/imgs/books/the-secret.jpg" alt="The Secret" class="book" />
-          <p>
-            In 2006, a groundbreaking feature-length film revealed the great mystery of the universe—The Secret—and, later that year,
-            Rhonda Byrne followed with a book that became a worldwide bestseller. Fragments of a Great Secret have been found
-            in the oral traditions, in literature, in religions and philosophies throughout the centuries. For the first
-            time, all the pieces of The Secret come together in an incredible revelation that will be life-transforming for
-            all who experience it. In this book, you’ll learn how to use The Secret in every aspect of your life—money, health,
-            relationships, happiness, and in every interaction you have in the world. You’ll begin to understand the hidden,
-            untapped power that’s within you, and this revelation can bring joy to every aspect of your life. The Secret
-            contains wisdom from modern-day teachers—men and women who have used it to achieve health, wealth, and happiness.
-            By applying the knowledge of The Secret, they bring to light compelling stories of eradicating disease, acquiring
-            massive wealth, overcoming obstacles, and achieving what many would regard as impossible.
-          </p>
-        </section>
-        <section>
-          <h3>Secrets of the Millionaire Mind</h3>
-          <h4>Author: T. Harv Ecker</h4>
-          <img src="assets/imgs/books/secrets-of-the-millionaire-mind.jpg" alt="Secrets of the Millionaire Mind" class="book" />
-          <p>
-            Secrets of the Millionaire Mind reveals the missing link between wanting success and achieving it!
-          </p>
-          <p>
-            Have you ever wondered why some people seem to get rich easily, while others are destined for a life of financial struggle?
-            Is the difference found in their education, intelligence, skills, timing, work habits, contacts, luck, or their
-            choice of jobs, businesses, or investments?
-          </p>
-          <p>
-            The shocking answer is: None of the above!
-          </p>
-          <p>
-            In his groundbreaking Secrets of the Millionaire Mind, T. Harv Eker states: "Give me five minutes, and I can predict your
-            financial future for the rest of your life!" Eker does this by identifying your "money and success blueprint."
-            We all have a personal money blueprint ingrained in our subconscious minds, and it is this blueprint, more than
-            anything, that will determine our financial lives. You can know everything about marketing, sales, negotiations,
-            stocks, real estate, and the world of finance, but if your money blueprint is not set for a high level of success,
-            you will never have a lot of money—and if somehow you do, you will most likely lose it! The good news is that
-            now you can actually reset your money blueprint to create natural and automatic success.
-          </p>
+          <h2>Start with Why</h2>
+          <h3>Simon Sinek</h3>
+          <div>
+            <img src="assets/imgs/books/start-with-why.jpg" alt="Go Pro" class="book" (click)="openBookModal('StartWithWhy')" />
+          </div>
         </section>
       </div>
     </article>

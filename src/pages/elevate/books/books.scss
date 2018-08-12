@@ -3,11 +3,23 @@ page-books {
     max-height: 700px;
   }
 
+  .tap {
+    display: block;
+    margin-bottom: 50px;
+    margin-top: -20px;
+  }
+
+  .click {
+    display: none;
+    margin-bottom: 50px;
+    margin-top: -20px;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: auto;
 
-    h3, h4 {
+    h2, h3, h4 {
       text-align: center;
     }
 
@@ -16,6 +28,7 @@ page-books {
       max-width: 640px;
       margin-left: auto;
       margin-right: auto;
+      cursor: pointer;
     }
   }
 
@@ -23,14 +36,27 @@ page-books {
     margin-bottom: 50px;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .grid-container {
-      grid-template-columns: auto auto;
+      grid-template-columns: auto auto auto;
 
       section {
         margin-left: 20px;
         margin-right: 20px;
       }
+    }
+
+    .tap {
+      display: none;
+      margin-bottom: 50px;
+      margin-top: -20px;
+    }
+
+    .click {
+      display: block;
+      margin-bottom: $small-margin;
+      margin-bottom: 50px;
+      margin-top: -20px;
     }
   }
 }

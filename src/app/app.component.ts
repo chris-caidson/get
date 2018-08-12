@@ -40,13 +40,13 @@ export class MyApp {
       { title: "Step Five", component: "Step_5Page", separatorLevel: 4, icon: null, stepNumber: "5" },
 
       // GET Success
-      { title: "GET Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "Welcome", component: "WelcomePage", separatorLevel: 4, icon: "bullhorn", stepNumber: null },
-      { title: "Step One", component: "GetSuccessStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
-      { title: "Step Two", component: "GetSuccessStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
-      { title: "Step Three", component: "GetSuccessStep_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
-      { title: "Step Four", component: "GetSuccessStep_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
-      { title: "Recap", component: "RecapPage", separatorLevel: 4, icon: "check-circle", stepNumber: null },
+      // { title: "GET Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
+      // { title: "Welcome", component: "WelcomePage", separatorLevel: 4, icon: "bullhorn", stepNumber: null },
+      // { title: "Step One", component: "GetSuccessStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
+      // { title: "Step Two", component: "GetSuccessStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
+      // { title: "Step Three", component: "GetSuccessStep_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
+      // { title: "Step Four", component: "GetSuccessStep_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
+      // { title: "Recap", component: "RecapPage", separatorLevel: 4, icon: "check-circle", stepNumber: null },
 
       // GET Calls
       { title: "GET Calls", component: null, separatorLevel: 2, icon: null, stepNumber: null },

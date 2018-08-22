@@ -16,7 +16,34 @@
   <main role="main">
     <nav-get-elevated></nav-get-elevated>
     <article>
-      <h1 class="centered uppercase">Videos</h1>
+      <h1 class="centered uppercase">Motivational Videos</h1>
+      <div class="grid-container">
+        <section>
+          <h3>The Golden Circle</h3>
+          <h4>Simon Sinek</h4>
+          <img id="goldenCircle" src="assets/imgs/misc/simon-sinek-golden-circle.jpg" (click)="openVideoModal('golden-circle')"
+          sizes="(max-width: 640px) 100vw" alt="Simon Sinek - The Golden Circle" class="video-thumb" />
+        </section>
+        <section>
+          <h3>You've Gotta Be Hungry</h3>
+          <h4>Les Brown</h4>
+          <img id="hungry" src="assets/imgs/misc/les-brown.jpg" (click)="openVideoModal('hungry')"
+          sizes="(max-width: 640px) 100vw" alt="Les Brown - You've Gotta Be Hungry" class="video-thumb" />
+        </section>
+        <section>
+          <h3>Why Leaders Eat Last</h3>
+          <h4>Simon Sinek</h4>
+          <img id="eatLast" src="assets/imgs/misc/simon-sinek-leaders-eat-last.jpg" (click)="openVideoModal('eat-last')"
+          sizes="(max-width: 640px) 100vw" alt="Simon Sinek - Why Leaders Eat Last" class="video-thumb" />
+        </section>
+        <section>
+          <h3>Stanford Commencement Address</h3>
+          <h4>Steve Jobs</h4>
+          <img id="stanford" src="assets/imgs/misc/steve-jobs.jpg" (click)="openVideoModal('stanford')"
+          sizes="(max-width: 640px) 100vw" alt="Steve Jobs - Stanford Commencement Address" class="video-thumb" />
+        </section>
+      </div>
+      <h1 class="centered uppercase">Video Library</h1>
       <div class="grid-container">
         <section>
           <h3>Why Isagenix</h3>

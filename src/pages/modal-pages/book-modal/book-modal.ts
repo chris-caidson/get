@@ -24,8 +24,6 @@ export class BookModalPage {
     this.summary2 = this.navParams.get("summary2");
     this.summary3 = this.navParams.get("summary3");
     this.author = this.navParams.get("author");
-
-    console.log(this.imgUrl);
   }
 
   closeModal() {

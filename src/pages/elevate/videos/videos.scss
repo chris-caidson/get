@@ -20,6 +20,10 @@ page-videos {
     text-align: center;
   }
 
+  h4 {
+    font-style: italic;
+  }
+
   @media (min-width: 500px) {
     .video-thumb {
       width: 400px;

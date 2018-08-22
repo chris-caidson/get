@@ -24,6 +24,38 @@ export class VideosPage {
     var data: any;
 
     switch (video) {
+      case "golden-circle":
+      data = {
+        name: "Simon Sinek - The Golden Circle",
+        url:
+          "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fsimon-sinek-the-golden-circle.mp4?alt=media&token=27bc7ecb-eba8-47f0-95ce-f20cc2616196"
+      };
+      break;
+
+      case "hungry":
+        data = {
+          name: "Les Brown - You Gotta Be Hungry",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fles-brown-you-gotta-be-hungry.mp4?alt=media&token=11db7f16-a1c2-4707-aa16-3c9b37501534"
+        };
+        break;
+
+        case "eat-last":
+        data = {
+          name: "Simon Sinek - Why Leaders Eat Last",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fsimon-sinek-why-leaders-eat-last.mp4?alt=media&token=c39b3066-c108-43e5-85d1-82106f5d04d7"
+        };
+        break;
+
+        case "stanford":
+        data = {
+          name: "Steve Jobs - Standford Commencement Address",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fsteve-jobs-2005-stanford-commencement-address.mp4?alt=media&token=bd13a330-e82f-427a-9991-329a29ac1826"
+        };
+        break;
+
       case "transform-your-life":
         data = {
           name: "Transform Your Life",

@@ -3,6 +3,10 @@ page-books {
     max-height: 700px;
   }
 
+  h2 {
+    padding-top: 40px;
+  }
+
   .tap {
     display: block;
     margin-bottom: 50px;
@@ -28,7 +32,6 @@ page-books {
       max-width: 640px;
       margin-left: auto;
       margin-right: auto;
-      cursor: pointer;
     }
   }
 
@@ -36,11 +39,25 @@ page-books {
     margin-bottom: 50px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 800px) {
     .grid-container {
-      grid-template-columns: auto auto auto;
+      grid-template-columns: auto;
 
       section {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        img {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .inner-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+
+      div {
         margin-left: 20px;
         margin-right: 20px;
       }

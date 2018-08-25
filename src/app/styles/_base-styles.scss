@@ -6,6 +6,13 @@
   line-height: 1.35;
 }
 
+body {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
 main {
   max-width: $max-grid-width;
   margin-left: auto;
@@ -61,17 +68,15 @@ p {
   text-align: justify;
 }
 
-a, .link-span {
+a,
+.link-span {
   color: $bright-accent-color !important;
   font-weight: 600 !important;
   opacity: 1;
   text-decoration: none;
 }
 
-
-
 // Classes
-
 .centered {
   text-align: center;
 }

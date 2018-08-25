@@ -41,11 +41,9 @@ export class MyApp {
 
       // GET Success
       { title: "GET Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "Welcome", component: "WelcomePage", separatorLevel: 4, icon: "bullhorn", stepNumber: null },
       { title: "Step One", component: "GetSuccessStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
       { title: "Step Two", component: "GetSuccessStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
       { title: "Step Three", component: "GetSuccessStep_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
-      { title: "Step Four", component: "GetSuccessStep_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
       { title: "Recap", component: "RecapPage", separatorLevel: 4, icon: "check-circle", stepNumber: null },
 
       // GET Calls
@@ -57,7 +55,6 @@ export class MyApp {
       // GET Elevated
       { title: "GET Elevated", component: null, separatorLevel: 2, icon: null, stepNumber: null },
       { title: "Books", component: "BooksPage", separatorLevel: 4, icon: "book", stepNumber: null },
-      { title: "Podcasts", component: "PodcastsPage", separatorLevel: 4, icon: "podcast", stepNumber: null },
       { title: "Videos", component: "VideosPage", separatorLevel: 4, icon: "video-camera", stepNumber: null },
 
       // Admin

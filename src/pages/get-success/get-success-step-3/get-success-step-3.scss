@@ -8,8 +8,12 @@ page-get-success-step-3 {
     display: grid;
     align-content: flex-start;
   }
-  #tryProduct {
-    margin-left: -12px;
+  h4 {
+    text-align: center;
+  }
+  h5 {
+    color: #4F81BD;
+    font-weight: bold;
   }
   ul {
     list-style-type: none;
@@ -19,25 +23,26 @@ page-get-success-step-3 {
       margin-bottom: 10px;
     }
   }
-  h5 {
-    color: #4F81BD;
-    font-weight: bold;
-  }
   .diamond {
     height: 15px;
     margin-right: 10px;
   }
   .highlight {
     color: $bright-accent-color;
-  }
-  #divider {
-    display: none;
+    text-align: left;
   }
   #img {
     display: block;
     width: 75vw;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  #divider {
+    display: none;
+  }
+  #compPlan,
+  #dictionary {
+    margin-left: -15px;
   }
   @media (min-width: 800px) {
     #outerGrid {

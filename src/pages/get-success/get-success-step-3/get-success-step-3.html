@@ -29,64 +29,63 @@
             </li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Duplicate
-              <a>Eat It, Love It, Share It</a>
+              <span class="link-span" (click)="openVideoModal('eat-it-love-it-share-it')">Eat It, Love It, Share It</span>
             </li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Enroll 2 a Week -
-              <a>Double PIB's</a>
+              <span class="link-span" (click)="pdfProvider.openPdf('Double PIBs', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fdouble-pib.pdf?alt=media&token=dd09aed8-add1-47dd-93a3-ef36b44f80ea')">Double PIB's</span>
             </li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Join
-              <a>IsaBody Challenge</a> - $200</li>
+              <a href="https://www.isagenix.com/isabody-challenge" target="_blank">IsaBody Challenge</a> - $200</li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Enroll 5 People -
-              <a>FREE Vitamins</a>
+              <span class="link-span" (click)="pdfProvider.openPdf('Free Vitamins', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Ffree-vitamins.pdf?alt=media&token=054db23d-a348-4be8-abc7-35fc883d42b8')">FREE Vitamins</span>
             </li>
             <li>
               <h5>Compensation Plan</h5>
             </li>
-            <li id="compPlan"><a>Global Compensation Plan</a></li>
-            <li id="dictionary"><a>Dictionary of Terms</a></li>
+            <li id="compPlan"><span class="link-span" (click)="pdfProvider.openPdf('Compensation Plan', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fcompensation-plan.pdf?alt=media&token=76b26d3b-5f18-499b-b989-f802d19190e3')">Global Compensation Plan</span></li>
             <li>
               <h5>Road to Exec -
-                <a>$10,550 USD</a>
+                <span class="link-span" (click)="pdfProvider.openPdf('Crystal Executive', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fcrystal-exec.pdf?alt=media&token=0f37b46d-2eac-4e05-9ed8-d7afa975002b')">$10,550 USD</span>
               </h5>
             </li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
-              <a>Create Consultants</a> - $2000 ($100 x 20)</li>
+              Create Consultants - $2000 ($100 x 20)</li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
-              <a>Consultants</a> (You + 2) $50</li>
+              Consultants (You + 2) $50</li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
-              <a>Manager</a> (Them + 2) $250</li>
+              Manager (Them + 2) $250</li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
-              <a>Director</a> (You + 4 More) $750</li>
+              Director (You + 4 More) $750</li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
-              <a>Executive</a> (You + 4 More) $1000</li>
+              Executive (You + 4 More) $1000</li>
             <li>
               <h5>Monthly Pools</h5>
             </li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
-              <a>Director Pools</a> $2500</li>
+              <span class="link-span" (click)="pdfProvider.openPdf('Director Pools', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fdirector-pools.pdf?alt=media&token=ff18fed3-7c44-4005-8a10-2be37e06c963')">Director Pools</span> $2500</li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
-              <a>One-Star Executive Pools</a> $5000</li>
+              <span class="link-span" (click)="pdfProvider.openPdf('Executive Pool', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fexecutive-pool.pdf?alt=media&token=0f9bddff-782c-453b-8539-bb7f48942ce0')">One-Star Executive Pools</span> $5000</li>
             <li>
               <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />
-              <a>Two-Star Executive Pools</a> and Above $125k</li>
+              <span class="link-span" (click)="pdfProvider.openPdf('Two-Star Pool', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Ftwo-star-pool.pdf?alt=media&token=da8ae04f-45f9-47e0-8c30-f658521951dd')">Two-Star Executive Pools</span> and Above $125k</li>
           </ul>
         </section>
         <section id="divider"></section>
         <section id="secondSection">
           <h4 class="centered">Show Me the Money
-            <span>by Adrienne Cross Donovan and Erin Brauer</span>
+            <span>with Adrienne Cross Donovan and Erin Brauer</span>
           </h4>
-          <img id="showMeTheMoneyVideo" src="assets/imgs/why-isagenix/why-isagenix_1015.jpg" (click)="openVideoModal()" sizes="(max-width: 1280px) 100vw"
+          <img id="showMeTheMoneyVideo" src="assets/imgs/why-isagenix/why-isagenix_1015.jpg" (click)="openVideoModal('show-me-the-money')" sizes="(max-width: 1280px) 100vw"
             alt="Show Me the Money" class="video-thumb" srcset="
                                     assets/imgs/why-isagenix/why-isagenix_400.jpg 400w,
                                     assets/imgs/why-isagenix/why-isagenix_742.jpg 742w,

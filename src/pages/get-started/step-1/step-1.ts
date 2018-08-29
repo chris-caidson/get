@@ -9,6 +9,7 @@ import { AuthProvider } from '../../../providers/auth/auth';
   templateUrl: 'step-1.html',
 })
 export class Step_1Page {
+  public activeVideo: string = "unpacking";
 
   constructor(
     public navCtrl: NavController,
@@ -20,6 +21,10 @@ export class Step_1Page {
 
   openPage(pageName) {
     this.navCtrl.push(pageName);
+  }
+
+  toggleVideo(videoName: string) {
+    this.activeVideo = videoName;
   }
 
   openVideoModal(video: string) {

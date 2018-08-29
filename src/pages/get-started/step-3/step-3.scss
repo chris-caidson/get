@@ -3,7 +3,13 @@ page-step-3 {
     display: grid;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-top: -27px;
+    padding-top: 20px;
+  }
+  section div {
+    margin-bottom: 50px;
+  }
+  #divider {
+    display: none;
   }
   p {
     text-align: left;
@@ -11,6 +17,14 @@ page-step-3 {
   .subtext {
     font-size: smaller;
     color: #777;
+  }
+  h4 {
+    font-weight: bold;
+  }
+  .action {
+    color: #4F81BD;
+    font-size: larger;
+    font-weight: bold;
   }
   #blurb {
     span {
@@ -21,11 +35,18 @@ page-step-3 {
   @media(min-width: 1000px) {
     #container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 4px 1fr;
       align-content: flex-start;
       align-items: flex-start;
       margin-top: -26px;
       margin-bottom: 3px;
+
+      #divider {
+        display: block;
+        height: 100%;
+        width: 4px;
+        background-color: #4F81BD;
+      }
 
       #blurb {
         align-self: flex-end;

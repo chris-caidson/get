@@ -13,6 +13,15 @@ page-text-your-few {
     margin-right: auto;
   }
 
+  h3 {
+    color: #4F81BD;
+  }
+
+  #insert {
+    color: #C00000;
+    font-style: italic;
+  }
+
   @media (min-width: 640px) {
     #sampleImg1 {
       float: right;

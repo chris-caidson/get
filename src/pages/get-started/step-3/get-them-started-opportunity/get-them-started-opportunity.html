@@ -1,0 +1,233 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-play fixed-width space-right"></i>
+      <span>Get Them Started with the Opportunity</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <main role="main">
+    <nav-get-started></nav-get-started>
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered">Get Them Started with the Opportunity</h1>
+      <p>
+        By asking questions, we put the true power of the decision into our prospect/partner’s hands. This allows us to
+        focus on taking a Consultative approach, so we can discover what their true needs and desires are. When we’re
+        asking questions, with a true desire to learn about how we can SERVE them…we’re never selling.
+      </p>
+      <p>
+        Note: This is just a framework and suggested line of questioning. Every situation is different. In the words of
+        Anthony Robbins, “Let your prospect determine your presentation.”
+      </p>
+      <h3>YOUR JOB IS TO LISTEN SO HARD IT HURTS!!!</h3>
+      <p>
+        <span class="highlight">Pro-tip:</span> Use the 3-second count to make sure they’re truly done talking. Count
+        in your head “1-Mississippi….2-
+        Mississippi….3 Mississippi.”
+      </p>
+      <p>
+        Before getting into the conversation, make sure to thank your partner for their warm introduction and re-edify
+        them to their prospect.
+      </p>
+      <h3>Step 1: Connect &amp; Build Rapport Quickly Using F.O.R.M</h3>
+      <p>
+        (F – Family/Friends/From) Where are you from? How do you and ______ know each other?
+      </p>
+      <p>
+        (O – Occupation) What kind of work do you do?
+      </p>
+      <p>
+        (R – Recreation) What do you like to do for fun?
+      </p>
+      <p>
+        (M – Motivation) What are you passionate about?
+      </p>
+      <p>
+        <span class="highlight">Pro-tip:</span> Find points of interest in common with them
+      </p>
+      <h3>Step 2: Take Down Their Guard</h3>
+      <p>“_____ said great things about you and I’m excited to connect. I’ve been passionately building a business with
+        Isagenix for ____ months/years and I can’t believe I’ve already been able to _________ (ex: replace my
+        corporate salary, payoff my debt, travel more, work less hours, etc.) So I’m really here to learn more about
+        you and to see whether or not this feels like a good fit. Would it be okay if I asked you a couple of
+        questions?”</p>
+      <h3>Step 3: Confirm They Watched the Videos</h3>
+      <p>“What did you like most about the videos you watched?”</p>
+      <h3>Step 4: Why Are They Excited?</h3>
+      <p>“What is it about what _____ shared with you that has you interested/excited to learn more about Isagenix?”</p>
+      <h3>Step 5: Identify the Need</h3>
+      <p>
+        QUESTION 1: “How much additional income on a monthly basis would make a radical difference in your life right
+        now?”
+      </p>
+      <p>
+        QUESTION 2: “What would an extra $______ allow you to do that you can’t do right now?”
+      </p>
+      <p>
+        QUESTION 3: “What else have you considered doing to earn that additional income?”
+      </p>
+      <p>
+        YOU: I’ve considered/tried some of those things at one point too, but I was still trading time for money. What
+        I love about this is that you can increase the amount of money that you make while increasing your free time
+        simultaneously. How cool is that?
+      </p>
+      <p>
+        QUESTION 4: “We’ve designed a simple system that anyone can follow in order to learn how to create the $_____
+        per month. With that in mind, how much time per week would you be willing to devote to creating that kind of
+        income – at least at first?”
+      </p>
+      <h3>Step 6: Tell a Relatable Story</h3>
+      <p>
+        Tell a story about someone in the community (can be ANYONE, including YOU) that they remind you of. 30 Seconds
+        TOPS!
+      </p>
+      <p>
+        <span class="highlight">Pro-tip:</span> Know the stories so well that you keep this part brief and keep the
+        conversation flowing.
+      </p>
+      <h3>Step 7: Explain How It Works</h3>
+      <p>
+        “Let me explain how this works and what we do. Network Marketing with Isagenix is simply the distribution of
+        world class products that solve a real problem for people. Most companies reinvest half of their revenue in
+        advertising and shelf space, instead Isagenix leverages the most powerful form of advertising around, which is
+        word of mouth, generously rewarding the people who passionately share the products.
+      </p>
+      <p>
+        Our intention is to help you develop a large base of customers who fall wildly in love with our products, some
+        will share with a few friends earning enough to get their products paid for and others will go on to build
+        large businesses alongside you.
+      </p>
+      <p>
+        What’s really unique about Isagenix is that you can start a business for just the cost of your own products,
+        which is just food, and turn it into whatever you want.
+      </p>
+      <p>
+        You don’t have to worry about carrying any inventory, having employees or managing any kind of significant
+        overhead, meaning that at best you achieve your financial goals and at worst you decide this isn’t for you, but
+        still get into the best shape of your life because of the quality of our products.”
+      </p>
+      <h3>Step 8: Make Sure They Feel Informed</h3>
+      <p>
+        “What are some questions I can answer for you at this point?”
+      </p>
+      <p>
+        Most common questions/objections might be:
+      </p>
+      <p>
+        QUESTION: “So, do I just talk to my friends about it, etc?”
+      </p>
+      <p>
+        ANSWER: “As I mentioned before, we have a proven system to teach you how to do this. So on our next call, or
+        when you feel like you’re ready to get going, we’ll show you how one step at a time.” (Now move onto the next
+        section).
+      </p>
+      <p>
+        QUESTION: “But I’m not any good at sales…”
+      </p>
+      <p>
+        ANSWER: “I can totally appreciate that. Most of the people that are successful on our team didn’t have any
+        previous sales experience either. What’s really cool about Network Marketing is that you can earn while you
+        learn.” (Now move onto the next section).
+      </p>
+      <p>
+        QUESTION: “Is this one of those pyramid things?”
+      </p>
+      <p>
+        ANSWER: “No, pyramid schemes are illegal. Isagenix has been in business since 2002 and is AAA rated with the
+        Better Business Bureau. A pyramid scheme is an illegal money operation where money exchanges hands and no
+        product is ever delivered. We have over 65 world class products and 600,000+ customers worldwide. Additionally,
+        another sign of a pyramid is where you get paid for the recruitment of other people. At Isagenix, we only get
+        paid when a product or system is sold.” (Now move onto the next section).
+      </p>
+      <p>
+        QUESTION: “I just don’t know if I have time to do this.”
+      </p>
+      <p>
+        ANSWER: “How much additional income on a monthly basis would make it worth your time?” or “How much time do you
+        think you need?” (Now move onto the next section).
+      </p>
+      <h3>Step 9: Make A Recommendation</h3>
+      <p>
+        “Would you agree that you’re most likely to be successful doing this, if you’re a product of the product?” (Let
+        them answer).
+      </p>
+      <p>
+        “Great. If you could achieve any health goals right now, what would they be?” (Let them answer).
+      </p>
+      <p>
+        “Perfect. Would you like me to make a recommendation for how to get started?” (Let them answer).
+      </p>
+      <p>
+        Before I share with you what the cost of starting your business and products will be, here’s what I want you to
+        keep in mind that you’re getting – access to a multi million dollar website, a system that’s already proven its
+        ability to create 6 and 7 figure earners, all product manufacturing and distribution is taken care of for you,
+        a global staff of over 400 employees and the ability to do business in 16 countries and that number is growing.
+      </p>
+      <p>
+        Based on the financial and physical goals that you’ve shared with me, there’s really only one way I recommend
+        you getting started.
+      </p>
+      <p>
+        The reason I’m going to recommend this pack, is because it’ll be the pack you want to most recommend to your
+        customers. People will do what you do.
+      </p>
+      <p>
+        With that in mind, this pack is going to give your customers and you the best product experience possible,
+        while also getting the best bang for your buck.
+      </p>
+      <p>
+        As a business person, this is also going to give you higher customer retention, 4x the amount in upfront
+        bonuses and twice as much residual income on every purchase.
+      </p>
+      <p>
+        And as you saw in the Compensation Plan video, just by getting 3 customers started with this same pack, you’ll
+        have earned back the cost of your products.
+      </p>
+      <p>
+        It’s called the Value Pak and it breaks down to $19/day. It includes the complete 30 day system which provides
+        you two meals a day but with this pack you’re also getting a bunch of snacks including healthy chocolates which
+        are amazing, a box of meal replacement bars, whey/harvest thins which are a high protein savory chip so you can
+        snack without the guilt, a canister of greens which has over 30 different kinds of vegetables, womens/mens
+        vitamins which are like nutritional insurance in convenient tear packs, e shots which are healthy energy drinks
+        that give you a focused sustained boost without the crash, a beautiful stainless steel travel blender, a $75
+        Event Coupon, $25 off your next order, free membership and 2 free memberships to gift to your first two
+        customers.
+      </p>
+      <p>
+        So if it works within your budget, this is hands down THE BEST recommendation. It’s $589 for your first 30
+        days, then you can drop down for the next month.
+      </p>
+      <p>
+        Does that sound like a good fit for you?
+      </p>
+      <p><span class="highlight">Pro Tip:</span> Ask for the order then ZIP IT.</p>
+      <p><em>[THEY RESPOND]</em></p>
+      <p>
+        <strong><em>IF NO:</em></strong> I completely understand! Do you want to take a look at the other available pak
+        options? There are so many price points and combinations. You can look at the options here LINK TO THE PAK PAGE
+        ON ISAMOVIE Let me know which one would fit for you.
+      </p>
+      <p>
+        <strong><em>IF YES:</em></strong> Great! Let’s get you started. Where would you like your box shipped?
+      </p>
+      <p><em>
+          If at any point they say “no” or do not want to continue the conversation – that’s OK! Tell them “thank you
+          for taking the time,” and ask them if you may keep them on your list to circle back with them down the road.
+          Timing is everything, and you never know when someone will realize they really do need what you have to
+          offer.
+        </em></p>
+
+
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

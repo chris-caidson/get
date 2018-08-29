@@ -10,61 +10,43 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
     <nav-get-started></nav-get-started>
     <article>
-        <button id="backBtn" (click)="goBack()">
-            <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
       <h1 class="centered">Text Your Few</h1>
       <section>
-        <p>* This is designed to help someone enroll their first few people. This does NOT replace the Facebook Post or the
-          Top Down Invitation. This is to simply reach out to the “Two people who they know, that would for sure want to
-          do this with them.”</p>
+        <h3>If You Haven't Started Yet</h3>
+        <p><strong>YOU:</strong>
+          Hey _______! Any interest in doing a healthy detox with me? I’m ready to ______ (lose X pounds, get shredded,
+          etc) and feel like myself again. I’ve seen so many before and afters & done all the research. It’s the real
+          deal and I’m super excited about it.</p>
+        <h3>If You've Already Started</h3>
         <p>
-          <strong>YOU:</strong> Hey _______ Girl/Bro/Name, etc! Any interest in doing a nutritional system with me? I’m ready to
-          ______ (lose X pounds, get shredded, etc) and feel like myself again. I’ve seen so many before and afters & done
-          all the research. It’s the real deal and I’m super excited about it.</p>
-        <p>My friend is coaching me. She’s worked with loads of people and doesn’t charge anything. All we do is pay for the
-          products. Wanna do it with me?</p>
-        <p>
-          <strong>OR - (IF ON DAY 5 OR AFTER)</strong>
+          <strong>YOU:</strong> Hey _____! Any interest in doing a healthy detox with me? I’ve only been doing it _____
+          # of days and am already experiencing ______. I was tired of seeing everyone else’s before and afters and was
+          ready for my own! It’s so easy to do and everything tastes amazing.
         </p>
-        <p>Hey _____ Girl/Bro/Name, etc! Any interest in doing a nutritional cleansing system with me? I’ve only been using
-          the system _____ # of days and am already experiencing ______. I was tired of seeing everyone else’s before and
-          afters and was ready for my own! It’s so easy to do and everything tastes amazing.</p>
-        <p>My friend is coaching me. She’s worked with loads of people and doesn’t charge anything. All we do is pay for the
-          products. Wanna do it with me?</p>
-        <p>
-          <strong>THEM: </strong>YESSSS!!!!</p>
-        <p>
-          <strong>YOU:</strong> Sweet! My box is already on it’s way, best thing to do is connect you with ______ (enter mentor/partner’s
-          name). What’s your availability for a call over the next day or two?</p>
-        <p>
-          <strong>THEM:</strong> I can chat now or tomorrow morning.</p>
-          <img id="sampleImg1" sizes="(max-width: 576px) 100vw, 576px" srcset="
+        <img id="sampleImg1" sizes="(max-width: 576px) 100vw, 576px" srcset="
           assets/imgs/sample/sample_200.png 200w,
           assets/imgs/sample/sample_352.png 352w,
           assets/imgs/sample/sample_464.png 464w,
-          assets/imgs/sample/sample_576.png 576w" src="assets/imgs/sample/sample_576.png"
-            alt="">
+          assets/imgs/sample/sample_576.png 576w"
+          src="assets/imgs/sample/sample_576.png" alt="">
+        <p><strong>THEM: </strong>YES!!!!</p>
         <p>
-          <strong>YOU:</strong> Ha! She can’t get on a call today, but can tomorrow morning at either 9:30am or 10:30am, which of
-          those times works best for you?</p>
+          <strong>YOU:</strong> Sweet! Sweet! My box is already on it’s way / is already here. I’d like to send you a
+          video that I loved which helped me get started. If I send you the website, when can you watch it for sure?</p>
         <p>
-          <strong>THEM:</strong> 9:30</p>
+          <strong>THEM:</strong> Tomorrow at 9:30 am.</p>
         <p>
-          <strong>YOU:</strong> Ok, that’s perfect. I’ll call you with her on the line. She had me watch 2 short videos before our
-          call and asked if you could watch them too. They’re 10 min total, I’ll send them tomorrow morning – can you watch
-          them for sure?</p>
-        <p>
-          <strong>THEM:</strong> Yes</p>
-        <p>
-          <strong>YOU:</strong> Great. So excited to do this together! Wait til you see the results people are getting with is, you’ll
-          flip! Talk to you at 9:30a tomorrow. If for some reason you need to cancel, please give me plenty of notice. I
-          want to be mindful of her schedule.</p>
+          <strong>YOU:</strong> Ok, that’s perfect. I’ll follow up with you then and we’ll discuss the video. So
+          excited to do this together! Wait til you see the results people are getting with is, you’ll flip! Here’s the
+          link: <span id="insert">[INSERT YOUR REPLICATED WEBSITE/IsaMovie]</span>. Talk to you at ____. </p>
         <p>
           <strong>THEM:</strong> I’m excited! Thanks for thinking of me!</p>
         <p>
@@ -72,12 +54,19 @@
         <p>This will be us soon (enter finger pointing up emoji 👆)</p>
         <p>
           <strong>THEM:</strong> Woot Woot!</p>
-          <img id="sampleImg2" sizes="(max-width: 576px) 100vw, 576px" srcset="
+        <img id="sampleImg2" sizes="(max-width: 576px) 100vw, 576px" srcset="
           assets/imgs/sample/sample_200.png 200w,
           assets/imgs/sample/sample_352.png 352w,
           assets/imgs/sample/sample_464.png 464w,
-          assets/imgs/sample/sample_576.png 576w" src="assets/imgs/sample/sample_576.png"
-            alt="">
+          assets/imgs/sample/sample_576.png 576w"
+          src="assets/imgs/sample/sample_576.png" alt="">
+        <p>
+          *** To create a link to your personal Isagenix website, log in to your Back Office (where you order products),
+          and hover over the “Resources” tab. Click “Manage My Website” to create your website URL. Then copy and paste
+          that URL. Add “/IsaMovie” after “.com”. This will hyperlink to your personal Isagenix website, so if your
+          prospect decides to purchase a pak right away, the sale will go to you! Please note that you must be an
+          Associate to have a personal Isagenix website.
+        </p>
       </section>
     </article>
   </main>

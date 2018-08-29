@@ -16,39 +16,96 @@
   <main role="main">
     <nav-get-started></nav-get-started>
     <article>
+      <div>
+        <h1>GET Started - Step Three</h1>
+        <h2>Who Do You Want to Help?</h2>
+        <p>
+          You feel amazing and know a lot of people who would benefit from using the Isagenix system. Here are some
+          simple ways to
+          reach out and ask them to take a look.
+        </p>
+      </div>
       <div id="container">
-        <div id="headers">
-          <h1>GET Started - Step Three</h1>
-          <h2>Who Do You Want to Help?</h2>
-        </div>
-        <div id="blurb">
-          <span>
-            You feel amazing and know a lot of people who would benefit from using the Isagenix system. Here are some simple ways to
-            reach out and ask them to take a look.
-          </span>
-        </div>
         <section id="section1">
-          <h3>1. Text a Few Friends</h3>
-          <p>We all have those friends who will jump in the fun with us. This text template was designed to ask them to join
-            you in a fun way.</p>
-          <p>
-            Click here for the
-            <span class="link-span" (click)="openPage('TextYourFewPage')">simple template</span> that takes all the guesswork out of what to say from the first text to them saying “YES!”
-          </p>
+          <h3>Product Approach (Bottom-Up)</h3>
+          <div>
+            <h4><span class="action">SAY</span> - Text a Few Friends</h4>
+            <p>
+              Click here for the
+              <span class="link-span" (click)="openPage('TextYourFewPage')">simple template</span> that takes all the
+              guesswork out of what to say from the first text to them saying “YES!”
+            </p>
+          </div>
+          <div>
+            <h4><span class="action">SAY</span> - Post on Facebook</h4>
+            <p>
+              First adjust your Facebook Settings to make sure your post will be visible by following
+              <span class="link-span" (click)="openPage('BeforeYouPostPage')">these simple steps.</span>
+            </p>
+            <p>
+              Then copy and paste
+              <span class="link-span" (click)="openPage('PostOnFacebookPage')">this simple post</span> and follow the
+              template when friends start commenting.
+            </p>
+          </div>
+          <div>
+            <h4><span class="action">SHARE</span> - GETFree.global</h4>
+            <p>
+              Once your friends, family, or prospects have agreed to take a look, send them to <a href="//getfreeglobal.com/#/why-cleanse"
+                target="_blank">GETfree.global/why-cleanse</a>
+              and give them the password GETFIT to watch a video about our solutions. Once they’ve watched the video,
+              encourage them to click around the site. This site does the heavy lifting for you! It should answer many
+              questions they may have.
+            </p>
+          </div>
+          <div>
+            <h4><span class="action">DO</span> - Follow Up</h4>
+            <p>
+              After they check out GETFree.global, follow up! Ask if they’re ready to get started. Here’s how.
+            </p>
+            <p>
+              Not sure what to say? Follow <span class="link-span" (click)="openPage('GetThemStartedPage')">this support script</span> to identify their goals
+              and recommend the best pak for their needs.
+            </p>
+          </div>
         </section>
+        <section id="divider"></section> 
         <section id="section2">
-          <h3>2. Post on Facebook</h3>
-          <p>
-            You never know which of your friends is looking for the results you have achieved (or are looking to achieve)!
-          </p>
-          <p>
-            First adjust your Facebook Settings to make sure your post will be visible by following
-            <span class="link-span" (click)="openPage('BeforeYouPostPage')">these simple steps.</span>
-          </p>
-          <p>
-            Then copy and paste
-            <span class="link-span" (click)="openPage('PostOnFacebookPage')">THIS SIMPLE POST</span> and follow the template when friends start commenting.
-          </p>
+          <h3>Business Approach (Top-Down)</h3>
+          <div>
+            <h4><span class="action">SAY</span> - Share Your 30-Second Story</h4>
+            <p>
+              Click here for the <span class="link-span" (click)="pdfProvider.openPdf('Share Your Story the Right Way', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fshare-your-story.pdf?alt=media&token=a88674ef-a20d-4f89-8daf-17a48c2f3b69')">simple template</span> to create your unique story.
+            </p>
+            <p>
+              Listen here as Susan Miller shares her 30-Second Story for the Opportunity:
+            </p>
+            <p>
+              <!--SUSAN’S AUDIO LINK GOES HERE-->
+            </p>
+            <p>
+              Download the transcript of her 30-Second Story <span class="link-span">Here</span>.
+            </p>
+          </div>
+          <div>
+            <h4><span class="action">SHARE</span> - GETFree.global</h4>
+            <p>
+              Once your prospects have agreed to take a look, send them to <a href="//getfree.global" target="_blank">GETfree.global</a>
+              and give them the password
+              GETFIT to watch the video about our opportunity. You may also direct them to any page you feel is
+              relevant.
+            </p>
+          </div>
+          <div>
+            <h4><span class="action">DO</span> - Follow Up</h4>
+            <p>
+              After they check out GETFree.global, follow up! Ask if they’re ready to get started.
+            </p>
+            <p>
+              Not sure what to say? Follow this optional <span class="link-span" (click)="openPage('GetThemStartedOpportunityPage')">support script</span> to identify their goals and get them started
+              right.
+            </p>
+          </div>
         </section>
       </div>
     </article>

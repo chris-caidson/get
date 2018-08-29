@@ -1,0 +1,133 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-play fixed-width space-right"></i>
+      <span>Get Them Started</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <main role="main">
+    <nav-get-started></nav-get-started>
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered">Get Them Started</h1>
+      <p><strong>YOU:</strong> What did you like best about what you saw on IsaMovie? I know when we spoke last, your
+        goals were _______ and I know this system can really help!
+      </p>
+      <p><em>[THEY RESPOND]</em></p>
+      <p><strong>YOU:</strong> Before we talk more about Isagenix, I want to take some time to learn more about your
+        goal. What are two to three areas of your life/body where you would like to see these results?
+      </p>
+      <p><em>[THEY RESPOND]</em></p>
+      <p><strong>YOU:</strong> How long have you had this goal?
+      </p>
+      <p><em>[THEY RESPOND]</em></p>
+      <p><strong>YOU:</strong> Sounds like it’s time to make a change! On a scale of 1-10, with 10 being totally
+        committed, how committed would you say your are to achieving _________ (their goal)?
+      </p>
+      <p><em>[THEY RESPOND]</em></p>
+      <p><strong>YOU:</strong> Why is this so important to you?
+      </p>
+      <p><em>[THEY RESPOND]</em></p>
+      <p><strong>YOU:</strong> How would you feel if you achieved these goals in the next 90 days?
+      </p>
+      <p><em>[THEY RESPOND]</em></p>
+      <p><strong>YOU:</strong> How would you feel if you did NOT achieve these goals?
+      </p>
+      <p><em>[THEY RESPOND]</em></p>
+      <p><strong>YOU:</strong> Tell a story about someone in the community (it can be ANYONE, including YOU) that they
+        remind you of. 30 seconds TOPS!
+        <p><strong>YOU:</strong> Are there any questions I can answer for you? OR What are some questions I can answer
+          for you?
+          <p><em>(Answer their questions quickly and move into the next line)</em></p>
+          <p><strong>YOU:</strong> Would you like me to make a recommendation for how to get started?
+          </p>
+          <p><em>[THEY RESPOND]</em></p>
+          <p>
+            Based on the goals you shared there are two packs I would recommend. One breaks down to $9/day, the other
+            breaks down to $19/day. Remember, with both packs you’re having 2 meals a day provided for you.
+          </p>
+          <p>
+            The $9/day pack is a basic system that still gives you all the products you need to have a great
+            experience. It’s $272 + $29 membership which gives you wholesale pricing for the year, plus tax and
+            shipping.”
+          </p>
+          <p>
+            The $19/day pack, however, is my highest recommendation based on the goals you shared. Not only doest it
+            include the products in the basic pak, but it also comes with products that can help you achieve a lasting
+            transformation.
+          </p>
+          <p>
+            It comes with delicious chocolate squares that you can have even on cleanse days, whey thins which are a
+            high protein savory chip so you can snack without the guilt, a canister of greens which has over 30
+            different kinds of vegetables, herbs and botanicals. It tastes great on its own or can be added to your
+            shake. You’ll also get a box of bars which taste like candy, a box of women’s/men’s vitamins which provide
+            total nutritional support in a convenient tear pack and feature a complete spectrum of extremely high
+            quality supplements. They’re a game changer! You’ll also get a box of e shots which are healthy energy
+            drinks. They give you a focused, sustained boost, without the crash. A beautiful stainless steel travel
+            blender, a $75 event coupon, $25 off your next order, free membership saving you $29, and TWO family and
+            friends coupons saving THEM $29 each also, when we help get them started.
+          </p>
+          <p>
+            This system is called the Value Pack, so if you really want to do it right, and it works within your
+            budget, this is hands down THE BEST recommendation. It’s $589 for your first 30 days, then you can drop
+            down to a more basic pack from there.
+          </p>
+          <p>
+            Which sounds like the best fit for you?
+          </p>
+          <p><em>[THEY RESPOND]</em></p>
+          <p>
+            <strong>IF NEITHER:</strong> I completely understand! Do you want to take a look at the other available pak
+            options? There are so many price points and combinations. You can look at the options here <span id="insert">LINK
+              TO THE PAK PAGE ON ISAMOVIE</span> Let me know which one would fit for you.
+          </p>
+          <p>
+            <strong>​IF YES:</strong> Great! Do you feel like you have enough information to get started today?
+          </p>
+          <p>
+            <em><span class="red-highlight">​Pro Tip:</span> Ask for the order then ZIP IT.</em>
+          </p>
+          <p>
+            If at any point they say “no” or do not want to continue the conversation – that’s OK! Tell them “thank you
+            for taking the time,” and ask them if you may keep them on your list to circle back with them down the
+            road. Timing is everything, and you never know when someone will realize they really do need what you have
+            to offer.
+          </p>
+          <h2>Once They Have Joined</h2>
+          <p>
+            YOU: Curiously, who are two people that you know would want do this with you for sure?
+          </p>
+          <p>
+            (Let them answer)
+          </p>
+          <p>
+            <strong>YOU:</strong> The reason I ask is because Isagenix doesnt spend any money on advertising and
+            instead rewards its
+            customers for our referrals. So when you help <span class="red-highlight">*friend name 1*</span> and <span
+              class="red-highlight">*friend name 2*</span> get started youll earn
+            anywhere from $150 – $450 back right away. How awesome is that?
+          </p>
+          <p>
+            <span class="red-highlight">SHOW THEM YOU SHARE, THEY SHARE, REPEAT</span>
+          </p>
+          <p>
+            <strong>YOU:</strong> If I showed you a system that could help you share Isagenix with <span class="red-highlight">*friend
+              name 1*</span> and <span class="red-highlight">*friend name 2*</span>
+            would you be willing to give it a try?
+          </p>
+          <p>
+            Show them the Step Three page of our website and lead them through it.
+          </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

@@ -33,9 +33,17 @@ page-get-success-step-3 {
   }
   #img {
     display: block;
-    width: 75vw;
+    width: 100%;
+    max-width: 528px;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  #moneyHeader {
+    text-align: left;
+  }
+  #showMeTheMoneyVideo {
+    width: 100%;
+    max-width: 528px;
   }
   #divider {
     display: none;
@@ -45,6 +53,9 @@ page-get-success-step-3 {
     margin-left: -15px;
   }
   @media (min-width: 800px) {
+    #moneyHeader {
+      text-align: center;
+    }
     #outerGrid {
       grid-template-columns: 1fr 4px 1fr;
     }

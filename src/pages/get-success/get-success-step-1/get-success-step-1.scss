@@ -17,6 +17,12 @@ page-get-success-step-1 {
     margin-bottom: 40px;
   }
 
+  #freeToBeMeImg, #img {
+    display: block;
+    width: 100%;
+    max-width: 528px;
+  }
+
   #divider {
     display: none;
   }
@@ -40,11 +46,6 @@ page-get-success-step-1 {
       margin-left: -40px;
       margin-bottom: 10px;
     }
-  }
-
-  #img {
-    display: block;
-    width: 75vw;
   }
 
   @media (min-width: 800px) {

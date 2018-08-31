@@ -47,11 +47,17 @@ page-get-success-step-2 {
   }
   #img {
     display: block;
-    width: 75vw;
+    width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  @media (min-width: 800px) {
+  #virtualFranchiseVideo {
+    width: 100%;
+  }
+  #virtualFranchiseVideo, #img {
+    max-width: 528px;
+  }
+  @media (min-width: 1024px) {
     #outerGrid {
       grid-template-columns: 1fr 4px 1fr;
     }

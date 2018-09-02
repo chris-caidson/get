@@ -15,9 +15,9 @@ export class HomePage {
 
   openVideoModal() {
     const myModal = this.modalCtrl.create("VideoModalPage", {
-      name: "Why Isagenix",
+      name: "What's Your Why?",
       url:
-        "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2FWhy-Isagenix-Promo.mp4?alt=media&token=903beebd-f2d1-4e80-9386-8cb764d56cf8"
+        "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fi-am-good-enough.mp4?alt=media&token=c1e7ced5-e7ca-4ac7-afe0-05ea1e9a1beb"
     });
 
     myModal.present();

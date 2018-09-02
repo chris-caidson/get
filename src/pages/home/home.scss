@@ -3,8 +3,43 @@ page-home {
     max-height: 800px;
   }
 
-  #whyIsaSection {
-    margin-top: -18px;
-    margin-bottom: 60px;
+  p {
+    margin-bottom: 40px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  #tribe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  #video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      align-items: stretch;
+
+      #tribe {
+        padding-right: 20px;
+        margin-bottom: 0;
+      }
+
+      #video {
+        padding-left: 20px;
+      }
+    }
   }
 }

@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
-import { AuthProvider } from '../../../providers/auth/auth';
+import { AuthProvider } from '../../../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
-  selector: 'page-step-4',
-  templateUrl: 'step-4.html',
+  selector: 'page-launch-call',
+  templateUrl: 'launch-call.html',
 })
-export class Step_4Page {
+export class LaunchCallPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public modalCtrl: ModalController, public auth: AuthProvider) {
@@ -15,15 +15,15 @@ export class Step_4Page {
 
   openVideoModal() {
     const myModal = this.modalCtrl.create("VideoModalPage", {
-      name: "You Share, They Share, Repeat",
+      name: "How to Launch a New Associate Effectively",
       url:
-        "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fyou-share-they-share-repeat.mp4?alt=media&token=b7981a94-b577-4d7b-bbe6-db9108cf5e3c"
+        "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Flaunch-associate.mp4?alt=media&token=06536119-df70-49b8-a9b4-8d09548631e2"
     });
 
     myModal.present();
   }
 
-  openPage(pageName) {
-    this.navCtrl.setRoot(pageName);
+  goBack() {
+    this.navCtrl.pop();
   }
 }

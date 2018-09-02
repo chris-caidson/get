@@ -1,0 +1,66 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-mobile fixed-width space-right"></i>
+      <span>Welcome Call</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <main role="main">
+    <nav-get-started></nav-get-started>
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered">Welcome Call</h1>
+      <section>
+        <h3>Three-Way Welcome Call with Upline or Team Member</h3>
+        <ul>
+          <li>The purpose of this call is to WELCOME the New Member.
+          </li>
+          <li>
+            Upline/Team Member’s role is to be warm, welcoming & excited.
+          </li>
+          <li>
+            After you make a brief introduction, Team Member will share their 90-second (tops) Isagenix Story (Business
+            &amp; Product) and offer
+            support &amp; friendship. Then HANG UP!
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>What This Call Is NOT</h3>
+        <ul>
+          <li>
+            The sole intention of this call is for your New Member to receive enthusiastic support and confirmation
+            that he/she has made
+            a great decision by getting started with us. That’s it!
+          </li>
+          <li>
+            This is NOT a coaching call.
+          </li>
+          <li>
+            This is NOT a question/answer call.
+          </li>
+          <li>
+            This is NOT an upsell call.
+          </li>
+          <li>
+            This call should last only 4-5 mins.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fwelcome-call.pdf?alt=media&token=871ce848-4f0d-49f5-90bb-3ab97b81a52c">Download
+          These Notes as a PDF</a>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

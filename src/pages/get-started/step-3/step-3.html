@@ -27,85 +27,49 @@
       </div>
       <div id="container">
         <section id="section1">
-          <h3>Product Approach (Bottom-Up)</h3>
-          <div>
-            <h4><span class="action">SAY</span> - Text a Few Friends</h4>
-            <p>
-              Click here for the
-              <span class="link-span" (click)="openPage('TextYourFewPage')">simple template</span> that takes all the
-              guesswork out of what to say from the first text to them saying “YES!”
-            </p>
-          </div>
-          <div>
-            <h4><span class="action">SAY</span> - Post on Facebook</h4>
-            <p>
-              First adjust your Facebook Settings to make sure your post will be visible by following
-              <span class="link-span" (click)="openPage('BeforeYouPostPage')">these simple steps.</span>
-            </p>
-            <p>
-              Then copy and paste
-              <span class="link-span" (click)="openPage('PostOnFacebookPage')">this simple post</span> and follow the
-              template when friends start commenting.
-            </p>
-          </div>
-          <div>
-            <h4><span class="action">SHARE</span> - GETFree.global</h4>
-            <p>
-              Once your friends, family, or prospects have agreed to take a look, send them to <a href="//getfreeglobal.com/#/why-cleanse"
-                target="_blank">GETfree.global/why-cleanse</a>
-              and give them the password GETFIT to watch a video about our solutions. Once they’ve watched the video,
-              encourage them to click around the site. This site does the heavy lifting for you! It should answer many
-              questions they may have.
-            </p>
-          </div>
-          <div>
-            <h4><span class="action">DO</span> - Follow Up</h4>
-            <p>
-              After they check out GETFree.global, follow up! Ask if they’re ready to get started. Here’s how.
-            </p>
-            <p>
-              Not sure what to say? Follow <span class="link-span" (click)="openPage('GetThemStartedPage')">this support script</span> to identify their goals
-              and recommend the best pak for their needs.
-            </p>
-          </div>
+          <h3>1. Connect</h3>
+          <ul>
+            <li>Send GetFree.global link: <a href="//getfree.global" target="_blank">Business</a> or <a href="//getfreeglobal.com/why-cleanse"
+                target="_blank">Product</a>
+              <ul>
+                <li>Be sure to provide the password: GETFIT</li>
+              </ul>
+            </li>
+            <li>Call a Few Friends - <span class="link-span">Power Quotes</span></li>
+            <li>Text a Few Friends - <span class="link-span" (click)="openPage('TextYourFewPage')">Sample Text</span></li>
+            <li>Initial Facebook Post - <span class="link-span" (click)="openPage('PostOnFacebookPage')">Simple Steps</span></li>
+          </ul>
+          <h3>2. Validate</h3>
+          <ul>
+            <li>Add to <a href="//www.facebook.com/groups/1929979043937515/" target="_blank">GETFree</a> and/or <a href="//www.facebook.com/groups/960960177302669"
+                target="_blank">GETFit</a> Facebook Support Pages</li>
+            <li>Follow-up Support Scripts: <span class="link-span" (click)="openPage('GetThemStartedOpportunityPage')">Opportunity</span>
+              or <span class="link-span" (click)="openPage('GetThemStartedPage')">Product</span></li>
+            <li>Overcoming Objections <span class="link-span" (click)="openVideoModal()">Video</span></li>
+          </ul>
+          <h3>3. Enroll</h3>
+          <ul>
+            <li>"Your next step is... to <a href="//getfree.global/getting-started-packs-usa" target="_blank">Try the
+                Products</a>"</li>
+            <li>"Let me show you how to <span class="link-span" (click)="openPage('GetThemStartedRightPage')">Open a
+                Wholesale Account...</span>"</li>
+          </ul>
+          <h3>4. Duplicate</h3>
+          <ul>
+            <li>Teach them the system. Lead them to <span class="link-span" (click)="openHomePage()">globalexecteam.com</span>.</li>
+          </ul>
         </section>
-        <section id="divider"></section> 
+        <section id="divider"></section>
         <section id="section2">
-          <h3>Business Approach (Top-Down)</h3>
-          <div>
-            <h4><span class="action">SAY</span> - Share Your 30-Second Story</h4>
-            <p>
-              Click here for the <span class="link-span" (click)="pdfProvider.openPdf('Share Your Story the Right Way', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fshare-your-story.pdf?alt=media&token=a88674ef-a20d-4f89-8daf-17a48c2f3b69')">simple template</span> to create your unique story.
-            </p>
-            <p>
-              Listen here as Susan Miller shares her 30-Second Story for the Opportunity:
-            </p>
-            <p>
-              <!--SUSAN’S AUDIO LINK GOES HERE-->
-            </p>
-            <p>
-              Download the transcript of her 30-Second Story <span class="link-span">Here</span>.
-            </p>
-          </div>
-          <div>
-            <h4><span class="action">SHARE</span> - GETFree.global</h4>
-            <p>
-              Once your prospects have agreed to take a look, send them to <a href="//getfree.global" target="_blank">GETfree.global</a>
-              and give them the password
-              GETFIT to watch the video about our opportunity. You may also direct them to any page you feel is
-              relevant.
-            </p>
-          </div>
-          <div>
-            <h4><span class="action">DO</span> - Follow Up</h4>
-            <p>
-              After they check out GETFree.global, follow up! Ask if they’re ready to get started.
-            </p>
-            <p>
-              Not sure what to say? Follow this optional <span class="link-span" (click)="openPage('GetThemStartedOpportunityPage')">support script</span> to identify their goals and get them started
-              right.
-            </p>
-          </div>
+          <a href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/images%2Ffunnel_1144.png?alt=media&token=eedf3436-fea2-47d7-920f-181a25070d48"
+            target="_blank">
+            <img id="funnelThumb" sizes="(max-width: 1144px) 100vw, 1144px" srcset="
+              assets/imgs/funnel/funnel_400.png 400w,
+              assets/imgs/funnel/funnel_691.png 691w,
+              assets/imgs/funnel/funnel_917.png 917w,
+              assets/imgs/funnel/funnel_1144.png 1144w"
+              src="assets/imgs/funnel/funnel_1144.png" alt="The Funnel Effect">
+          </a>
         </section>
       </div>
     </article>

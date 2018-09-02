@@ -1,0 +1,27 @@
+page-get-them-started-right {
+  #container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #welcomeText,
+  #launchCall {
+    font-size: 22px;
+  }
+  @media (min-width: 800px) {
+    #container {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    #section1,
+    #section3,
+    #section5 {
+      margin-right: 20px;
+    }
+    #section2,
+    #section4,
+    #section6 {
+      margin-left: 20px;
+    }
+  }
+}

@@ -37,7 +37,6 @@ export class MyApp {
       { title: "Step Two", component: "Step_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
       { title: "Step Three", component: "Step_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
       { title: "Step Four", component: "Step_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
-      { title: "Step Five", component: "Step_5Page", separatorLevel: 4, icon: null, stepNumber: "5" },
 
       // GET Success
       { title: "GET Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },

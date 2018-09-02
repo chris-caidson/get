@@ -11,27 +11,20 @@ page-step-3 {
   #divider {
     display: none;
   }
-  p {
-    text-align: left;
-  }
-  .subtext {
-    font-size: smaller;
-    color: #777;
-  }
-  h4 {
-    font-weight: bold;
-  }
-  .action {
+
+  h3 {
     color: #4F81BD;
-    font-size: larger;
     font-weight: bold;
   }
-  #blurb {
-    span {
-      color: #777;
-      font-style: italic;
-    }
+
+  li {
+    margin-bottom: 10px;
   }
+
+  #funnelThumb {
+    cursor: pointer;
+  }
+
   @media(min-width: 1000px) {
     #container {
       display: grid;
@@ -46,11 +39,6 @@ page-step-3 {
         height: 100%;
         width: 4px;
         background-color: #4F81BD;
-      }
-
-      #blurb {
-        align-self: flex-end;
-        margin-bottom: 13px;
       }
 
       #headers, #section1 {

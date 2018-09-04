@@ -1,0 +1,85 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>GET Started - Step 2</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <main role="main">
+    <nav-get-started></nav-get-started>
+    <article>
+      <div id="container">
+        <div id="headers">
+          <h1>GET Started - Step Two</h1>
+          <h2>Connect with Your Team</h2>
+        </div>
+        <div id="blurb">
+            <h3>
+            Building a Successful Network <br class="hiddenBr" />Requires a TEAM Effort.
+            </h3>
+            <span>Be Coachable and duplicate the proven virtual <br class="hiddenBr" />franchise Network Marketing
+            model.
+          </span>
+        </div>
+        <section id="section1">
+          <h3>Facebook Support Pages</h3>
+          <p>
+            <a target="_blank" href="https://www.facebook.com/groups/960960177302669">GETFit</a> Product Validation
+            <br />
+            <span class="subtext">A place to share our solutions with prospects</span>
+          </p>
+          <p>
+            <a target="_blank" href="https://www.facebook.com/groups/1929979043937515/">GETFree</a> Business Validation
+            <br />
+            <span class="subtext">A place to share business validation</span>
+          </p>
+          <p>
+            <a target="_blank" href="https://www.facebook.com/groups/globalexecutiveteam/">Global Exec Team</a> Business Builder Support
+            <br />
+            <span class="subtext">A place to connect, learn, and recognize business leaders</span>
+          </p>
+          <p>
+            GET Leaders Individual Team Pages (sponsor)
+            <br />
+            <span class="subtext">A place to connect with your immediate team</span>
+          </p>
+        </section>
+        <section id="section2">
+          <div>
+            <h3>GET Weekly Training Calls</h3>
+            <p>
+              Monday – Friday 8AM Eastern
+              <br/> (857) 232-0159 code# 257064
+              <br />
+              <span class="subtext">Recordings available here at <span id="callsLink" class="link-span" (click)="openWeekdayCallsPage()">GlobalExecTeam.com/weekday-calls</span>.</span>
+            </p>
+          </div>
+          <div id="teamSites">
+            <h3>GET Team Websites</h3>
+            <p>
+              <a target="_blank" href="http://getfit.global">GETFit.global</a> - Product
+              <span class="subtext">(Password: GETFREE)</span>
+            </p>
+            <p>
+              <a target="_blank" href="http://getfree.global">GETFree.global</a> - Prospecting
+              <span class="subtext">Password: GETFIT)</span>
+            </p>
+            <p>
+              <a target="_blank" href="#">GlobalExecTeam.com</a> - Training
+              <span class="subtext">(Password: ONETEAM)</span>
+            </p>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

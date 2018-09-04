@@ -1,0 +1,87 @@
+page-get-free {
+  #outerGrid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #note span {
+    display: none;
+  }
+
+  #firstSection,
+  #secondSection {
+    display: grid;
+    align-content: flex-start;
+  }
+  #tryProduct {
+    margin-left: -12px;
+  }
+  #videoUrl {
+    margin-left: -12px;
+    font-size: small;
+
+    a {
+      font-size: small;
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin-bottom: 40px;
+    li {
+      margin-left: -40px;
+      margin-bottom: 10px;
+    }
+  }
+  h5 {
+    color: #4F81BD;
+    font-weight: bold;
+  }
+  .action {
+    color: #4F81BD;
+    font-weight: bold;
+  }
+  .diamond {
+    height: 15px;
+    margin-right: 10px;
+  }
+  .highlight {
+    color: $bright-accent-color;
+  }
+  #divider {
+    display: none;
+  }
+  #img {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #virtualFranchiseVideo {
+    width: 100%;
+  }
+  #virtualFranchiseVideo, #img {
+    max-width: 528px;
+  }
+  @media (min-width: 1024px) {
+    #outerGrid {
+      grid-template-columns: 1fr 4px 1fr;
+    }
+    #firstSection {
+      margin-right: 40px;
+    }
+    #secondSection {
+      margin-left: 40px;
+    }
+    #divider {
+      display: inherit;
+      width: 4px;
+      background-color: #4F81BD;
+    }
+    #note span {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>GET Fit</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <main role="main">
+    <nav-get-success></nav-get-success>
+    <article>
+      <h1>GET Fit</h1>
+      <h2>Step One</h2>
+      <div id="container">
+        <section id="linkSection">
+          <h3>Join the IsaBody Challenge</h3>
+          <ul>
+            <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />
+              <a target="_blank" href="https://www.isagenix.com/isabody-challenge">Get $200 in Free Product</a>
+            </li>
+          </ul>
+          <h3>Eat for Free</h3>
+          <ul>
+            <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />
+              <a target="_blank" href="https://www.isagenix.com/en-us/opportunity/become-an-associate">
+                Become an Associate</a>
+            </li>
+            <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />
+              <a target="_blank" href="https://www.isagenix.com/en-us/resource-center/you-share-they-share">
+                Enroll Two Friends</a>
+            </li>
+          </ul>
+          <h3>Earn Free Vitamins</h3>
+          <ul>
+            <li>
+              <span class="pdf link-span" (click)="pdfProvider.openPdf('Enroll 5 People', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fteam-builders-club.pdf?alt=media&token=ed27abc8-c0d4-482b-b31c-0f37ddacfa37')">Enroll
+                5 People</span>
+            </li>
+          </ul>
+          <h3>Know Your Product</h3>
+          <ul>
+            <li>
+              <span class="pdf link-span" (click)="pdfProvider.openPdf('Product Fast Facts', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Ffast-facts.pdf?alt=media&token=5bdeaa0e-2bf2-41b7-9169-fe5e6198fc10')">Fast
+                Fact Sheet</span>
+            </li>
+            <li>
+              <span class="pdf link-span" (click)="pdfProvider.openPdf('30-Day System Guide', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fthirty-day-guide.pdf?alt=media&token=b9f57411-d655-4f3b-b88a-2bb88d89a40c')">30-Day
+                System Guide</span>
+            </li>
+          </ul>
+        </section>
+        <section id="divider"></section>
+        <section id="videoSection">
+          <img (click)="openVideoModal()" class="video-thumb" src="assets/imgs/misc/you-share-they-share-repeat.jpg"
+            alt="You Share, They Share, Repeat Video">
+          <h3>You Share, They Share, Repeat</h3>
+        </section>
+      </div>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

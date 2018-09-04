@@ -33,23 +33,20 @@ export class MyApp {
 
       // GET Started
       { title: "GET Started", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "Step One", component: "Step_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
-      { title: "Step Two", component: "Step_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
-      { title: "Step Three", component: "Step_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
-      { title: "Step Four", component: "Step_4Page", separatorLevel: 4, icon: null, stepNumber: "4" },
+      { title: "Step One", component: "GetStartedStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
+      { title: "Step Two", component: "GetStartedStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
+      { title: "Step Three", component: "GetStartedStep_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
 
       // GET Success
       { title: "GET Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "Step One", component: "GetSuccessStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
-      { title: "Step Two", component: "GetSuccessStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
-      { title: "Step Three", component: "GetSuccessStep_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
-      { title: "Recap", component: "RecapPage", separatorLevel: 4, icon: "check-circle", stepNumber: null },
+      { title: "GET Fit", component: "GetFitPage", separatorLevel: 4, icon: null, stepNumber: "1" },
+      { title: "GET Focused", component: "GetFocusedPage", separatorLevel: 4, icon: null, stepNumber: "2" },
+      { title: "GET Free", component: "GetFreePage", separatorLevel: 4, icon: null, stepNumber: "3" },
 
       // GET Calls
       { title: "GET Calls", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "Weekday Calls", component: "DailyCallsPage", separatorLevel: 4, icon: "phone", stepNumber: null },
+      { title: "Weekday Calls", component: "WeekdayCallsPage", separatorLevel: 4, icon: "phone", stepNumber: null },
       { title: "Targeted Subject", component: "TargetedSubjectPage", separatorLevel: 4, icon: "user", stepNumber: null },
-      // { title: "Leadership Videos", component: "LeadershipVideosPage", separatorLevel: 4, icon: "film", stepNumber: null },
 
       // GET Elevated
       { title: "GET Elevated", component: null, separatorLevel: 2, icon: null, stepNumber: null },

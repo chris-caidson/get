@@ -1,0 +1,52 @@
+page-get-fit {
+  ul {
+    margin-bottom: 30px;
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 10px;
+    margin-left: -20px;
+  }
+
+  .diamond {
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 40px;
+  }
+
+  #divider {
+    display: none;
+  }
+
+
+  @media (min-width: 800px) {
+    #container {
+      grid-template-columns: 1fr 4px 1fr;
+
+      #divider {
+        display: inherit;
+        width: 4px;
+        background-color: #4F81BD;
+      }
+
+      #videoSection {
+        margin-left: 20px;
+      }
+
+      #videoSection h3 {
+        text-align: center;
+      }
+
+      #linkSection {
+        margin-top: -20px;
+        margin-left: 20px;
+      }
+    }
+  }
+}

@@ -1,26 +1,22 @@
-import { Component } from "@angular/core";
-import {
-  IonicPage,
-  NavController,
-  NavParams,
-  ModalController
-} from "ionic-angular";
-import { AuthProvider } from "../../../providers/auth/auth";
-import { PdfProvider } from '../../../providers/pdf/pdf';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, ModalController, NavParams } from 'ionic-angular';
+import { AuthProvider } from "../../../../providers/auth/auth";
+import { PdfProvider } from '../../../../providers/pdf/pdf';
 
 @IonicPage()
 @Component({
-  selector: "page-get-free",
-  templateUrl: "get-free.html"
+  selector: 'page-duplication-system',
+  templateUrl: 'duplication-system.html',
 })
-export class GetFreePage {
+export class DuplicationSystemPage {
+
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public auth: AuthProvider,
     public pdfProvider: PdfProvider,
-    public modalCtrl: ModalController
-  ) {}
+    public modalCtrl: ModalController) {
+  }
 
   openVideoModal(video: string) {
     if (video === "share") {
@@ -52,7 +48,7 @@ export class GetFreePage {
     }
   }
 
-  openPage(pageName) {
-    this.navCtrl.push(pageName);
+  goBack() {
+    this.navCtrl.pop();
   }
 }

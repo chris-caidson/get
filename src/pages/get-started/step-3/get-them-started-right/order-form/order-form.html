@@ -10,9 +10,9 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
     <nav-get-started></nav-get-started>
     <article>
@@ -24,7 +24,8 @@
           <em>Note: Manually write down your new Associate’s information before entering it into the system.</em>
         </p>
         <p>
-          Follow the questions in order on this page and use the form at the bottom of the page. Please shred all personal information
+          Follow the questions in order on this page and use the form at the bottom of the page. Please shred all
+          personal information
           once the order is in!
         </p>
         <p>
@@ -79,22 +80,31 @@
                 Vegan IsaLean Shakes ($4 more per box): Vanilla Chai or Chocolate
               </li>
               <li>
-                IsaLean Pro (higher protein content and $9 more per box): Chocolate, Vanilla, French Vanilla, Strawberry
+                IsaLean Pro (higher protein content and $9 more per box): Chocolate, Vanilla, French Vanilla,
+                Strawberry
               </li>
             </ul>
           </li>
-          <li>Next are IsaSnacks which are yummy little wafers. Do you want Chocolate, Vanilla or Dairy Free Wild Berry? My favorite
+          <li>Next are IsaSnacks which are yummy little wafers. Do you want Chocolate, Vanilla or Dairy Free Wild
+            Berry? My favorite
             is _______.</li>
-          <li>If they have a Value Pak: You have a choice of bars: Lemon Passion ,Oatmeal Raisin, Salted Caramel Cashew, Chocolate
-            Decadence, Chocolate Cream Crisp or Chocolate Peanut Butter and Vegan Bar Options($4 more per box): Chocolate
+          <li>If they have a Value Pak: You have a choice of bars: Lemon Passion ,Oatmeal Raisin, Salted Caramel
+            Cashew, Chocolate
+            Decadence, Chocolate Cream Crisp or Chocolate Peanut Butter and Vegan Bar Options($4 more per box):
+            Chocolate
             Peanut Butter, Chocolate Berry Bliss or Chocolate Coconut Almond.</li>
-          <li>If they have a Value Pak: You also have a choice of Whey Thins chips. They taste amazing and you can use them on
-            cleanse days too! They come in Barbecue, Sour Cream & Onion or White Cheddar. My favorite is ______________.</li>
-          <li>(Get their preference, then ask) For your IsaDelights, do you prefer plain Dark Chocolate, Dark Chocolate Mint,
+          <li>If they have a Value Pak: You also have a choice of Whey Thins chips. They taste amazing and you can use
+            them on
+            cleanse days too! They come in Barbecue, Sour Cream & Onion or White Cheddar. My favorite is
+            ______________.</li>
+          <li>(Get their preference, then ask) For your IsaDelights, do you prefer plain Dark Chocolate, Dark Chocolate
+            Mint,
             plain Milk Chocolate or Milk Chocolate with Salted Caramel? </li>
           <li>
-            If they have a basic Getting Started Pak: “I highly recommend adding a box of IsaDelight Chocolates. They’re amazing on cleanse
-            days and only $36.00 more. Seriously, I couldn’t live without them! Would you like to add those?” (Retention
+            If they have a basic Getting Started Pak: “I highly recommend adding a box of IsaDelight Chocolates.
+            They’re amazing on cleanse
+            days and only $36.00 more. Seriously, I couldn’t live without them! Would you like to add those?”
+            (Retention
             is 50% higher when IsaDelights are ordered with their first system.)
             <p>Flavor Options:</p>
             <ul>
@@ -120,25 +130,30 @@
             Which credit card would you like to use? Exp date & CVV? (Repeat the #’s back)
           </li>
           <li>
-            Okay, so here’s what going to happen next, you’re going to receive an email confirmation from the company that’s going to
-            have your receipt and tracking info. You’re also going to get a second email with notification about autoship.
-            Make sure to write down the date that’s in the email so no orders ever get sent without you wanting them. Once
-            your box arrives and you’ve gone through it, we’ll hop back on a call so I can answer any questions you have,
+            Okay, so here’s what going to happen next, you’re going to receive an email confirmation from the company
+            that’s going to
+            have your receipt and tracking info. You’re also going to get a second email with notification about
+            autoship.
+            Make sure to write down the date that’s in the email so no orders ever get sent without you wanting them.
+            Once
+            your box arrives and you’ve gone through it, we’ll hop back on a call so I can answer any questions you
+            have,
             and at that time I’ll also show you how to manage your autoship.
           </li>
           <li>
-            I’m also going to add you to a private group on Facebook so you can experience the support of our amazing community. How
+            I’m also going to add you to a private group on Facebook so you can experience the support of our amazing
+            community. How
             does that sound?
           </li>
         </ul>
         <p>
-            (Book your next appointment to walk them through their back office and show them <a href="#">GlobalExecTeam.com</a>.)
+          (Book your next appointment to walk them through their back office and show them <a href="#">GlobalExecTeam.com</a>.)
         </p>
       </section>
       <section>
-          <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Forder-form.pdf?alt=media&token=af1e3e58-468f-4210-a7ce-71f6369d44bb">Download
-            This Order Form as a PDF</a>
-        </section>
+        <span class="link-span" (click)="pdfProvider.openPdf('Order Form','https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Forder-form.pdf?alt=media&token=af1e3e58-468f-4210-a7ce-71f6369d44bb')">Download
+          This Order Form as a PDF</span>
+      </section>
     </article>
   </main>
   <get-footer></get-footer>

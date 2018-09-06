@@ -1,0 +1,62 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-cogs fixed-width space-right"></i>
+      <span>Before You Post</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <main role="main">
+    <nav-get-success></nav-get-success>
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered">GET Duplication System</h1>
+      <h4 class="highlight">
+        <img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Income Producing Activity</h4>
+      <h4>Basic ACTION Steps that keep the proven process Simple for mass duplication is the KEY to Success</h4>
+      <ul>
+        <li>
+          <h5>Connect</h5>
+        </li>
+        <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Share Your Story <span class="action">(Say)</span></li>
+        <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Send Video from <a target="_blank"
+            href="//getfree.global">GETfree.Global</a> <span class="action">(Share)</span></li>
+        <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Follow-up <span class="action">(Do)</span></li>
+        <li>
+          <h5>Validate</h5>
+        </li>
+        <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Add to <a target="_blank" href="//www.facebook.com/groups/960960177302669/">GETFIT</a>
+          and <a target="_blank" href="//www.facebook.com/groups/1929979043937515/">GETFREE</a> Facebook Pages</li>
+        <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />3 Way Intro with Up-line Leader
+          (Text, IM, Call)</li>
+        <li>
+          <h5>Enroll</h5>
+        </li>
+        <li id="tryProduct">“YOUR NEXT STEP IS to try the product”</li>
+        <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Send Video on <span class="link-span"
+            (click)="openVideoModal('value-pak')">Value Pack</span> by Melissa Henault</li>
+        <li>
+          <h5>Educate</h5>
+        </li>
+        <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Welcome to <a href="#">Globalexecteam.com</a></li>
+        <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Add to <a target="_blank" href="//www.facebook.com/groups/globalexecutiveteam/">Global
+            Exec Team</a> Facebook Page</li>
+        <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />Attend Next Local and <a target="_blank"
+            href="http://www.isagenixevents.com/">Corporate Event</a></li>
+      </ul>
+      <br />
+      <section>
+        <span class="link-span" (click)="pdfProvider.openPdf('Duplication System', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fduplication-system.pdf?alt=media&token=6a27cd9b-b72a-47f1-813f-e5b81292a975')">Download This Page as a PDF</span>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

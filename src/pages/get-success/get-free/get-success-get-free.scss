@@ -1,11 +1,17 @@
-page-get-free {
+page-get-success-get-free {
   h3 {
+    color: $secondary-color;
     font-weight: bold;
+    margin-top: 20px;
   }
 
   #outerGrid {
     display: grid;
     grid-template-columns: auto;
+  }
+
+  #videoImg {
+    cursor: pointer;
   }
 
   #note span {

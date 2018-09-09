@@ -1,15 +1,15 @@
 import { ComponentsModule } from '../../../components/components.module';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { GetFocusedPage } from './get-focused';
+import { GetStartedGetFocusedPage } from './get-started-get-focused';
 
 @NgModule({
   declarations: [
-    GetFocusedPage,
+    GetStartedGetFocusedPage,
   ],
   imports: [
     ComponentsModule,
-    IonicPageModule.forChild(GetFocusedPage),
+    IonicPageModule.forChild(GetStartedGetFocusedPage),
   ],
 })
-export class GetFocusedPageModule {}
+export class GetStartedGetFocusedPageModule {}

@@ -5,7 +5,7 @@
     </button>
     <ion-title>
       <i class="fa fa-list-ol fixed-width space-right"></i>
-      <span>GET Started - Step 1</span>
+      <span>GET Fit</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -16,7 +16,7 @@
   <main role="main">
     <nav-get-started></nav-get-started>
     <article>
-      <h1>GET Started - Step One</h1>
+      <h1>GET Fit</h1>
       <h2>Use the Products and Feel Amazing</h2>
       <div id="topGrid">
         <section id="videoSection">
@@ -46,8 +46,12 @@
           <h3>Download Your Tools</h3>
           <div id="linksDiv">
             <div>
-              <a target="_blank" href="https://www.isagenix.com/isalife/landing">IsaLife App</a> - Personal fitness
-              tracker, coach &amp; product ordering platform available from your app store.
+              <a target="_blank" href="https://www.isagenix.com/isalife/landing">IsaLife App</a> - Personal Fitness
+              Tracker and Communication Tool
+            </div>
+            <div>
+              <span class="link-span" (click)="pdfProvider.openPdf('30-Day System Guide','https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fsystem-guide.pdf?alt=media&token=f5c43511-b9e4-488c-9cad-326f4729965c')">
+                30-Day System Guide</span> - A simple guide to help you get started using the products
             </div>
             <div>
               <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/images%2Fshakedaytracker.jpg?alt=media&token=ce028cf6-7f05-4179-be6b-3c10cda31a30">Shake
@@ -58,12 +62,8 @@
               Schedule to Make Cleanse Days a Breeze
             </div>
             <div>
-              <span class="link-span" (click)="pdfProvider.openPdf('Four-Week Meal Plan', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2FFour-Week-Meal-Plan.pdf?alt=media&token=ed785524-658e-4e79-9d27-25112d562f56')">Four-Week
-                Meal Plan</span> - Takes All the Guesswork Out of What to Eat and When
-            </div>
-            <div>
-              <span class="link-span" (click)="pdfProvider.openPdf('Build-A-Meal Guide', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2F400-600-Calorie-Meals.pdf?alt=media&token=c7025725-08e2-4c75-a991-5d7cfe940a95')">Build-A-Meal
-                Guide</span> - Simple Meal Planning Tool For Quick Lunches or Dinners
+              <span class="link-span" (click)="pdfProvider.openPdf('Product Fast Facts','https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fus-en-product-fast-facts.pdf?alt=media&token=7086c75f-a8fd-41ca-86d2-09ed13385d9e')">
+                Product Fast Facts</span> - Basic nutritional information for various Isagenix products
             </div>
           </div>
         </section>

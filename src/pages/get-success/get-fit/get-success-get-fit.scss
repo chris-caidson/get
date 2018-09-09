@@ -1,4 +1,9 @@
-page-get-focused {
+page-get-success-get-fit {
+  h3 {
+    color: $secondary-color;
+    font-weight: bold;
+  }
+
   #outerGrid {
     display: grid;
     grid-template-columns: auto;
@@ -11,10 +16,15 @@ page-get-focused {
 
   #quote {
     color: $bright-accent-color;
+    font-weight: bold;
     font-style: italic;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  #videoImg {
+    cursor: pointer;
   }
 
   #freeToBeMeImg, #img {

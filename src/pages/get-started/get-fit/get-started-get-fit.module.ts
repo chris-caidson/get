@@ -1,15 +1,15 @@
 import { ComponentsModule } from '../../../components/components.module';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { GetStartedStep_3Page } from './get-started-step-3';
+import { GetStartedGetFitPage } from './get-started-get-fit';
 
 @NgModule({
   declarations: [
-    GetStartedStep_3Page,
+    GetStartedGetFitPage,
   ],
   imports: [
     ComponentsModule,
-    IonicPageModule.forChild(GetStartedStep_3Page),
+    IonicPageModule.forChild(GetStartedGetFitPage),
   ],
 })
-export class GetStartedStep_3PageModule {}
+export class GetStartedGetFitPageModule {}

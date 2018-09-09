@@ -1,12 +1,9 @@
-page-get-started-step-3 {
+page-get-success-get-focused {
   #container {
     display: grid;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 20px;
-  }
-  section div {
-    margin-bottom: 50px;
   }
   #divider {
     display: none;
@@ -20,7 +17,7 @@ page-get-started-step-3 {
   }
 
   h3 {
-    color: #4F81BD;
+    color: $secondary-color;
     font-weight: bold;
   }
 

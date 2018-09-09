@@ -3,12 +3,12 @@ import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angu
 import { PdfProvider } from '../../../providers/pdf/pdf';
 import { AuthProvider } from '../../../providers/auth/auth';
 
-@IonicPage()
+@IonicPage() 
 @Component({
-  selector: 'page-get-fit',
-  templateUrl: 'get-fit.html',
+  selector: 'page-get-success-get-fit',
+  templateUrl: 'get-success-get-fit.html',
 })
-export class GetFitPage {
+export class GetSuccessGetFitPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public pdfProvider: PdfProvider,
     public modalCtrl: ModalController, public auth: AuthProvider) {

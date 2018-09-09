@@ -1,0 +1,71 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-heartbeat fixed-width space-right"></i>
+      <span>GET Fit</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <main role="main">
+    <nav-get-success></nav-get-success>
+    <article>
+      <h1>GET Fit</h1>
+      <div id="outerGrid">
+          <section id="firstSection">
+            <h3>Set Your Goals and Share Your Story</h3>
+            <ul>
+              <li>
+                <span class="pdf" (click)="pdfProvider.openPdf('Identify YOUR Why', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fidentify-your-why.pdf?alt=media&token=24f5ef6a-3d07-47af-ad13-32c269f4b83c')">Set
+                  YOUR Goals</span>
+              </li>
+              <li>Share with your Team Leader</li>
+              <li>
+                <span class="pdf" (click)="pdfProvider.openPdf('Develop Your 30-Second Story', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fshare-your-story.pdf?alt=media&token=a88674ef-a20d-4f89-8daf-17a48c2f3b69')">Develop
+                  YOUR 30-Second Story</span>
+              </li>
+              <li>Practice, Practice, Practice</li>
+              <li>
+                Videotape and Share with Your Team Leader
+              </li>
+              <li>
+                <span class="pdf" (click)="pdfProvider.openPdf('Who Do You Know?', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fwho-do-you-know.pdf?alt=media&token=236ec3f7-66ee-4be8-89e9-95ddf4f0c424')">Identify
+                  YOUR Networks</span>
+              </li>
+              <li>
+                Write Down 100 Names
+              </li>
+              <li>
+                Highlight Your Top 10 Product Users
+              </li>
+              <li>
+                <span class="pdf" (click)="pdfProvider.openPdf('Who Do You Know?', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fcrystal-exec.pdf?alt=media&token=0f37b46d-2eac-4e05-9ed8-d7afa975002b')">
+                  Highlight Your Top 10 Business Partners
+                </span>
+              </li>
+            </ul>
+          </section>
+          <section id="divider"></section>
+          <section id="secondSection">
+            <img id="freeToBeMeImg" alt="Free to Be Me" sizes="(max-width: 452px) 100vw" src="assets/imgs/free-to-be-me/free-to-be-me_452.png"
+              srcset="assets/imgs/free-to-be-me/free-to-be-me_200.png 200w,
+                        assets/imgs/free-to-be-me/free-to-be-me_301.png 301w,
+                        assets/imgs/free-to-be-me/free-to-be-me_387.png 387w,
+                        assets/imgs/free-to-be-me/free-to-be-me_452.png 452w">
+            <h3 id="knowYourWhy">Establish Your Why
+              <span>(with Peta Kelly-Coover)</span>
+            </h3>
+            <img id="videoImg" src="assets/imgs/misc/peta.jpg" (click)="openVideoModal()" alt="Establishing Your Why" />
+            <h5 id="quote">“The Future Belongs to Those Who <br />BELIEVE in the BEAUTY of Their DREAMS.”</h5>
+          </section>
+        </div>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

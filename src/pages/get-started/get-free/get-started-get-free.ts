@@ -5,10 +5,10 @@ import { PdfProvider } from '../../../providers/pdf/pdf';
 
 @IonicPage()
 @Component({
-  selector: 'page-get-started-step-3',
-  templateUrl: 'get-started-step-3.html',
+  selector: 'page-get-started-get-free',
+  templateUrl: 'get-started-get-free.html',
 })
-export class GetStartedStep_3Page {
+export class GetStartedGetFreePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private modalCtrl: ModalController,
     public auth: AuthProvider, public pdfProvider: PdfProvider) {

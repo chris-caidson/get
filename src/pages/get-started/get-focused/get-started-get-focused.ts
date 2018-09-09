@@ -3,11 +3,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AuthProvider } from '../../../providers/auth/auth';
 
 @IonicPage()
-@Component({ 
-  selector: 'page-get-started-step-2',
-  templateUrl: 'get-started-step-2.html',
+@Component({
+  selector: 'page-get-started-get-focused',
+  templateUrl: 'get-started-get-focused.html',
 })
-export class GetStartedStep_2Page {
+export class GetStartedGetFocusedPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public auth: AuthProvider) {
   }

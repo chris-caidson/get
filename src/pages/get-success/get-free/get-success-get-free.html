@@ -1,0 +1,59 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-thumbs-up fixed-width space-right"></i>
+      <span>GET Free</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <main role="main">
+    <nav-get-success></nav-get-success>
+    <article>
+      <h1>GET Free</h1>
+      <div id="outerGrid">
+        <section id="firstSection">
+          <h2>Master the Money</h2>
+          <h3>Road to Exec - <span class="link-span" (click)="pdfProvider.openPdf('Crystal Executive Plan', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fcrystal-exec.pdf?alt=media&token=0f37b46d-2eac-4e05-9ed8-d7afa975002b')">$10,550
+              USD</span></h3>
+          <ul>
+            <li><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Create Consultants - $2000
+              ($100 x 20)</li>
+            <li><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Consultants (You + 2) $50</li>
+            <li><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Manager (Them + 2) $250</li>
+            <li><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Director (You + 4 More) $750</li>
+            <li><img class="diamond" src="assets/imgs/misc/orange-diamond.png" alt="" />Executive (You + 4 More) $1000</li>
+          </ul>
+          <h3>Monthly Pools</h3>
+          <ul>
+            <li><span class="link-span" (click)="pdfProvider.openPdf('Director Pools', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fdirector-pools.pdf?alt=media&token=ff18fed3-7c44-4005-8a10-2be37e06c963')">Director
+                Pools</span> - $2500</li>
+            <li><span class="link-span" (click)="pdfProvider.openPdf('One-Star Executive Pools', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fexecutive-pool.pdf?alt=media&token=0f9bddff-782c-453b-8539-bb7f48942ce0')">One-Star
+                Executive Pools</span> - $5000</li>
+            <li><span class="link-span" (click)="pdfProvider.openPdf('Two-Star Executive Pools', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Ftwo-star-pool.pdf?alt=media&token=da8ae04f-45f9-47e0-8c30-f658521951dd')">Two-Star
+                Executive Pools</span> and Above - $125k</li>
+          </ul>
+          <h3>Compensation Plan</h3>
+          <ul>
+            <li><span class="link-span" (click)="pdfProvider.openPdf('Compensation Plan', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fcompensation-plan.pdf?alt=media&token=76b26d3b-5f18-499b-b989-f802d19190e3')">Global
+                Compensation Plan</span></li>
+          </ul>
+        </section>
+        <section id="divider"></section>
+        <section id="secondSection">
+          <h3 id="knowYourWhy">Isagenix Compensation Plan<br />
+            <span>(with Erin Brauer &amp; Adrienne Cross Donovan)</span>
+          </h3>
+          <img id="videoImg" src="assets/imgs/misc/erin.jpg" alt="Compensation Plan" (click)="openVideoModal('')" />
+        </section>
+      </div>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

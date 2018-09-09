@@ -3,12 +3,12 @@ import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angu
 import { PdfProvider } from '../../../providers/pdf/pdf';
 import { AuthProvider } from '../../../providers/auth/auth';
 
-@IonicPage()
+@IonicPage() 
 @Component({
-  selector: 'page-get-started-step-1',
-  templateUrl: 'get-started-step-1.html',
+  selector: 'page-get-started-get-fit',
+  templateUrl: 'get-started-get-fit.html',
 })
-export class GetStartedStep_1Page {
+export class GetStartedGetFitPage {
   public activeVideo: string = "unpacking";
 
   constructor(

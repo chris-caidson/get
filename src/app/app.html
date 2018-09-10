@@ -20,7 +20,7 @@
           <span>{{p.title}}</span>
         </div>
         <button *ngIf="p.component !== null" menuClose ion-item (click)="openPage(p.component)" no-lines class="menu-button">
-          <i *ngIf="p.icon !== null" item-start class="fa fa-{{p.icon}} space-right fixed-width"></i>
+          <i *ngIf="p.icon !== null" item-start class="fa fa-{{p.icon}} space-right fixed-width menu-icon"></i>
           <span *ngIf="p.stepNumber !== null" item-start class="step-number space-right">{{p.stepNumber}}</span>
           <span>{{p.title}}</span>
         </button>

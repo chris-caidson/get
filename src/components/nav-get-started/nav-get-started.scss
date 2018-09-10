@@ -16,24 +16,80 @@ nav-get-started {
     margin-bottom: 15px;
   }
 
-  #menuItems {
+  // #menuItems {
+  //   display: grid;
+  //   grid-template-columns: auto auto auto auto auto auto;
+  //   justify-content: center;
+  //   justify-items: center;
+  //   border-top: 1px solid #555;
+  //   border-bottom: 1px solid #555;
+  //   padding: 18px 0 18px 0;
+  //   margin: 20px 0 40px 0;
+  //   div {
+  //     cursor: pointer;
+  //     margin-left: 35px;
+  //     margin-right: 35px;
+  //   }
+  //   div:hover {
+  //     color: $bright-accent-color;
+  //   }
+  // }
+  #menuGrid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+      "empty heading heading heading"
+      "empty ln ln ln"
+      "menu1 menu2 menu3 menu4";
     justify-content: center;
     justify-items: center;
     border-top: 1px solid #555;
     border-bottom: 1px solid #555;
-    padding: 18px 0 18px 0;
-    margin: 20px 0 40px 0;
 
-    div {
+    #menuHeader {
+      border-bottom: 1px solid #999;
+      text-align: center;
+      width: 100%;
+    }
+
+    .menu-item {
       cursor: pointer;
+      display: inline-block;
       margin-left: 35px;
       margin-right: 35px;
     }
 
-    div:hover {
+    .menu-item:hover {
       color: $bright-accent-color;
     }
+  }
+
+  #menuHeader {
+    grid-area: heading;
+  }
+
+  #menuLines {
+    grid-area: ln;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    height: 5px;
+    width: 100%;
+  }
+
+  #home {
+    grid-area: menu1;
+  }
+
+  #getFit {
+    grid-area: menu2;
+  }
+
+  #getFocused {
+    grid-area: menu3;
+  }
+
+  #getFree {
+    grid-area: menu4;
   }
 }

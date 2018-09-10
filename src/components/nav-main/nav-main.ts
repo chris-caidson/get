@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -6,6 +6,8 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'nav-main.html'
 })
 export class NavMainComponent {
+  @Input() selectedSection: string = "Home";
+  @Input() selectedMenuItem: string = "Home";
 
   constructor(public navCtrl: NavController) {
   }

@@ -14,7 +14,7 @@
 </ion-content>
 <ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
-    <nav-get-calls></nav-get-calls>
+    <nav-main selectedSection="GET Calls" selectedMenuItem="Targeted Subject"></nav-main>
     <article>
       <h1 class="centered">Targeted Subject Calls</h1>
       <div id="loadingDiv" *ngIf="!this.loaded">

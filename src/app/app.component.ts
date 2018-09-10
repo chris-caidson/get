@@ -33,9 +33,9 @@ export class MyApp {
 
       // GET Started
       { title: "GET Started", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "Step One", component: "GetStartedStep_1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
-      { title: "Step Two", component: "GetStartedStep_2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
-      { title: "Step Three", component: "GetStartedStep_3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
+      { title: "GET Fit", component: "GetStartedGetFitPage", separatorLevel: 4, icon: "heartbeat", stepNumber: null },
+      { title: "GET Focused", component: "GetStartedGetFocusedPage", separatorLevel: 4, icon: "eye", stepNumber: null },
+      { title: "GET Free", component: "GetStartedGetFreePage", separatorLevel: 4, icon: "thumbs-up", stepNumber: null },
 
       // GET Success
       { title: "GET Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },

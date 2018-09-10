@@ -1,4 +1,9 @@
 page-videos {
+  h3 {
+    color: $secondary-color;
+    font-weight: bold;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: auto;

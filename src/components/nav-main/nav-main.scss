@@ -1,35 +1,153 @@
 nav-main {
-  #logoContainer {
-    display: block;
-    max-width: 478px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #getLogoPageTitle {
-    cursor: pointer;
-    display: inline-block;
-    max-width: 478px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-  }
-  #menuItems {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    justify-content: center;
-    justify-items: center;
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #555;
-    padding: 18px 0 18px 0;
-    margin: 20px 0 40px 0;
-    div {
-      cursor: pointer;
-      margin-left: 38px;
-      margin-right: 38px;
+    #mainNav {
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
-    div:hover {
-      color: $bright-accent-color;
+
+    #logoContainer {
+        display: block;
+        max-width: 478px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
-  }
+
+    #getLogoPageTitle {
+        cursor: pointer;
+        display: inline-block;
+        max-width: 478px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    #mainMenu {
+        border-top: 1px solid #555;
+        border-bottom: 1px solid #555;
+        text-align: center;
+    }
+
+    #menuContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #homeSpan {
+        padding-top: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    #homeSpan:hover {
+        color: $secondary-color;
+        border-bottom: 3px solid $primary-color;
+        background: #ffffff;
+        background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+        background: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+        background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .main-menu {
+        border: none;
+        background-color: transparent;
+        margin: 0 20px 0 0;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .main-menu:hover, #homeSpan:hover  {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #ffffff;
+        background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+        background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+        background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border: 1px solid #ccc;
+        opacity: .95;
+        width: 100%;
+    }
+
+    .dropdown-content p {
+        margin: 20px 20px;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    #adminMenu p {
+      white-space: normal;
+    }
+
+    .dropdown-content p:hover {
+        cursor: pointer;
+        color: $secondary-color;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .main-menu {
+        color: $secondary-color;
+        border-bottom: 3px solid $primary-color;
+        background: #ffffff;
+        background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+        background: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+        background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        height: 41px;
+    }
+
+    #successSubMenu {
+        right: 0px;
+    }
+
+    #companySubMenu {
+        right: 20px;
+    }
+
+    #productSubMenu {
+        right: 20px;
+    }
+
+    #getDiv {
+        margin-left: 20px;
+        color: darken($tertiary-color, 15%);
+    }
+
+    #adminMenu {
+        position: absolute;
+        right: 0px !important;
+    }
+
+    .sel-section, .sel-item {
+        font-weight: bold;
+        color: $primary-color;
+    }
 }

@@ -2,10 +2,19 @@
   <div id="logoContainer">
     <img id="getLogoPageTitle" src="assets/imgs/misc/get-lg.png" alt="Global Exec Team" (click)="openPage('HomePage')" />
   </div>
-  <div id="menuItems">
+  <!-- <div id="menuItems">
     <div (click)="openPage('HomePage')">Home</div>
-    <div (click)="openPage('GetStartedGetFitPage')">GET Fit</div>
-    <div (click)="openPage('GetStartedGetFocusedPage')">GET Focused</div>
-    <div (click)="openPage('GetStartedGetFreePage')">GET Free</div>
+    <div (click)="openPage('GetStartedStep_1Page')">GET Fit</div>
+    <div (click)="openPage('GetStartedStep_2Page')">GET Focused</div>
+    <div (click)="openPage('GetStartedStep_3Page')">GET Free</div>
+  </div> -->
+
+  <div id="menuGrid">
+    <div id="menuHeader">GET Started</div>
+    <div id="menuLines"></div>
+    <div id="home" class="menu-item" (click)="openPage('HomePage')">Home</div>
+    <div id="getFit" class="menu-item" (click)="openPage('GetStartedGetFitPage')">GET Fit</div>
+    <div id="getFocused" class="menu-item" (click)="openPage('GetStartedGetFocusedPage')">GET Focused</div>
+    <div id="getFree" class="menu-item" (click)="openPage('GetStartedGetFreePage')">GET Free</div>
   </div>
 </nav>

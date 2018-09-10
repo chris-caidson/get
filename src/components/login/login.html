@@ -12,7 +12,7 @@
         <form (ngSubmit)="login()" #loginForm="ngForm" id="loginControls">
           <label for="loginTextBox">Password:</label>
           <input id="loginTextBox" type="password" name="password" autofocus [(ngModel)]="password" required />
-          <button id="submitButton" ion-button outline type="submit" [disabled]="!loginForm.form.valid">Submit</button>
+          <button id="submitButton" type="submit" [disabled]="!loginForm.form.valid">Submit</button>
           <span id="incorrectSpan" *ngIf="this.authProvider.incorrectPassword">Invalid password.</span>
         </form>
       </div>

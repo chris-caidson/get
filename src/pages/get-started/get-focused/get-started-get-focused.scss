@@ -49,12 +49,23 @@ page-get-started-get-focused {
       margin: -26px auto 3px auto;
     }
 
+    // #calls1 {
+    //   display: inherit;
+    // }
+
+    // #calls2 {
+    //   display: none;
+    // }
+
     #calls1 {
-      display: inherit;
+      display: none;
     }
 
     #calls2 {
-      display: none;
+      max-width: 390px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -20px;
     }
 
     #teamSites {

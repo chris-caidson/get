@@ -6,6 +6,10 @@ page-get-success-get-focused {
     padding-top: 20px;
   }
 
+  #section1, #section2 {
+    width: 90vw;
+  }
+
   #divider {
     display: none;
   }
@@ -47,6 +51,10 @@ page-get-success-get-focused {
       align-items: flex-start;
       margin-top: -26px;
       margin-bottom: 3px;
+
+      #section1, #section2 {
+        width: 100%;
+      }
 
       #divider {
         display: block;

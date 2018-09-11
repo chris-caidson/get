@@ -35,4 +35,8 @@ export class GetSuccessGetFreePage {
   openPage(pageName) {
     this.navCtrl.push(pageName);
   }
+
+  goBack() {
+    this.navCtrl.setRoot("GetSuccessGetFocusedPage");
+  }
 }

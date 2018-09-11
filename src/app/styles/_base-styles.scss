@@ -81,6 +81,7 @@ a,
 }
 
 // Classes
+
 .centered {
   text-align: center;
 }
@@ -95,6 +96,16 @@ a,
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+}
+
+.forward-link {
+  float: right;
+  margin-top: 10px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .grid-container {

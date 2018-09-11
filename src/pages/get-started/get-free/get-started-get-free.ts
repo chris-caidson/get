@@ -22,6 +22,10 @@ export class GetStartedGetFreePage {
     this.navCtrl.setRoot("HomePage");
   }
 
+  goBack() {
+    this.navCtrl.setRoot("GetStartedGetFocusedPage");
+  }
+
   openVideoModal() {
     const myModal = this.modalCtrl.create("VideoModalPage", {
       name: "Overcoming Objections",

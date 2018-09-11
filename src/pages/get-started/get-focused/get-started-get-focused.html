@@ -14,7 +14,11 @@
 </ion-content>
 <ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
-      <nav-main selectedSection="GET Started" selectedMenuItem="GET Started GET Focused"></nav-main>
+    <nav-main selectedSection="GET Started" selectedMenuItem="GET Started GET Focused"></nav-main>
+    <nav>
+      <span id="goBack" class="back-link link-span" (click)="goBack()">&lt; GET Fit</span>
+      <span id="goForward" class="forward-link link-span" (click)="goForward()">GET Free &gt;</span>
+    </nav>
     <article>
       <div id="headers">
         <h1>GET Focused</h1>
@@ -22,49 +26,49 @@
       </div>
       <div id="container">
         <section id="section1">
-          <h3>GET Team Websites</h3>
+          <h3>GET Websites</h3>
           <p>
-            <a target="_blank" href="http://getfit.global">GETFit.global</a> <span class="desc">- Product</span>
-            <span class="pw">(Password: GETFREE)</span>
+            <a target="_blank" href="http://getfit.global">GETFit.global</a><span class="pw"> (Password: GETFREE)</span>
+            <br />
+            <span class="desc">Product</span>
             <br />
             <span class="subtext">A place to learn more about our products</span>
           </p>
           <p>
-            <a target="_blank" href="http://getfree.global">GETFree.global</a> <span class="desc">- Prospecting</span>
-            <span class="pw">(Password: GETFIT)</span>
+            <a target="_blank" href="http://getfree.global">GETFree.global</a><span class="pw"> (Password: GETFIT)</span>
             <br />
-            <span class="subtext">A place to send prospects for the opportunity &amp; the products</span>
+            <span class="desc">Product and Opportunity</span>
+            <br />
+            <span class="subtext">A place to send PROSPECTS to cast the vision</span>
           </p>
           <p>
-            <a target="_blank" href="#">GlobalExecTeam.com</a> <span class="desc">- Training</span>
-            <span class="pw">(Password: ONETEAM)</span>
+            <a target="_blank" href="#">GlobalExecTeam.com</a><span class="pw"> (Password: ONETEAM)</span>
+            <br />
+            <span class="desc">Training</span>
             <br />
             <span class="subtext">A place to learn the business model</span>
           </p>
-          <div id="calls1">
-            <h3 id="callsHeader">GET Weekday Training Calls</h3>
-            <p>
-              Monday – Friday 8AM Eastern
-              <br /> (857) 232-0159 code# 257064
-              <br />
-              <span class="subtext">Recordings: <span id="callsLink" class="link-span" (click)="openWeekdayCallsPage()">GlobalExecTeam.com/weekday-calls</span></span>
-            </p>
-          </div>
         </section>
         <section id="section2">
-          <h3>GET Facebook Support Pages</h3>
+          <h3>GET Facebook Groups</h3>
           <p>
-            <a target="_blank" href="https://www.facebook.com/groups/960960177302669">GETFit</a> <span class="desc">- Product Validation</span>
+            <a target="_blank" href="https://www.facebook.com/groups/960960177302669">GETFit</a>
             <br />
-            <span class="subtext">A place to share our solutions with prospects</span>
+            <span class="desc"> Product Validation</span>
+            <br />
+            <span class="subtext">A place to share product success stories</span>
           </p>
           <p>
-            <a target="_blank" href="https://www.facebook.com/groups/1929979043937515/">GETFree</a> <span class="desc">- Business Validation</span>
+            <a target="_blank" href="https://www.facebook.com/groups/1929979043937515/">GETFree</a>
             <br />
-            <span class="subtext">A place to share business validation</span>
+            <span class="desc"> Business Validation</span>
+            <br />
+            <span class="subtext">A place to share business success stories</span>
           </p>
           <p>
-            <a target="_blank" href="https://www.facebook.com/groups/globalexecutiveteam/">Global Exec Team</a> <span class="desc">- Business Builder Support</span>
+            <a target="_blank" href="https://www.facebook.com/groups/globalexecutiveteam/">Global Exec Team</a>
+            <br />
+            <span class="desc"> Business Builder Support</span>
             <br />
             <span class="subtext">A place to connect, learn, and recognize business leaders</span>
           </p>
@@ -76,7 +80,9 @@
           Monday – Friday 8AM Eastern
           <br /> (857) 232-0159 code# 257064
           <br />
-          <span class="subtext">Recordings: <span id="callsLink" class="link-span" (click)="openWeekdayCallsPage()">GlobalExecTeam.com/weekday-calls</span></span>
+          <span class="subtext">Recordings Available:</span>
+          <br />
+          <span id="callsLink" class="link-span" (click)="openWeekdayCallsPage()">GlobalExecTeam.com/weekday-calls</span>
         </p>
       </div>
     </article>

@@ -5,9 +5,11 @@ page-get-success-get-focused {
     margin-bottom: 10px;
     padding-top: 20px;
   }
+
   #divider {
     display: none;
   }
+
   #note span {
     display: block;
     margin-left: auto;
@@ -16,9 +18,17 @@ page-get-success-get-focused {
     text-align: center;
   }
 
+  #pw {
+    font-size: smaller;
+  }
+
   h3 {
     color: $secondary-color;
     font-weight: bold;
+
+    span {
+      color: #4F81BD;
+    }
   }
 
   li {
@@ -45,11 +55,13 @@ page-get-success-get-focused {
         background-color: #4F81BD;
       }
 
-      #headers, #section1 {
+      #headers,
+      #section1 {
         margin-right: 20px;
       }
 
-      #section2, #blurb {
+      #section2,
+      #blurb {
         margin-left: 20px;
       }
     }

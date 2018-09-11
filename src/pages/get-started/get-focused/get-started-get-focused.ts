@@ -15,4 +15,12 @@ export class GetStartedGetFocusedPage {
   openWeekdayCallsPage() {
     this.navCtrl.setRoot("WeekdayCallsPage")
   }
+
+  goBack() {
+    this.navCtrl.setRoot("GetStartedGetFitPage");
+  }
+
+  goForward() {
+    this.navCtrl.setRoot("GetStartedGetFreePage");
+  }
 }

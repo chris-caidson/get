@@ -14,7 +14,10 @@
 </ion-content>
 <ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
-      <nav-main selectedSection="GET Started" selectedMenuItem="GET Started GET Free"></nav-main>
+    <nav-main selectedSection="GET Started" selectedMenuItem="GET Started GET Free"></nav-main>
+    <nav>
+      <span id="goBack" class="back-link link-span" (click)="goBack()">&lt; GET Focused</span>
+    </nav>
     <article>
       <h1>GET Free</h1>
       <div id="container">
@@ -25,7 +28,7 @@
               <a target="_blank" href="https://www.isagenix.com/isabody-challenge">$200 in Free Product</a>
             </li>
           </ul>
-          <h3>Eat for Free</h3>
+          <h3>Become a Consultant</h3>
           <ul>
             <li><img class="diamond" src="assets/imgs/misc/gray-diamond.png" alt="" />
               <a target="_blank" href="//backoffice.isagenix.com/Authentication/Login">
@@ -33,7 +36,7 @@
             </li>
             <li>
               <span class="pdf link-span" (click)="pdfProvider.openPdf('Enroll 5 People', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fdouble-pib.pdf?alt=media&token=dd09aed8-add1-47dd-93a3-ef36b44f80ea')">
-                Enroll Two People a Week</span>
+                Enroll Two People</span>
             </li>
           </ul>
           <h3>Earn Free Vitamins</h3>

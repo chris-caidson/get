@@ -15,6 +15,9 @@
 <ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
       <nav-main selectedSection="GET Started" selectedMenuItem="GET Started GET Fit"></nav-main>
+      <nav>
+        <span id="goForward" class="forward-link link-span" (click)="goForward()">GET Focused &gt;</span>
+      </nav>
     <article>
       <h1>GET Fit</h1>
       <h2>Use the Products and Feel Amazing</h2>
@@ -50,7 +53,7 @@
               Tracker and Communication Tool
             </div>
             <div>
-              <span class="link-span" (click)="pdfProvider.openPdf('30-Day System Guide','https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fsystem-guide.pdf?alt=media&token=f5c43511-b9e4-488c-9cad-326f4729965c')">
+              <span class="link-span" (click)="pdfProvider.openPdf('30-Day System Guide','https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fbrief-system-guide.pdf?alt=media&token=398cccf5-ec2e-4f87-966d-951b9e0b6de8')">
                 30-Day System Guide</span> - A simple guide to help you get started using the products
             </div>
             <div>

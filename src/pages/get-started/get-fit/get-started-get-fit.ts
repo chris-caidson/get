@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angu
 import { PdfProvider } from '../../../providers/pdf/pdf';
 import { AuthProvider } from '../../../providers/auth/auth';
 
-@IonicPage() 
+@IonicPage()
 @Component({
   selector: 'page-get-started-get-fit',
   templateUrl: 'get-started-get-fit.html',
@@ -21,6 +21,10 @@ export class GetStartedGetFitPage {
 
   openPage(pageName) {
     this.navCtrl.push(pageName);
+  }
+
+  goForward() {
+    this.navCtrl.setRoot("GetStartedGetFocusedPage");
   }
 
   toggleVideo(videoName: string) {

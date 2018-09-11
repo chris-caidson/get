@@ -14,7 +14,10 @@
 </ion-content>
 <ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
-      <nav-main selectedSection="GET Success" selectedMenuItem="GET Success GET Free"></nav-main>
+    <nav-main selectedSection="GET Success" selectedMenuItem="GET Success GET Free"></nav-main>
+    <nav>
+      <span id="goBack" class="back-link link-span" (click)="goBack()">&lt; GET Focused</span>
+    </nav>
     <article>
       <h1>GET Free</h1>
       <div id="outerGrid">

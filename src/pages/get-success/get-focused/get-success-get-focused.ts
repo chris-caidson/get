@@ -14,15 +14,6 @@ export class GetSuccessGetFocusedPage {
     public auth: AuthProvider, public modalCtrl: ModalController, public pdfProvider: PdfProvider) {
   }
 
-  // openVideoModal() {
-  //   const myModal = this.modalCtrl.create("VideoModalPage", {
-  //     name: "Establishing Your Why",
-  //     url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Festablish-your-why.mp4?alt=media&token=d6cb2aed-bf84-4cd5-8469-daa708c0d631"
-  //   });
-
-  //   myModal.present();
-  // }
-
   openPage(pageName) {
     this.navCtrl.push(pageName);
   }
@@ -38,5 +29,13 @@ export class GetSuccessGetFocusedPage {
         "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fovercoming-objections.mp4?alt=media&token=bdeeed68-ff46-41eb-bc1c-5ea7dc3dd476"
     });
     myModal.present();
+  }
+
+  goBack() {
+    this.navCtrl.setRoot("GetSuccessGetFitPage");
+  }
+
+  goForward() {
+    this.navCtrl.setRoot("GetSuccessGetFreePage");
   }
 }

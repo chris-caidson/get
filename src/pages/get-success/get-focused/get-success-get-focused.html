@@ -14,62 +14,68 @@
 </ion-content>
 <ion-content *ngIf="this.auth.loggedIn">
   <main role="main">
-      <nav-main selectedSection="GET Success" selectedMenuItem="GET Success GET Focused"></nav-main>
+    <nav-main selectedSection="GET Success" selectedMenuItem="GET Success GET Focused"></nav-main>
+    <nav>
+      <span id="goBack" class="back-link link-span" (click)="goBack()">&lt; GET Fit</span>
+      <span id="goForward" class="forward-link link-span" (click)="goForward()">GET Free &gt;</span>
+    </nav>
     <article>
-        <div>
-            <h1>GET Focused</h1>
-          </div>
-          <div id="container">
-            <section id="section1">
-              <h3>1. Connect</h3>
+      <div>
+        <h1>GET Focused</h1>
+      </div>
+      <div id="container">
+        <section id="section1">
+          <h3>Connect <span>- Send a Video</span></h3>
+          <ul>
+            <li>Send GetFree.global link: <a href="//getfree.global" target="_blank">Business</a> or <a href="//getfree.global/why-cleanse"
+                target="_blank">Product</a>
               <ul>
-                <li>Send GetFree.global link: <a href="//getfree.global" target="_blank">Business</a> or <a href="//getfree.global/why-cleanse"
-                    target="_blank">Product</a>
-                  <ul>
-                    <li>Be sure to provide the password: GETFIT</li>
-                  </ul>
-                </li>
-                <li>Call a Few Friends - <span class="link-span">Power Quotes</span></li>
-                <li>Text a Few Friends - <span class="link-span" (click)="openPage('TextYourFewPage')">Sample Text</span></li>
-                <li>Initial Facebook Post - <span class="link-span" (click)="openPage('PostOnFacebookPage')">Simple Steps</span></li>
+                <li>Be sure to provide the password: GETFIT</li>
               </ul>
-              <h3>2. Validate</h3>
-              <ul>
-                <li>Add to <a href="//www.facebook.com/groups/1929979043937515/" target="_blank">GETFree</a> and/or <a href="//www.facebook.com/groups/960960177302669"
-                    target="_blank">GETFit</a> Facebook Support Pages</li>
-                <li>Follow-up Support Scripts: <span class="link-span" (click)="openPage('GetThemStartedOpportunityPage')">Opportunity</span>
-                  or <span class="link-span" (click)="openPage('GetThemStartedPage')">Product</span></li>
-                <li>Overcoming Objections <span class="link-span" (click)="openVideoModal()">Video</span></li>
-              </ul>
-              <h3>3. Enroll</h3>
-              <ul>
-                <li>"Your next step is... to <a href="//getfree.global/getting-started-packs-usa" target="_blank">Try the
-                    Products</a>"</li>
-                <li>"Let me show you how to <span class="link-span" (click)="openPage('GetThemStartedRightPage')">Open a
-                    Wholesale Account...</span>"</li>
-              </ul>
-              <h3 id="dupe">4. Duplicate</h3>
-              <ul>
-                <li>Teach them the system. Lead them to <span class="link-span" (click)="openHomePage()">globalexecteam.com</span>.</li>
-                <li>Attend your <a href="http://www.isagenixevents.com" target="_blank">Next Event</a>.</li>
-              </ul>
-            </section>
-            <section id="divider"></section>
-            <section id="section2">
-                <a href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/images%2Fload-the-bases_874.png?alt=media&token=960feb10-0577-46e5-8385-2fe4780ca7c6"
-                target="_blank">
-                <img id="img" alt="GET Duplication System" sizes="(max-width: 874px) 100vw" src="assets/imgs/load-the-bases/load-the-bases_874.png"
-                  srcset="assets/imgs/load-the-bases/load-the-bases_400.png 400w,
+            </li>
+            <li>Call a Few Friends - <span class="link-span" (click)="openPage('PowerQuotesPage')">Power Quotes</span></li>
+            <li>Text a Few Friends - <span class="link-span" (click)="openPage('TextYourFewPage')">Sample Text</span></li>
+            <li>Initial Facebook Post - <span class="link-span" (click)="openPage('PostOnFacebookPage')">Simple Steps</span></li>
+          </ul>
+          <h3>Validate <span>- Add to Facebook Page(s)</span></h3>
+          <ul>
+            <li>Add to <a href="//www.facebook.com/groups/1929979043937515/" target="_blank">GETFree</a> and/or <a href="//www.facebook.com/groups/960960177302669"
+                target="_blank">GETFit</a> Facebook Support Pages</li>
+            <li>Follow-up Support Scripts: <span class="link-span" (click)="openPage('GetThemStartedOpportunityPage')">Opportunity</span>
+              or <span class="link-span" (click)="openPage('GetThemStartedPage')">Product</span></li>
+            <li>Overcoming Objections <span class="link-span" (click)="openVideoModal()">Video</span></li>
+          </ul>
+          <h3>Enroll <span>- Close with Product</span></h3>
+          <ul>
+            <li>"Your next step is... to <a href="//getfree.global/getting-started-packs-usa" target="_blank">Try the
+                Products</a>"</li>
+            <li>"Let me show you how to <span class="link-span" (click)="openPage('GetThemStartedRightPage')">Open a
+                Wholesale Account...</span>"</li>
+          </ul>
+          <h3 id="dupe">Educate <span>- Exclusive GET Training</span></h3>
+          <ul>
+            <li>Teach them the system. Lead them to <span class="link-span" (click)="openHomePage()">globalexecteam.com</span>.
+              <span id="pw">(Password: ONETEAM)</span></li>
+            <li>Attend your <a href="http://www.isagenixevents.com" target="_blank">Next Event</a>.</li>
+          </ul>
+        </section>
+        <section id="divider"></section>
+        <section id="section2">
+          <a href="https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/images%2Fload-the-bases_874.png?alt=media&token=960feb10-0577-46e5-8385-2fe4780ca7c6"
+            target="_blank">
+            <img id="img" alt="GET Duplication System" sizes="(max-width: 874px) 100vw" src="assets/imgs/load-the-bases/load-the-bases_874.png"
+              srcset="assets/imgs/load-the-bases/load-the-bases_400.png 400w,
                           assets/imgs/load-the-bases/load-the-bases_567.png 567w,
                           assets/imgs/load-the-bases/load-the-bases_686.png 686w,
                           assets/imgs/load-the-bases/load-the-bases_874.png 874w" />
-              </a>
-              <div id="note">
-                <span class="note">(Click the image above to view it full-screen.)</span>
-              </div>
-              <h3 class="centered"><span class="link-span" (click)="openPage('DuplicationSystemPage')">GET Duplication System Overview.<br />Click Here to Download.</span></h3>
-            </section>
+          </a>
+          <div id="note">
+            <span class="note">(Click the image above to view it full-screen.)</span>
           </div>
+          <h3 class="centered"><span class="link-span" (click)="openPage('DuplicationSystemPage')">GET Duplication
+              System Overview.<br />Click Here to Download.</span></h3>
+        </section>
+      </div>
     </article>
   </main>
   <get-footer></get-footer>

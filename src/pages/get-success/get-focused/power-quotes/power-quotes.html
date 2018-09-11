@@ -1,0 +1,49 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-quote-left fixed-width space-right"></i>
+      <span>Power Quotes</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <main role="main">
+    <nav-main selectedSection="GET Success" selectedMenuItem="GET Success GET Focused"></nav-main>
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered">Power Quotes</h1>
+      <section>
+        <h3>Prospecting Power-Line</h3>
+        <p>
+          “I have something to show you I am pretty excited about… I dont know if this is the right time for you to
+          take ACTION, but if it is.. you are going to love me.” ~ Susan Miller
+        </p>
+        <h3>Overcoming Objection Power-Line</h3>
+        <p>
+          “Your perception is not my reality… Are you open to hearing WHY?” ~ Susan Miller
+        </p>
+        <h3>Closing Power-Lines</h3>
+        <p>
+          “Your Next Step is… to try the products. I'll show you how to open a wholesale account and get you in the
+          system.” - Susan Miller
+        </p>
+        <p>
+          “I am truly only looking for people who are OPEN and EXCITED about getting in front of an opportunity before
+          the whole world knows. If thats YOU.. I am here to SHOW YOU HOW!”
+        </p>
+      </section>
+      <section>
+        <span class="link-span" (click)="pdfProvider.openPdf('Power Quotes','https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fpower-quotes.pdf?alt=media&token=f22472dc-291e-442f-bdb0-ea115ec173de')">Download
+          This Page as a PDF</span>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

@@ -22,14 +22,36 @@ export class GetSuccessGetFreePage {
     public modalCtrl: ModalController
   ) {}
 
-  openVideoModal() {
-      const myModal = this.modalCtrl.create("VideoModalPage", {
+  openVideoModal(video: string) {
+    var data: any;
+
+    switch (video) {
+      case "kathy-coover": data = {
+        name: "Fast Track to Executive with Kathy Coover",
+        url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ffast-track-to-exec.mp4?alt=media&token=78a48a85-4f8d-4ade-9325-8ae68a29e440"
+      };
+      break;
+
+      case "jim-coover":
+      data = {
+        name: "The Isagenix Compensation Plan with Jim Coover",
+        url:
+          "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fcomp-plan-with-jim-coover.mp4?alt=media&token=a7456289-9e57-44ff-8e6f-a298ee2c6d31"
+      };
+      break;
+
+      case "erin-and-adrienne":
+      data = {
         name: "Isagenix Compensation Plan",
         url:
           "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ferin-adrienne-comp-plan.mp4?alt=media&token=79a6bd74-b245-4a41-a744-f843ee23e25f"
-      });
+      };
 
-      myModal.present();
+      break;
+    }
+
+    const myModal = this.modalCtrl.create("VideoModalPage", data);
+    myModal.present();
   }
 
   openPage(pageName) {

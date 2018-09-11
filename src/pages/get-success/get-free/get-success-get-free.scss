@@ -5,12 +5,21 @@ page-get-success-get-free {
     margin-top: 20px;
   }
 
+  .note {
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
   #outerGrid {
     display: grid;
     grid-template-columns: auto;
   }
 
-  #videoImg {
+  #videoImg, #videoImgKathy {
     cursor: pointer;
   }
 
@@ -92,6 +101,14 @@ page-get-success-get-free {
   }
 
   @media (min-width: 1024px) {
+    .note {
+      font-size: 16px;
+      display: inline-block;
+      text-align: center;
+      margin-top: 10px;
+      width: 100%;
+    }
+
     #outerGrid {
       grid-template-columns: 1fr 4px 1fr;
     }

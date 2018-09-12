@@ -14,6 +14,17 @@ page-get-success-get-focused {
     display: none;
   }
 
+  .indented {
+    margin-left: 20px;
+  }
+
+  .fa-circle {
+    font-size: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #5988C0;
+  }
+
   #note span {
     display: block;
     margin-left: auto;
@@ -24,6 +35,11 @@ page-get-success-get-focused {
 
   #pw {
     font-size: smaller;
+  }
+
+  #pwDiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   h3 {

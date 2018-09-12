@@ -36,7 +36,7 @@ export class GetSuccessGetFreePage {
       data = {
         name: "The Isagenix Compensation Plan with Jim Coover",
         url:
-          "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fcomp-plan-with-jim-coover.mp4?alt=media&token=a7456289-9e57-44ff-8e6f-a298ee2c6d31"
+          "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fjim-coover-comp-plan.mp4?alt=media&token=2772764b-1fd7-4e97-881f-f7f6331c4663"
       };
       break;
 

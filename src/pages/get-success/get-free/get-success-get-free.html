@@ -45,24 +45,33 @@
           <h3>Compensation Plan</h3>
           <ul>
             <li>
-                <span class="link-span" (click)="openVideoModal('jim-coover')">
-                  Jim Coover Explains the Compensation Plan</span>
+              <span class="link-span" (click)="openVideoModal('jim-coover')">
+                Isagenix Compensation Plan with Jim Coover</span>
             </li>
+            <li><span class="link-span" (click)="pdfProvider.openPdf('Compensation Plan at a Glance', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fthe-money.pdf?alt=media&token=7e398d4f-8cfb-4c39-98c1-e0863c923564')">
+                Compensation Plan at a Glance</span></li>
+            <li><span class="link-span" (click)="pdfProvider.openPdf('Residual Income', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fisagenix-cycles.pdf?alt=media&token=84378b03-8320-4fd2-90e4-b46a65c5966c')">
+                Residual Income</span></li>
             <li><span class="link-span" (click)="pdfProvider.openPdf('Compensation Plan', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fcompensation-plan.pdf?alt=media&token=76b26d3b-5f18-499b-b989-f802d19190e3')">Global
                 Compensation Plan</span></li>
           </ul>
         </section>
         <section id="divider"></section>
         <section id="secondSection">
-          <h3>Fast Track to Executive <br /><span>(with Kathy Coover)</span></h3>
-          <img id="videoImgKathy" src="assets/imgs/misc/fast-track-to-exec.jpg" alt="The Isagenix Compensation Plan with Kathy Coover" (click)="openVideoModal('kathy-coover')" />
+          <h3>Fast Track to Executive <br /><span>(by Co-founder Kathy Coover)</span></h3>
+          <img id="videoImgKathy" src="assets/imgs/misc/fast-track-to-exec-kathy.jpg" alt="The Isagenix Compensation Plan with Kathy Coover"
+            (click)="openVideoModal('kathy-coover')" />
           <div>
-            <span class="note">UPDATE: The VALUE PAK is now $100 PIB or $200<br />with Double PIB for a total of $400 </span>
+            <span class="note">UPDATE: The VALUE PAK is now $100 PIB or $200<br />with Double PIB for a total of $400
+            </span>
           </div>
-          <h3>Isagenix Compensation Plan<br />
-            <span>(with Erin Brauer &amp; Adrienne Cross Donovan)</span>
-          </h3>
-          <img id="videoImg" src="assets/imgs/misc/erin.jpg" alt="Compensation Plan" (click)="openVideoModal('erin-and-adrienne')" />
+          <div>
+            <span class="link-span" (click)="pdfProvider.openPdf('Fast Track Bonuses', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fbonuses.pdf?alt=media&token=782b0771-52b1-447b-92bb-981a5c94d593')">Fast
+              Track Bonuses</span>
+            <br />
+            <span id="pibNote" class="note">Updated version coming soon. The Value Pak PIB has increased<br /> from $80
+              to $100.</span>
+          </div>
         </section>
       </div>
     </article>

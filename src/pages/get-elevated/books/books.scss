@@ -1,79 +1,33 @@
 page-books {
-  header img {
-    max-height: 700px;
+  h3 {
+    margin-top: 40px;
+    color: $secondary-color;
+    font-weight: bold;
   }
 
-  h2 {
-    padding-top: 40px;
-  }
-
-  .tap {
-    display: block;
-    margin-bottom: 50px;
-    margin-top: -20px;
-  }
-
-  .click {
-    display: none;
-    margin-bottom: 50px;
-    margin-top: -20px;
-  }
-
-  .grid-container {
+  .book-container {
     display: grid;
-    grid-template-columns: auto;
-
-    h2, h3, h4 {
-      text-align: center;
-    }
-
-    img {
-      display: block;
-      max-width: 640px;
-      margin-left: auto;
-      margin-right: auto;
+    grid-template-columns: auto 1fr;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    span {
+      font-size: 11pt;
+      margin-left: 12px;
+      margin-right: 12px;
     }
   }
-
-  section {
-    margin-bottom: 50px;
+  .book-container span i {
+    color: #FF6600 !important;
   }
 
-  @media (min-width: 800px) {
-    .grid-container {
-      grid-template-columns: auto;
+  .title {
+    font-weight: bold;
+  }
 
-      section {
-        margin-left: 20px;
-        margin-right: 20px;
-
-        img {
-          margin-top: 20px;
-        }
-      }
-    }
-
-    .inner-grid {
-      display: grid;
-      grid-template-columns: auto auto;
-
-      div {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-    }
-
-    .tap {
-      display: none;
-      margin-bottom: 50px;
-      margin-top: -20px;
-    }
-
-    .click {
-      display: block;
-      margin-bottom: $small-margin;
-      margin-bottom: 50px;
-      margin-top: -20px;
-    }
+  .title, .author {
+    display: inline-block;
+    font-style: normal;
+    margin-right: -10px !important;
+    font-size: large !important;
   }
 }

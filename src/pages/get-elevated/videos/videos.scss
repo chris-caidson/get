@@ -1,67 +1,39 @@
 page-videos {
   h3 {
+    margin-top: 40px;
     color: $secondary-color;
     font-weight: bold;
-    text-align: center;  }
+  }
 
-  .grid-container {
+  .video-container {
     display: grid;
-    grid-template-columns: auto;
-
-    section {
-      margin-bottom: 50px;
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
+    grid-template-columns: auto 1fr;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    span {
+      font-size: 11pt;
+      margin-left: 12px;
+      margin-right: 12px;
     }
   }
 
-  .video-thumb {
-    width: 300px;
-    height: 225px;
+  .video-container:hover {
+    background-color: #FFEDE1;
   }
 
-  h4 {
-    color: #5988C0;
+  .video-container span i {
+    color: #FF6600 !important;
+  }
+
+  .title {
     font-weight: bold;
   }
 
-  h5 {
-    font-style: italic;
-    margin-top: -10px !important;
-  }
-
-  @media (min-width: 500px) {
-    .video-thumb {
-      width: 400px;
-      height: 300px;
-    }
-  }
-
-  @media (min-width: 800px) {
-    .grid-container {
-      grid-template-columns: auto auto;
-
-      section {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-
-      h3 {
-        text-align: left;
-      }
-    }
-
-    .video-thumb {
-      width: 300px;
-      height: 225px;
-    }
-  }
-
-  @media (min-width: 1000px) {
-    .video-thumb {
-      width: 400px;
-      height: 300px;
-    }
+  .title, .author {
+    display: inline-block;
+    font-style: normal;
+    margin-right: -10px !important;
+    font-size: large !important;
   }
 }

@@ -228,6 +228,13 @@ export class VideosPage {
           url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fwhy-isa-works.mp4?alt=media&token=c83d6a1a-e089-4afe-8c8c-e62f81d38f08"
         };
         break;
+
+        case "erin-adrienne":
+        data = {
+          name: "Basic Compensation Plan",
+          url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ferin-adrienne-comp-plan.mp4?alt=media&token=79a6bd74-b245-4a41-a744-f843ee23e25f"
+        };
+        break;
     }
 
     const myModal = this.modalCtrl.create("VideoModalPage", data);

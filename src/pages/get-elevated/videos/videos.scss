@@ -2,7 +2,7 @@ page-videos {
   h3 {
     color: $secondary-color;
     font-weight: bold;
-  }
+    text-align: center;  }
 
   .grid-container {
     display: grid;
@@ -21,12 +21,14 @@ page-videos {
     height: 225px;
   }
 
-  h3 {
-    text-align: center;
+  h4 {
+    color: #5988C0;
+    font-weight: bold;
   }
 
-  h4 {
+  h5 {
     font-style: italic;
+    margin-top: -10px !important;
   }
 
   @media (min-width: 500px) {

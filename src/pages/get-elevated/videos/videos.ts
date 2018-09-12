@@ -25,12 +25,12 @@ export class VideosPage {
 
     switch (video) {
       case "golden-circle":
-      data = {
-        name: "Simon Sinek - The Golden Circle",
-        url:
-          "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fsimon-sinek-the-golden-circle.mp4?alt=media&token=27bc7ecb-eba8-47f0-95ce-f20cc2616196"
-      };
-      break;
+        data = {
+          name: "Simon Sinek - The Golden Circle",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fsimon-sinek-the-golden-circle.mp4?alt=media&token=27bc7ecb-eba8-47f0-95ce-f20cc2616196"
+        };
+        break;
 
       case "hungry":
         data = {
@@ -40,7 +40,7 @@ export class VideosPage {
         };
         break;
 
-        case "eat-last":
+      case "eat-last":
         data = {
           name: "Simon Sinek - Why Leaders Eat Last",
           url:
@@ -48,7 +48,7 @@ export class VideosPage {
         };
         break;
 
-        case "stanford":
+      case "stanford":
         data = {
           name: "Steve Jobs - Standford Commencement Address",
           url:
@@ -154,9 +154,78 @@ export class VideosPage {
 
       case "network-marketing":
         data = {
-          name: "Learn About Network Marketing",
+          name: "NWM vs MLM by Susan Miller",
           url:
             "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2FWhat-Is-Network-Marketing-vs-MLM-and-How-Isagenix-Got-It-Right.mp4?alt=media&token=5f81da0f-a444-407b-8126-380e2a7f8a8b"
+        };
+        break;
+
+      case "biz-future":
+        data = {
+          name: "The Business of the Future",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fbusiness-of-the-future.mp4?alt=media&token=5b26d8c5-5ed3-4af6-afcb-eee3fe264899"
+        };
+        break;
+
+      case "transform-life":
+        data = {
+          name: "Transform Your Life",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ftransform-your-life.mp4?alt=media&token=201d1740-7474-4a8a-94db-b7fb3c0609cd"
+        };
+        break;
+
+      case "diets-failing":
+        data = {
+          name: "Why Diets are Failing Us",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fdiets-failing.mp4?alt=media&token=c8c8a9d8-c25a-4a89-8275-d41897b80f8d"
+        };
+        break;
+
+      case "unhealthy-truth":
+        data = {
+          name: "The Unhealthy Truth",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Funhealthy-truth.mp4?alt=media&token=5a149f67-8cd3-4e95-8c16-69291462ee80"
+        };
+        break;
+
+      case "food-matters":
+        data = {
+          name: "Food Matters",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ffood-matters.mp4?alt=media&token=058b40a9-6f6f-465e-b62c-0565a5ffc8a3"
+        };
+        break;
+
+      case "fed-up":
+        data = {
+          name: "Fed Up",
+          url:
+            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ffed-up.mp4?alt=media&token=919f6b97-339e-4579-b379-afce8142a6df"
+        };
+        break;
+
+      case "toxic":
+        data = {
+          name: "Are You Toxic?",
+          url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ftoxic.mp4?alt=media&token=c3344ebd-62e3-4e85-a312-ce8f0d4018c7"
+        };
+        break;
+
+      case "why-cleanse":
+        data = {
+          name: "Why Cleanse?",
+          url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fwhy-cleanse.mp4?alt=media&token=fde1b387-22b7-482b-89bc-6bd7ad30df02"
+        };
+        break;
+
+      case "isa-works":
+        data = {
+          name: "Why Isagenix Works",
+          url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fwhy-isa-works.mp4?alt=media&token=c83d6a1a-e089-4afe-8c8c-e62f81d38f08"
         };
         break;
     }

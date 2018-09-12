@@ -16,65 +16,123 @@
   <main role="main">
     <nav-main selectedSection="GET Elevated" selectedMenuItem="Videos"></nav-main>
     <article>
-      <h1 class="centered">Motivational Videos</h1>
+      <h1 class="centered">Videos</h1>
+      <h3>Network Marketing</h3>
       <div class="grid-container">
         <section>
-          <h3>The Golden Circle</h3>
-          <h4>Simon Sinek</h4>
-          <img id="goldenCircle" src="assets/imgs/misc/simon-sinek-golden-circle.jpg" (click)="openVideoModal('golden-circle')"
-          sizes="(max-width: 640px) 100vw" alt="Simon Sinek - The Golden Circle" class="video-thumb" />
+          <h4>NWM vs MLM by Susan Miller</h4>
+          <img src="assets/imgs/network-marketing/network-marketing_555.jpg" (click)="openVideoModal('network-marketing')"
+            sizes="(max-width: 640px) 100vw" alt="NWM vs MLM by Susan Miller" class="video-thumb" srcset="
+              assets/imgs/network-marketing/network-marketing_200.jpg 200w,
+              assets/imgs/network-marketing/network-marketing_555.jpg 555w" />
         </section>
         <section>
-          <h3>You've Gotta Be Hungry</h3>
-          <h4>Les Brown</h4>
-          <img id="hungry" src="assets/imgs/misc/les-brown.jpg" (click)="openVideoModal('hungry')"
-          sizes="(max-width: 640px) 100vw" alt="Les Brown - You've Gotta Be Hungry" class="video-thumb" />
+          <h4>The Business of the Future</h4>
+          <img src="assets/imgs/misc/biz-future.jpg" alt="The Business of the Future" (click)="openVideoModal('biz-future')"
+            sizes="(max-width: 640px) 100vw" class="video-thumb" />
         </section>
         <section>
-          <h3>Why Leaders Eat Last</h3>
-          <h4>Simon Sinek</h4>
-          <img id="eatLast" src="assets/imgs/misc/simon-sinek-leaders-eat-last.jpg" (click)="openVideoModal('eat-last')"
-          sizes="(max-width: 640px) 100vw" alt="Simon Sinek - Why Leaders Eat Last" class="video-thumb" />
-        </section>
-        <section>
-          <h3>Stanford Commencement Address</h3>
-          <h4>Steve Jobs</h4>
-          <img id="stanford" src="assets/imgs/misc/steve-jobs.jpg" (click)="openVideoModal('stanford')"
-          sizes="(max-width: 640px) 100vw" alt="Steve Jobs - Stanford Commencement Address" class="video-thumb" />
-        </section>
-      </div>
-      <h1 class="centered">Video Library</h1>
-      <div class="grid-container">
-        <section>
-          <h3>How to Build with Facebook</h3>
-          <img src="assets/imgs/build-with-facebook/build-with-facebook_555.jpg" (click)="openVideoModal('facebook')" sizes="(max-width: 640px) 100vw"
-            alt="How to Build with Facebook" class="video-thumb" srcset="
-        assets/imgs/build-with-facebook/build-with-facebook_200.jpg 200w,
-        assets/imgs/build-with-facebook/build-with-facebook_468.jpg 468w,
-        assets/imgs/build-with-facebook/build-with-facebook_555.jpg 555w" />
-        </section>
-        <section>
-          <h3>How to Build with Instagram</h3>
-          <img src="assets/imgs/build-with-instagram/build-with-instagram_555.jpg" (click)="openVideoModal('instagram')" sizes="(max-width: 640px) 100vw"
-            alt="How to Build with Instagram" class="video-thumb" srcset="
-        assets/imgs/build-with-instagram/build-with-instagram_200.jpg 200w,
-        assets/imgs/build-with-instagram/build-with-instagram_555.jpg 555w" />
-        </section>
-        <section>
-          <h3>Master the Compensation Plan</h3>
+          <h4>Master the Compensation Plan</h4>
           <img src="assets/imgs/comp-plan/comp-plan_640.jpg" (click)="openVideoModal('comp-plan')" sizes="(max-width: 640px) 100vw"
             alt="Master the Compensation Plan" class="video-thumb" srcset="
-        assets/imgs/comp-plan/comp-plan_200.jpg 200w,
-        assets/imgs/comp-plan/comp-plan_400.jpg 400w,
-        assets/imgs/comp-plan/comp-plan_555.jpg 555w,
-        assets/imgs/comp-plan/comp-plan_640.jpg 640w" />
+          assets/imgs/comp-plan/comp-plan_200.jpg 200w,
+          assets/imgs/comp-plan/comp-plan_400.jpg 400w,
+          assets/imgs/comp-plan/comp-plan_555.jpg 555w,
+          assets/imgs/comp-plan/comp-plan_640.jpg 640w" />
+        </section>
+      </div>
+      <h3>Social Media</h3>
+      <div class="grid-container">
+        <section>
+          <h4>How to Build with Facebook</h4>
+          <img src="assets/imgs/build-with-facebook/build-with-facebook_555.jpg" (click)="openVideoModal('facebook')"
+            sizes="(max-width: 640px) 100vw" alt="How to Build with Facebook" class="video-thumb" srcset="
+          assets/imgs/build-with-facebook/build-with-facebook_200.jpg 200w,
+          assets/imgs/build-with-facebook/build-with-facebook_468.jpg 468w,
+          assets/imgs/build-with-facebook/build-with-facebook_555.jpg 555w" />
         </section>
         <section>
-          <h3>Learn About Network Marketing</h3>
-          <img src="assets/imgs/network-marketing/network-marketing_555.jpg" (click)="openVideoModal('network-marketing')" sizes="(max-width: 640px) 100vw"
-            alt="Learn About Network Marketing" class="video-thumb" srcset="
-        assets/imgs/network-marketing/network-marketing_200.jpg 200w,
-        assets/imgs/network-marketing/network-marketing_555.jpg 555w" />
+          <h4>How to Build with Instagram</h4>
+          <img src="assets/imgs/build-with-instagram/build-with-instagram_555.jpg" (click)="openVideoModal('instagram')"
+            sizes="(max-width: 640px) 100vw" alt="How to Build with Instagram" class="video-thumb" srcset="
+          assets/imgs/build-with-instagram/build-with-instagram_200.jpg 200w,
+          assets/imgs/build-with-instagram/build-with-instagram_555.jpg 555w" />
+        </section>
+      </div>
+      <h3>Entrepreneurship</h3>
+      <div class="grid-container">
+        <section>
+          <h4>The Golden Circle</h4>
+          <h5>by Simon Sinek</h5>
+          <img id="goldenCircle" src="assets/imgs/misc/simon-sinek-golden-circle.jpg" (click)="openVideoModal('golden-circle')"
+            sizes="(max-width: 640px) 100vw" alt="Simon Sinek - The Golden Circle" class="video-thumb" />
+        </section>
+        <section>
+          <h4>You've Gotta Be Hungry</h4>
+          <h5>by Les Brown</h5>
+          <img id="hungry" src="assets/imgs/misc/les-brown.jpg" (click)="openVideoModal('hungry')" sizes="(max-width: 640px) 100vw"
+            alt="Les Brown - You've Gotta Be Hungry" class="video-thumb" />
+        </section>
+        <section>
+          <h4>Stanford Commencement Speech</h4>
+          <h5>by Steve Jobs</h5>
+          <img id="stanford" src="assets/imgs/misc/steve-jobs.jpg" (click)="openVideoModal('stanford')" sizes="(max-width: 640px) 100vw"
+            alt="Steve Jobs - Stanford Commencement Address" class="video-thumb" />
+        </section>
+      </div>
+      <h3>Personal Growth</h3>
+      <div class="grid-container">
+        <section>
+          <h4>Why Leaders Eat Last</h4>
+          <h5>Simon Sinek</h5>
+          <img id="eatLast" src="assets/imgs/misc/simon-sinek-leaders-eat-last.jpg" (click)="openVideoModal('eat-last')"
+            sizes="(max-width: 640px) 100vw" alt="Simon Sinek - Why Leaders Eat Last" class="video-thumb" />
+        </section>
+      </div>
+      <h3>The Food Economy</h3>
+      <div class="grid-container">
+        <section>
+          <h4>Why Diets are Failing Us</h4>
+          <img id="dietsFailing" src="assets/imgs/misc/diets-failing.jpg" (click)="openVideoModal('diets-failing')"
+            sizes="(max-width: 640px) 100vw" alt="" class="video-thumb" />
+        </section>
+        <section>
+          <h4>The Unhealthy Truth</h4>
+          <img id="unhealthyTruth" src="assets/imgs/misc/unhealthy-truth.jpg" (click)="openVideoModal('unhealthy-truth')"
+            sizes="(max-width: 640px) 100vw" alt="The Unhealthy Truth" class="video-thumb" />
+        </section>
+        <section>
+          <h4>Food Matters</h4>
+          <img id="foodMatters" src="assets/imgs/misc/food-matters.jpg" (click)="openVideoModal('food-matters')" sizes="(max-width: 640px) 100vw"
+            alt="Food Matters" class="video-thumb" />
+        </section>
+        <section>
+          <h4>Fed Up</h4>
+          <img id="fedUp" src="assets/imgs/misc/fed-up.jpg" (click)="openVideoModal('fed-up')" sizes="(max-width: 640px) 100vw"
+            alt="Fed Up" class="video-thumb" />
+        </section>
+      </div>
+      <h3>Isagenix Solutions</h3>
+      <div class="grid-container">
+        <section>
+          <h4>Transform Your Life</h4>
+          <img id="transform-life" src="assets/imgs/transform-your-life/transform-your-life_640.jpg" (click)="openVideoModal('transform-life')"
+            sizes="(max-width: 640px) 100vw" alt="Transform Your Life" class="video-thumb" />
+        </section>
+        <section>
+          <h4>Why Isagenix Works</h4>
+          <img id="isa-works" src="assets/imgs/misc/isa-works.jpg" (click)="openVideoModal('isa-works')"
+            sizes="(max-width: 640px) 100vw" alt="Why Isagenix Works" class="video-thumb" />
+        </section>
+        <section>
+          <h4>Are You Toxic?</h4>
+          <img id="toxic" src="assets/imgs/misc/toxic.jpg" (click)="openVideoModal('toxic')"
+            sizes="(max-width: 640px) 100vw" alt="Are You Toxic?" class="video-thumb" />
+        </section>
+        <section>
+          <h4>Why Cleanse?</h4>
+          <img id="why-cleanse" src="assets/imgs/misc/why-cleanse.jpg" (click)="openVideoModal('why-cleanse')"
+            sizes="(max-width: 640px) 100vw" alt="Why Cleanse?" class="video-thumb" />
         </section>
       </div>
     </article>

@@ -5,10 +5,10 @@ import { PdfProvider } from '../../../../providers/pdf/pdf';
 
 @IonicPage()
 @Component({
-  selector: 'page-power-quotes',
-  templateUrl: 'power-quotes.html',
+  selector: 'page-business-prospecting',
+  templateUrl: 'business-prospecting.html',
 })
-export class PowerQuotesPage {
+export class BusinessProspectingPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public auth: AuthProvider, public pdfProvider: PdfProvider) {

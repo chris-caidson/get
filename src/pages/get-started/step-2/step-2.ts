@@ -4,10 +4,10 @@ import { AuthProvider } from '../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
-  selector: 'page-get-started-get-focused',
-  templateUrl: 'get-started-get-focused.html',
+  selector: 'page-step-2',
+  templateUrl: 'step-2.html',
 })
-export class GetStartedGetFocusedPage {
+export class Step2Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public auth: AuthProvider) {
   }
@@ -17,10 +17,10 @@ export class GetStartedGetFocusedPage {
   }
 
   goBack() {
-    this.navCtrl.setRoot("GetStartedGetFitPage");
+    this.navCtrl.setRoot("Step1Page");
   }
 
   goForward() {
-    this.navCtrl.setRoot("GetStartedGetFreePage");
+    this.navCtrl.setRoot("Step3Page");
   }
 }

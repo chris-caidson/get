@@ -4,8 +4,8 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <i class="fa fa-heartbeat fixed-width space-right"></i>
-      <span>GET Fit</span>
+      <i class="fa fa-list-ol fixed-width space-right"></i>
+      <span>Step 1</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -16,10 +16,11 @@
   <main role="main">
       <nav-main selectedSection="GET Started" selectedMenuItem="GET Started GET Fit"></nav-main>
       <nav>
-        <span id="goForward" class="forward-link link-span" (click)="goForward()">GET Focused &gt;</span>
+          <span id="goBack" class="back-link link-span" (click)="goBack()">&lt; Start Here</span>
+        <span id="goForward" class="forward-link link-span" (click)="goForward()">Step 2 &gt;</span>
       </nav>
     <article>
-      <h1>GET Fit</h1>
+      <h1>Step 1</h1>
       <h2>Use the Products and Feel Amazing</h2>
       <div id="topGrid">
         <section id="videoSection">

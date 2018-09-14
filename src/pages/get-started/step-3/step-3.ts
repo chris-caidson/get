@@ -5,10 +5,10 @@ import { PdfProvider } from '../../../providers/pdf/pdf';
 
 @IonicPage()
 @Component({
-  selector: 'page-get-started-get-free',
-  templateUrl: 'get-started-get-free.html',
+  selector: 'page-step-3',
+  templateUrl: 'step-3.html',
 })
-export class GetStartedGetFreePage {
+export class Step3Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private modalCtrl: ModalController,
     public auth: AuthProvider, public pdfProvider: PdfProvider) {
@@ -23,7 +23,7 @@ export class GetStartedGetFreePage {
   }
 
   goBack() {
-    this.navCtrl.setRoot("GetStartedGetFocusedPage");
+    this.navCtrl.setRoot("Step2Page");
   }
 
   openVideoModal() {

@@ -33,12 +33,14 @@ export class MyApp {
 
       // GET Started
       { title: "GET Started", component: null, separatorLevel: 2, icon: null, stepNumber: null },
-      { title: "GET Fit", component: "GetStartedGetFitPage", separatorLevel: 4, icon: "heartbeat", stepNumber: null },
-      { title: "GET Focused", component: "GetStartedGetFocusedPage", separatorLevel: 4, icon: "eye", stepNumber: null },
-      { title: "GET Free", component: "GetStartedGetFreePage", separatorLevel: 4, icon: "thumbs-up", stepNumber: null },
+      { title: "Start Here", component: "StartHerePage", separatorLevel: 4, icon: "play", stepNumber: null },
+      { title: "Step 1", component: "Step1Page", separatorLevel: 4, icon: null, stepNumber: "1" },
+      { title: "Step 2", component: "Step2Page", separatorLevel: 4, icon: null, stepNumber: "2" },
+      { title: "Step 3", component: "Step3Page", separatorLevel: 4, icon: null, stepNumber: "3" },
 
       // GET Success
       { title: "GET Success", component: null, separatorLevel: 2, icon: null, stepNumber: null },
+      { title: "Overview", component: "OverviewPage", separatorLevel: 4, icon: "play-circle", stepNumber: null },
       { title: "GET Fit", component: "GetSuccessGetFitPage", separatorLevel: 4, icon: "heartbeat", stepNumber: null },
       { title: "GET Focused", component: "GetSuccessGetFocusedPage", separatorLevel: 4, icon: "eye", stepNumber: null },
       { title: "GET Free", component: "GetSuccessGetFreePage", separatorLevel: 4, icon: "thumbs-up", stepNumber: null },

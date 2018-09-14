@@ -16,6 +16,7 @@
   <main role="main">
       <nav-main selectedSection="GET Success" selectedMenuItem="GET Success GET Fit"></nav-main>
       <nav>
+          <span id="goBack" class="back-link link-span" (click)="goBack()">&lt; Overview</span>
         <span id="goForward" class="forward-link link-span" (click)="goForward()">GET Focused &gt;</span>
       </nav>
     <article>
@@ -23,6 +24,9 @@
       <div id="outerGrid">
           <section id="firstSection">
             <h3>Set Your Goals and Share Your Story</h3>
+            <div>
+              <span class="link-span" (click)="openVideoModal('jess')"><i class="fa fa-film"></i>Setting Yourself Up for Success with Jessica Johnston</span>
+            </div>
             <ul>
               <li><img class="diamond" src="assets/imgs/misc/blue-diamond.png" alt="" />
                 <span class="link-span" (click)="pdfProvider.openPdf('Identify YOUR Goals', 'https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/pdfs%2Fidentify-your-goals.pdf?alt=media&token=78fbf83c-bcdf-4f08-9d56-6d85f237d1fb')">Set
@@ -55,7 +59,7 @@
             <h3 id="knowYourWhy">Establish Your Why
               <span>(with Peta Kelly-Coover)</span>
             </h3>
-            <img id="videoImg" src="assets/imgs/misc/peta.jpg" (click)="openVideoModal()" alt="Establishing Your Why" />
+            <img id="videoImg" src="assets/imgs/misc/peta.jpg" (click)="openVideoModal('peta')" alt="Establishing Your Why" />
             <h5 id="quote">“The Future Belongs to Those Who <br />BELIEVE in the BEAUTY of Their DREAMS.”</h5>
           </section>
         </div>

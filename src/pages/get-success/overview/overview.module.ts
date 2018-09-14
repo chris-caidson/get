@@ -1,15 +1,15 @@
 import { ComponentsModule } from '../../../components/components.module';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { GetStartedGetFocusedPage } from './get-started-get-focused';
+import { OverviewPage } from './overview';
 
 @NgModule({
   declarations: [
-    GetStartedGetFocusedPage,
+    OverviewPage,
   ],
   imports: [
     ComponentsModule,
-    IonicPageModule.forChild(GetStartedGetFocusedPage),
+    IonicPageModule.forChild(OverviewPage),
   ],
 })
-export class GetStartedGetFocusedPageModule {}
+export class OverviewPageModule {}

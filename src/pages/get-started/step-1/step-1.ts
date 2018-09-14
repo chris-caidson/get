@@ -5,10 +5,10 @@ import { AuthProvider } from '../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
-  selector: 'page-get-started-get-fit',
-  templateUrl: 'get-started-get-fit.html',
+  selector: 'page-step-1',
+  templateUrl: 'step-1.html',
 })
-export class GetStartedGetFitPage {
+export class Step1Page {
   public activeVideo: string = "unpacking";
 
   constructor(
@@ -23,8 +23,12 @@ export class GetStartedGetFitPage {
     this.navCtrl.push(pageName);
   }
 
+  goBack() {
+    this.navCtrl.setRoot("StartHerePage");
+  }
+
   goForward() {
-    this.navCtrl.setRoot("GetStartedGetFocusedPage");
+    this.navCtrl.setRoot("Step2Page");
   }
 
   toggleVideo(videoName: string) {

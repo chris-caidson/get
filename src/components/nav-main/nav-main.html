@@ -6,30 +6,41 @@
     <div id="menuContainer">
       <span id="homeSpan" (click)="openPage('HomePage')" [class.sel-section]="selectedSection=='Home'">Home</span>
       <div class="dropdown">
-        <div class="main-menu" (click)="openPage('GetStartedGetFitPage')" [class.sel-section]="selectedSection=='GET Started'">GET Started</div>
+        <div class="main-menu" (click)="openPage('StartHerePage')" [class.sel-section]="selectedSection=='GET Started'">GET
+          Started</div>
         <div class="dropdown-content">
-          <p (click)="openPage('GetStartedGetFitPage')" [class.sel-item]="selectedMenuItem=='GET Started GET Fit'">GET Fit</p>
-          <p (click)="openPage('GetStartedGetFocusedPage')" [class.sel-item]="selectedMenuItem=='GET Started GET Focused'">GET Focused</p>
-          <p (click)="openPage('GetStartedGetFreePage')" [class.sel-item]="selectedMenuItem=='GET Started GET Free'">GET Free</p>
+          <p (click)="openPage('StartHerePage')" [class.sel-item]="selectedMenuItem=='GET Started Start Here'">Start
+            Here</p>
+          <p (click)="openPage('Step1Page')" [class.sel-item]="selectedMenuItem=='GET Started GET Fit'">Step 1</p>
+          <p (click)="openPage('Step2Page')" [class.sel-item]="selectedMenuItem=='GET Started GET Focused'">Step 2</p>
+          <p (click)="openPage('Step3Page')" [class.sel-item]="selectedMenuItem=='GET Started GET Free'">Step 3</p>
         </div>
       </div>
       <div class="dropdown">
-        <div class="main-menu" (click)="openPage('GetSuccessGetFitPage')" [class.sel-section]="selectedSection=='GET Success'">GET Success</div>
+        <div class="main-menu" (click)="openPage('OverviewPage')" [class.sel-section]="selectedSection=='GET Success'">GET
+          Success</div>
         <div class="dropdown-content">
-          <p (click)="openPage('GetSuccessGetFitPage')" [class.sel-item]="selectedMenuItem=='GET Success GET Fit'">GET Fit</p>
-          <p (click)="openPage('GetSuccessGetFocusedPage')" [class.sel-item]="selectedMenuItem=='GET Success GET Focused'">GET Focused</p>
-          <p (click)="openPage('GetSuccessGetFreePage')" [class.sel-item]="selectedMenuItem=='GET Success GET Free'">GET Free</p>
+          <p (click)="openPage('OverviewPage')" [class.sel-item]="selectedMenuItem=='GET Success Overview'">Overview</p>
+          <p (click)="openPage('GetSuccessGetFitPage')" [class.sel-item]="selectedMenuItem=='GET Success GET Fit'">GET
+            Fit</p>
+          <p (click)="openPage('GetSuccessGetFocusedPage')" [class.sel-item]="selectedMenuItem=='GET Success GET Focused'">GET
+            Focused</p>
+          <p (click)="openPage('GetSuccessGetFreePage')" [class.sel-item]="selectedMenuItem=='GET Success GET Free'">GET
+            Free</p>
         </div>
       </div>
       <div class="dropdown">
-        <div class="main-menu" (click)="openPage('WeekdayCallsPage')" [class.sel-section]="selectedSection=='GET Calls'">GET Calls</div>
+        <div class="main-menu" (click)="openPage('WeekdayCallsPage')" [class.sel-section]="selectedSection=='GET Calls'">GET
+          Calls</div>
         <div class="dropdown-content">
           <p (click)="openPage('WeekdayCallsPage')" [class.sel-item]="selectedMenuItem=='Weekday Calls'">Weekday Calls</p>
-          <p (click)="openPage('TargetedSubjectPage')" [class.sel-item]="selectedMenuItem=='Targeted Subject'">Targeted Subject</p>
+          <p (click)="openPage('TargetedSubjectPage')" [class.sel-item]="selectedMenuItem=='Targeted Subject'">Targeted
+            Subject</p>
         </div>
       </div>
       <div class="dropdown">
-        <div class="main-menu" (click)="openPage('BooksPage')" [class.sel-section]="selectedSection=='GET Elevated'">GET Elevated</div>
+        <div class="main-menu" (click)="openPage('BooksPage')" [class.sel-section]="selectedSection=='GET Elevated'">GET
+          Elevated</div>
         <div class="dropdown-content">
           <p (click)="openPage('BooksPage')" [class.sel-item]="selectedMenuItem=='Books'">Books</p>
           <p (click)="openPage('VideosPage')" [class.sel-item]="selectedMenuItem=='Videos'">Videos</p>
@@ -38,9 +49,12 @@
       <div class="dropdown">
         <div class="main-menu" (click)="openPage('AdminWeekdayCallsPage')" [class.sel-section]="selectedSection=='Admin'">Admin</div>
         <div class="dropdown-content" id="adminMenu">
-          <p (click)="openPage('AdminWeekdayCallsPage')" [class.sel-item]="selectedMenuItem=='Admin - Weekday Calls'">Weekday Calls</p>
-          <p (click)="openPage('AdminTargetedSubjectCallsPage')" [class.sel-item]="selectedMenuItem=='Admin - Targeted Subject Calls'">Targeted Subject Calls</p>
-          <p (click)="openPage('AdminTargetedSubjectCategoriesPage')" [class.sel-item]="selectedMenuItem=='Admin - Targeted Subject Categories'">Targeted Subject Categories</p>
+          <p (click)="openPage('AdminWeekdayCallsPage')" [class.sel-item]="selectedMenuItem=='Admin - Weekday Calls'">Weekday
+            Calls</p>
+          <p (click)="openPage('AdminTargetedSubjectCallsPage')" [class.sel-item]="selectedMenuItem=='Admin - Targeted Subject Calls'">Targeted
+            Subject Calls</p>
+          <p (click)="openPage('AdminTargetedSubjectCategoriesPage')" [class.sel-item]="selectedMenuItem=='Admin - Targeted Subject Categories'">Targeted
+            Subject Categories</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,27 @@
+<ion-header *ngIf="this.auth.loggedIn">
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        <i class="fa fa-play-circle fixed-width space-right"></i>
+        <span>Overview</span>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content *ngIf="!this.auth.loggedIn">
+    <login></login>
+  </ion-content>
+  <ion-content *ngIf="this.auth.loggedIn">
+    <main role="main">
+        <nav-main selectedSection="GET Success" selectedMenuItem="GET Success Overview"></nav-main>
+        <nav>
+          <span id="goForward" class="forward-link link-span" (click)="goForward()">GET Fit &gt;</span>
+        </nav>
+      <article>
+        <h1>Overview</h1>
+
+      </article>
+    </main>
+    <get-footer></get-footer>
+  </ion-content>

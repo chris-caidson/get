@@ -1,15 +1,15 @@
 import { ComponentsModule } from '../../../components/components.module';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { GetStartedGetFreePage } from './get-started-get-free';
+import { Step3Page } from './step-3';
 
 @NgModule({
   declarations: [
-    GetStartedGetFreePage,
+    Step3Page,
   ],
   imports: [
     ComponentsModule,
-    IonicPageModule.forChild(GetStartedGetFreePage),
+    IonicPageModule.forChild(Step3Page),
   ],
 })
-export class GetStartedGetFreePageModule {}
+export class Step3PageModule {}

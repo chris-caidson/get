@@ -30,7 +30,7 @@ export class Step3Page {
     const myModal = this.modalCtrl.create("VideoModalPage", {
       name: "You Share, They Share, Repeat",
       url:
-        "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fyou-share-they-share-repeat.mp4?alt=media&token=b7981a94-b577-4d7b-bbe6-db9108cf5e3c"
+        "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fyou-share-they-share-repeat.mp4?alt=media&token=6ddcadda-4da2-4512-a97b-bcb0f5bc1119"
     });
     myModal.present();
   }

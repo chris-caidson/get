@@ -37,7 +37,7 @@ export const firebaseConfig = {
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PdfProvider,
     AuthProvider,
-    { provide: LocationStrategy, useClass: PathLocationStrategy }
+    //{ provide: LocationStrategy, useClass: PathLocationStrategy }
   ]
 })
 export class AppModule {}

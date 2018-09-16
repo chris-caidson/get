@@ -15,9 +15,8 @@ export class HomePage {
 
   openVideoModal() {
     const myModal = this.modalCtrl.create("VideoModalPage", {
-      name: "What's Your Why?",
-      url:
-        "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fi-am-good-enough.mp4?alt=media&token=c1e7ced5-e7ca-4ac7-afe0-05ea1e9a1beb"
+      name: "Welcome to the Global Exec Team",
+      url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fwelcome-to-the-global-exec-team.mp4?alt=media&token=e8d29b5c-b45d-4ceb-8cd3-aeffa76ec9a8"
     });
 
     myModal.present();

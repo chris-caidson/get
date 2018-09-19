@@ -17,4 +17,8 @@ export class WelcomeTextPage {
   goBack() {
     this.navCtrl.pop();
   }
+
+  openStep1Page() {
+    this.navCtrl.setRoot("Step1Page");
+  }
 }

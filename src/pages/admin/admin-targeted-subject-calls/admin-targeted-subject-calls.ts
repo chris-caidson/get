@@ -7,7 +7,7 @@ import {
 } from "ionic-angular";
 import * as firebase from "firebase"
 import "firebase/firestore";
-import { AuthProvider } from '../../../providers/auth/auth';
+import { AuthProvider } from "../../../providers/auth/auth";
 
 @IonicPage()
 @Component({

@@ -1,7 +1,7 @@
-import { ComponentsModule } from '../../../components/components.module';
-import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
-import { Step1Page } from './step-1';
+import { ComponentsModule } from "../../../components/components.module";
+import { NgModule } from "@angular/core";
+import { IonicPageModule } from "ionic-angular";
+import { Step1Page } from "./step-1";
 
 @NgModule({
   declarations: [

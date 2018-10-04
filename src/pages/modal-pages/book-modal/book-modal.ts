@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, NavParams, ViewController } from "ionic-angular";
 
 @IonicPage()
 @Component({
-  selector: 'page-book-modal',
-  templateUrl: 'book-modal.html',
+  selector: "page-book-modal",
+  templateUrl: "book-modal.html",
 })
 export class BookModalPage {
   bookName: string;

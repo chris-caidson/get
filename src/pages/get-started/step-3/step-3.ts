@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, ModalController, NavParams } from 'ionic-angular';
-import { AuthProvider } from '../../../providers/auth/auth';
-import { PdfProvider } from '../../../providers/pdf/pdf';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, ModalController, NavParams } from "ionic-angular";
+import { AuthProvider } from "../../../providers/auth/auth";
+import { PdfProvider } from "../../../providers/pdf/pdf";
 
 @IonicPage()
 @Component({
-  selector: 'page-step-3',
-  templateUrl: 'step-3.html',
+  selector: "page-step-3",
+  templateUrl: "step-3.html",
 })
 export class Step3Page {
 

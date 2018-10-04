@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from '../../../../providers/auth/auth';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, NavParams } from "ionic-angular";
+import { AuthProvider } from "../../../../providers/auth/auth";
 
 @IonicPage()
 @Component({
-  selector: 'page-cleanse-day-tracker',
-  templateUrl: 'cleanse-day-tracker.html',
+  selector: "page-cleanse-day-tracker",
+  templateUrl: "cleanse-day-tracker.html",
 })
 export class CleanseDayTrackerPage {
 

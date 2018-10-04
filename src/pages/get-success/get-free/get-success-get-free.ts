@@ -6,7 +6,7 @@ import {
   ModalController
 } from "ionic-angular";
 import { AuthProvider } from "../../../providers/auth/auth";
-import { PdfProvider } from '../../../providers/pdf/pdf';
+import { PdfProvider } from "../../../providers/pdf/pdf";
 
 @IonicPage()
 @Component({

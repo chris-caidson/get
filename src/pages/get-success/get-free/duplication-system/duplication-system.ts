@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, ModalController, NavParams } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, ModalController, NavParams } from "ionic-angular";
 import { AuthProvider } from "../../../../providers/auth/auth";
-import { PdfProvider } from '../../../../providers/pdf/pdf';
+import { PdfProvider } from "../../../../providers/pdf/pdf";
 
 @IonicPage()
 @Component({
-  selector: 'page-duplication-system',
-  templateUrl: 'duplication-system.html',
+  selector: "page-duplication-system",
+  templateUrl: "duplication-system.html",
 })
 export class DuplicationSystemPage {
 

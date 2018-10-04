@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
-import { VideoModalPage } from './video-modal';
+import { NgModule } from "@angular/core";
+import { IonicPageModule } from "ionic-angular";
+import { VideoModalPage } from "./video-modal";
 
 @NgModule({
   declarations: [

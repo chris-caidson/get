@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
-import { PdfProvider } from '../../../providers/pdf/pdf';
-import { AuthProvider } from '../../../providers/auth/auth';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, NavParams, ModalController } from "ionic-angular";
+import { PdfProvider } from "../../../providers/pdf/pdf";
+import { AuthProvider } from "../../../providers/auth/auth";
 
 @IonicPage()
 @Component({
-  selector: 'page-step-1',
-  templateUrl: 'step-1.html',
+  selector: "page-step-1",
+  templateUrl: "step-1.html",
 })
 export class Step1Page {
   public activeVideo: string = "unpacking";

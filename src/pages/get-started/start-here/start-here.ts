@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { IonicPage, ModalController, NavController, NavParams } from 'ionic-angular';
-import { PdfProvider } from '../../../providers/pdf/pdf';
-import { AuthProvider } from '../../../providers/auth/auth';
+import { Component } from "@angular/core";
+import { IonicPage, ModalController, NavController, NavParams } from "ionic-angular";
+import { PdfProvider } from "../../../providers/pdf/pdf";
+import { AuthProvider } from "../../../providers/auth/auth";
 
 @IonicPage()
 @Component({
-  selector: 'page-start-here',
-  templateUrl: 'start-here.html',
+  selector: "page-start-here",
+  templateUrl: "start-here.html",
 })
 export class StartHerePage {
 

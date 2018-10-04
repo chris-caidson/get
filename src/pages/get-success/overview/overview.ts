@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, ModalController, NavParams } from 'ionic-angular';
-import { PdfProvider } from '../../../providers/pdf/pdf';
-import { AuthProvider } from '../../../providers/auth/auth';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, ModalController, NavParams } from "ionic-angular";
+import { PdfProvider } from "../../../providers/pdf/pdf";
+import { AuthProvider } from "../../../providers/auth/auth";
 
 @IonicPage()
 @Component({
-  selector: 'page-overview',
-  templateUrl: 'overview.html',
+  selector: "page-overview",
+  templateUrl: "overview.html",
 })
 export class OverviewPage {
 

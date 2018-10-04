@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
-import { BookModalPage } from './book-modal';
+import { NgModule } from "@angular/core";
+import { IonicPageModule } from "ionic-angular";
+import { BookModalPage } from "./book-modal";
 
 @NgModule({
   declarations: [

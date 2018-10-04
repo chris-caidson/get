@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from '../../../../providers/auth/auth';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, NavParams } from "ionic-angular";
+import { AuthProvider } from "../../../../providers/auth/auth";
 
 @IonicPage()
 @Component({
-  selector: 'page-before-you-post',
-  templateUrl: 'before-you-post.html',
+  selector: "page-before-you-post",
+  templateUrl: "before-you-post.html",
 })
 export class BeforeYouPostPage {
 

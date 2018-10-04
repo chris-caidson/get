@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from '../../../../providers/auth/auth';
-import { PdfProvider } from '../../../../providers/pdf/pdf';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, NavParams } from "ionic-angular";
+import { AuthProvider } from "../../../../providers/auth/auth";
+import { PdfProvider } from "../../../../providers/pdf/pdf";
 
 @IonicPage()
 @Component({
-  selector: 'page-post-on-facebook',
-  templateUrl: 'post-on-facebook.html',
+  selector: "page-post-on-facebook",
+  templateUrl: "post-on-facebook.html",
 })
 export class PostOnFacebookPage {
 

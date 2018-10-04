@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 import { IonicPage, NavParams, ViewController } from "ionic-angular";
 
 @IonicPage()
 @Component({
-  selector: 'page-audio-modal',
-  templateUrl: 'audio-modal.html',
+  selector: "page-audio-modal",
+  templateUrl: "audio-modal.html",
 })
 export class AudioModalPage {
   category: string;

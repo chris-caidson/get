@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
-import { AuthProvider } from '../../providers/auth/auth';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, NavParams, ModalController } from "ionic-angular";
+import { AuthProvider } from "../../providers/auth/auth";
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: "page-home",
+  templateUrl: "home.html",
 })
 export class HomePage {
 

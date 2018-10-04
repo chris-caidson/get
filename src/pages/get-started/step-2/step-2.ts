@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from '../../../providers/auth/auth';
+import { Component } from "@angular/core";
+import { IonicPage, NavController, NavParams } from "ionic-angular";
+import { AuthProvider } from "../../../providers/auth/auth";
 
 @IonicPage()
 @Component({
-  selector: 'page-step-2',
-  templateUrl: 'step-2.html',
+  selector: "page-step-2",
+  templateUrl: "step-2.html",
 })
 export class Step2Page {
 

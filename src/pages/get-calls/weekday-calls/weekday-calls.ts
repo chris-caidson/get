@@ -34,14 +34,26 @@ export class WeekdayCallsPage {
       .get()
       .then(querySnapshot => {
         querySnapshot.forEach(doc => {
-          self.items.push(doc.data());
+          var d = doc.data();
+
+          var obj = {
+            id: doc.id,
+            recorded: d.recorded,
+            subject: d.subject,
+            url: d.url,
+            clicks: d.clicks ? d.clicks : 0
+          };
+
+          self.items.push(obj);
         });
 
         self.loaded = true;
       });
   }
 
-  openAudioModal(subject, recorded, url) {
+  openAudioModal(id, subject, recorded, url, clicks) {
+    this.logClick(id, ++clicks);
+
     const myModal = this.modalCtrl.create("AudioModalPage", {
       category: null,
       subject: subject,
@@ -49,5 +61,13 @@ export class WeekdayCallsPage {
       url: url
     });
     myModal.present();
+  }
+
+  logClick(id, clicks) {
+    firebase
+      .firestore()
+      .collection("daily-calls")
+      .doc(id)
+      .update({"clicks": +clicks})
   }
 }

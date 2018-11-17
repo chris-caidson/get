@@ -50,7 +50,8 @@ export class AdminWeekdayCallsPage {
             id: c.id,
             recorded: data.recorded,
             subject: data.subject,
-            url: data.url
+            url: data.url,
+            clicks: data.clicks ? data.clicks : 0
           });
         });
 

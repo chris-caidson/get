@@ -52,7 +52,8 @@ export class AdminTargetedSubjectCallsPage {
             order: data.order,
             category: data.category,
             subject: data.subject,
-            url: data.url
+            url: data.url,
+            clicks: data.clicks ? data.clicks : 0
           });
         });
 

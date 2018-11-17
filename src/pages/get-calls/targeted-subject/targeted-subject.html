@@ -23,7 +23,7 @@
       <section id="contentSection" *ngIf="this.loaded">
         <div *ngFor="let cat of categories">
           <h3 class="centered">{{cat.category}}</h3>
-          <div class="call-container" *ngFor="let call of cat.calls" (click)="openAudioModal(call.category, call.subject, call.url)">
+          <div class="call-container" *ngFor="let call of cat.calls" (click)="openAudioModal(call.id, call.category, call.subject, call.url, call.clicks)">
               <span class="icon">
                 <i class="fa fa-headphones"></i>
               </span>

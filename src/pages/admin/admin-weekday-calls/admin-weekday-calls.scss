@@ -3,9 +3,11 @@ page-admin-weekday-calls {
     display: inherit;
     margin-top: 40px;
   }
+
   #largeScreens {
     display: none;
   }
+
   #loadingDiv {
     height: 5%;
     width: 5%;
@@ -13,37 +15,45 @@ page-admin-weekday-calls {
     max-height: 50px;
     margin-top: 40px;
   }
+
   #contentSection {
     margin-top: 20px;
   }
+
   .form-grid {
     display: grid;
     grid-template-columns: auto 1fr;
   }
+
   .item-container {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
     padding-bottom: 10px;
   }
+
   .input-grid {
     display: grid;
     grid-template-columns: 100px 1fr;
     margin-bottom: 5px;
+
     label {
       margin-right: 10px;
       margin-top: 5px;
       text-align: right;
     }
+
     input {
       text-align: left;
     }
   }
+
   .buttons-div {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: flex-end;
     justify-items: flex-end;
   }
+
   .input-grid input {
     padding: 5px;
     border-radius: 5px;
@@ -51,6 +61,7 @@ page-admin-weekday-calls {
     background-color: #FFF7F1;
     box-shadow: 2px 2px 10px #FFD5B9 inset;
   }
+
   article button {
     border-radius: 10px !important;
     height: 30px;
@@ -59,33 +70,40 @@ page-admin-weekday-calls {
     background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
     background: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
     margin-left: 6px !important;
   }
+
   @media (min-width: 1200px) {
     #smallScreens {
       display: none;
     }
+
     #largeScreens {
       display: inherit;
     }
+
     #columnHeaders {
       margin-top: -10px;
       margin-bottom: 0px;
+      display: grid;
+      grid-template-columns: 120px 360px 360px 30px 80px 100px;
     }
+
     .recorded-heading {
       width: 150px;
       margin-right: 10px;
-      text-align: center;
     }
+
     .form-grid {
       display: grid;
-      grid-template-columns: 150px 380px 380px auto auto;
+      grid-template-columns: 120px 360px 360px 30px 80px 100px;
       justify-items: flex-start;
       justify-content: flex-start;
       margin-bottom: 10px;
+
       .recorded-input {
-        width: 140px;
+        max-width: 110px;
         padding: 5px;
         border-radius: 5px;
         border: 1px solid #aaa;
@@ -93,6 +111,7 @@ page-admin-weekday-calls {
         box-shadow: 2px 2px 10px #FFD5B9 inset;
         text-align: center;
       }
+
       .category-input,
       .subject-input,
       .url-input {
@@ -101,22 +120,52 @@ page-admin-weekday-calls {
         border: 1px solid #aaa;
         background-color: #FFF7F1;
         box-shadow: 2px 2px 10px #FFD5B9 inset;
+        display: inline-block;
+        max-width: 350px;
+      }
+
+      .url-input {
         width: 100%;
       }
+
+      .clicks-span {
+        background: rgb(238, 238, 238);
+        background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%);
+        background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0);
+        display: inline-block;
+        min-width: 30px;
+        text-align: center;
+        border: 1px solid #777;
+        border-radius: 5px;
+        padding-top: 5px;
+      }
+
       .subject-input,
       url-input {
         width: 370px;
       }
+
       button {
         border: 1px solid #777;
         height: 30px;
         margin-left: 10px;
       }
     }
+
     .item-container {
       border-bottom: none;
       padding-bottom: 0px;
       margin-bottom: 0px;
+    }
+
+    .delete-btn, .no-btn, .yes-btn, .save-btn {
+      max-width: 80px !important;
+
+      span {
+        font-size: 12pt;
+      }
     }
   }
 }

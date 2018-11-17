@@ -33,7 +33,7 @@
         <img src="assets/imgs/misc/loading.gif" />
       </div>
       <section id="contentSection" *ngIf="this.loaded">
-        <div class="call-container" *ngFor="let item of items" (click)="openAudioModal(item.subject, item.recorded, item.url)">
+        <div class="call-container" *ngFor="let item of items" (click)="openAudioModal(item.id, item.subject, item.recorded, item.url, item.clicks)">
           <span class="icon">
             <i class="fa fa-headphones"></i>
           </span>

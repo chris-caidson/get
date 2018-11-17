@@ -28,7 +28,7 @@ export class GetSuccessGetFreePage {
     switch (video) {
       case "kathy-coover": data = {
         name: "Fast Track to Executive with Kathy Coover",
-        url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ffast-track-to-exec.mp4?alt=media&token=78a48a85-4f8d-4ade-9325-8ae68a29e440"
+        url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ffast-track-to-executive-2018.mp4?alt=media&token=af710ad5-2c1f-4a71-8a7d-f4bd1f25b1d9"
       };
       break;
 

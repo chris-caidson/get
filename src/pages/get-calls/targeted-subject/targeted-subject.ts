@@ -34,7 +34,19 @@ export class TargetedSubjectPage {
       .get()
       .then(querySnapshot => {
         querySnapshot.forEach(doc => {
-          self.calls.push(doc.data());
+          var d = doc.data();
+
+          var obj = {
+            id: doc.id,
+            recorded: d.recorded,
+            subject: d.subject,
+            url: d.url,
+            category: d.category,
+            clicks: d.clicks ? d.clicks : 0
+          };
+
+          self.calls.push(obj);
+          console.log(obj);
         });
 
         self.categories.forEach(c => {
@@ -46,7 +58,9 @@ export class TargetedSubjectPage {
     });
   }
 
-  openAudioModal(category, subject, url) {
+  openAudioModal(id, category, subject, url, clicks) {
+    this.logClick(id, ++clicks);
+
     const myModal = this.modalCtrl.create("AudioModalPage", {
       category: category,
       subject: subject,
@@ -54,5 +68,13 @@ export class TargetedSubjectPage {
       url: url
     });
     myModal.present();
+  }
+
+  logClick(id, clicks) {
+    firebase
+      .firestore()
+      .collection("targeted-subject-calls")
+      .doc(id)
+      .update({"clicks": +clicks})
   }
 }

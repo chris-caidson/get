@@ -39,6 +39,10 @@
                   <input class="url-input" id="url-{{i}}" name="url-{{i}}" required [value]="item.url" (input)="item.url = $event.target.value"
                   />
                 </div>
+                <div class="input-grid">
+                  <label>Clicks:</label>
+                  <span>{{item.clicks}}</span>
+                </div>
                 <div class="buttons-div">
                   <button ion-button outline *ngIf="!item.deleting" type="submit" (click)="updateData(item.id, item.recorded, item.subject, item.url)">Save</button>
                   <button class="delete-btn" *ngIf="!item.deleting" ion-button outline type="submit" (click)="confirmDelete(i)">Delete</button>
@@ -70,10 +74,11 @@
       </div>
       <div id="largeScreens">
         <section id="contentSection" *ngIf="this.loaded">
-          <div id="columnHeaders" class="form-grid">
-            <h3 class="recorded-heading">Recorded</h3>
-            <h3 class="subject-heading">Subject</h3>
-            <h3 class="url-heading">URL</h3>
+          <div id="columnHeaders">
+            <h3>Recorded</h3>
+            <h3>Subject</h3>
+            <h3>URL</h3>
+            <h3>Cl.</h3>
           </div>
           <div class="item-container" *ngFor="let item of items; let i=index">
             <div class="form-grid">
@@ -83,7 +88,8 @@
               />
               <input class="url-input" id="url-{{i}}" name="url-{{i}}" required [value]="item.url" (input)="item.url = $event.target.value"
               />
-              <button ion-button outline *ngIf="!item.deleting" type="submit" (click)="updateData(item.id, item.recorded, item.subject, item.url)">Save</button>
+              <span class="clicks-span">{{item.clicks}}</span>
+              <button ion-button outline class="save-btn" *ngIf="!item.deleting" type="submit" (click)="updateData(item.id, item.recorded, item.subject, item.url)">Save</button>
               <button class="delete-btn" *ngIf="!item.deleting" ion-button outline type="submit" (click)="confirmDelete(i)">Delete</button>
               <button class="yes-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="deleteData(item.id, item.category)">Confirm</button>
               <button class="no-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="cancelDelete(i)">Cancel</button>

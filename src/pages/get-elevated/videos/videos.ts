@@ -64,14 +64,6 @@ export class VideosPage {
         };
         break;
 
-      case "start-your-life":
-        data = {
-          name: "Start Your Life",
-          url:
-            "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fstart-your-life.mp4?alt=media&token=adf58275-5158-459c-806b-61cb26e98c6c"
-        };
-        break;
-
       case "isa-difference":
         data = {
           name: "The Isagenix Difference",
@@ -229,10 +221,31 @@ export class VideosPage {
         };
         break;
 
-        case "erin-adrienne":
+      case "erin-adrienne":
         data = {
           name: "Basic Compensation Plan",
           url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Ferin-adrienne-comp-plan.mp4?alt=media&token=79a6bd74-b245-4a41-a744-f843ee23e25f"
+        };
+        break;
+
+      case "start-your-life":
+        data = {
+          name: "Start Your Life",
+          url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fstart-your-life.mp4?alt=media&token=adf58275-5158-459c-806b-61cb26e98c6c"
+        };
+        break;
+
+      case "enterprising-women":
+        data = {
+          name: "Enterprising Women",
+          url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fenterprising-women.mp4?alt=media&token=f2410f15-c29b-40c5-a52e-6f8ef4e32522"
+        };
+        break;
+
+      case "retire-wealthy":
+        data = {
+          name: "Retire Wealthy",
+          url: "https://firebasestorage.googleapis.com/v0/b/globalexecteam-17cfa.appspot.com/o/videos%2Fretire-wealthy.mp4?alt=media&token=cdfaba39-6553-47fa-85a9-03fb4f37e1c2"
         };
         break;
     }

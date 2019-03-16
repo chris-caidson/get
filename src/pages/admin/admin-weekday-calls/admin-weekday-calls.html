@@ -22,55 +22,52 @@
         <img src="assets/imgs/misc/loading.gif" />
       </div>
       <div id="smallScreens">
-          <section id="contentSection" *ngIf="this.loaded">
-              <div class="item-container" *ngFor="let item of items; let i=index">
-                <div class="input-grid">
-                  <label for="recorded-{{i}}">Recorded:</label>
-                  <input class="recorded-input" id="recorded-{{i}}" name="recorded-{{i}}" required [value]="item.recorded" (input)="item.recorded = $event.target.value"
-                  />
-                </div>
-                <div class="input-grid">
-                  <label for="subject-{{i}}">Subject:</label>
-                  <input class="subject-input" id="subject-{{i}}" name="subject-{{i}}" required [value]="item.subject" (input)="item.subject = $event.target.value"
-                  />
-                </div>
-                <div class="input-grid">
-                  <label for="url-{{i}}">URL:</label>
-                  <input class="url-input" id="url-{{i}}" name="url-{{i}}" required [value]="item.url" (input)="item.url = $event.target.value"
-                  />
-                </div>
-                <div class="input-grid">
-                  <label>Clicks:</label>
-                  <span>{{item.clicks}}</span>
-                </div>
-                <div class="buttons-div">
-                  <button ion-button outline *ngIf="!item.deleting" type="submit" (click)="updateData(item.id, item.recorded, item.subject, item.url)">Save</button>
-                  <button class="delete-btn" *ngIf="!item.deleting" ion-button outline type="submit" (click)="confirmDelete(i)">Delete</button>
-                  <button class="yes-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="deleteData(item.id, item.category)">Confirm</button>
-                  <button class="no-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="cancelDelete(i)">Cancel</button>
-                </div>
-              </div>
-              <div class="item-container">
-                <div class="input-grid">
-                  <label for="recorded-input">Recorded:</label>
-                  <input class="recorded-input" id="recorded-new" name="recorded-new" required [value]="newRecorded" (input)="newRecorded = $event.target.value"
-                  />
-                </div>
-                <div class="input-grid">
-                  <label for="subject-input">Subjecct:</label>
-                  <input class="subject-input" id="subject-new" name="subject-new" required [value]="newSubject" (input)="newSubject = $event.target.value"
-                  />
-                </div>
-                <div class="input-grid">
-                  <label for="url-input">URL:</label>
-                  <input class="url-input" id="url-new" name="url-new" required [value]="newUrl" (input)="newUrl = $event.target.value"
-                  />
-                </div>
-                <div class="buttons-div">
-                  <button ion-button outline type="submit" (click)="addData(newRecorded, newSubject, newUrl)">Save</button>
-                </div>
-              </div>
-            </section>
+        <section id="contentSection" *ngIf="this.loaded">
+          <div class="item-container">
+            <div class="input-grid">
+              <label for="recorded-input">Recorded:</label>
+              <input class="recorded-input" id="recorded-new" name="recorded-new" required [value]="newRecorded"
+                (input)="newRecorded = $event.target.value" />
+            </div>
+            <div class="input-grid">
+              <label for="subject-input">Subjecct:</label>
+              <input class="subject-input" id="subject-new" name="subject-new" required [value]="newSubject" (input)="newSubject = $event.target.value" />
+            </div>
+            <div class="input-grid">
+              <label for="url-input">URL:</label>
+              <input class="url-input" id="url-new" name="url-new" required [value]="newUrl" (input)="newUrl = $event.target.value" />
+            </div>
+            <div class="buttons-div">
+              <button ion-button outline type="submit" (click)="addData(newRecorded, newSubject, newUrl)">Save</button>
+            </div>
+          </div>
+          <div class="item-container" *ngFor="let item of items; let i=index">
+            <div class="input-grid">
+              <label for="recorded-{{i}}">Recorded:</label>
+              <input class="recorded-input" id="recorded-{{i}}" name="recorded-{{i}}" required [value]="item.recorded"
+                (input)="item.recorded = $event.target.value" />
+            </div>
+            <div class="input-grid">
+              <label for="subject-{{i}}">Subject:</label>
+              <input class="subject-input" id="subject-{{i}}" name="subject-{{i}}" required [value]="item.subject"
+                (input)="item.subject = $event.target.value" />
+            </div>
+            <div class="input-grid">
+              <label for="url-{{i}}">URL:</label>
+              <input class="url-input" id="url-{{i}}" name="url-{{i}}" required [value]="item.url" (input)="item.url = $event.target.value" />
+            </div>
+            <div class="input-grid">
+              <label>Clicks:</label>
+              <span>{{item.clicks}}</span>
+            </div>
+            <div class="buttons-div">
+              <button ion-button outline *ngIf="!item.deleting" type="submit" (click)="updateData(item.id, item.recorded, item.subject, item.url)">Save</button>
+              <button class="delete-btn" *ngIf="!item.deleting" ion-button outline type="submit" (click)="confirmDelete(i)">Delete</button>
+              <button class="yes-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="deleteData(item.id, item.category)">Confirm</button>
+              <button class="no-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="cancelDelete(i)">Cancel</button>
+            </div>
+          </div>
+        </section>
       </div>
       <div id="largeScreens">
         <section id="contentSection" *ngIf="this.loaded">
@@ -80,29 +77,26 @@
             <h3>URL</h3>
             <h3>Cl.</h3>
           </div>
+          <div class="form-grid">
+            <input class="recorded-input" id="recorded-new" name="recorded-new" required [value]="newRecorded" (input)="newRecorded = $event.target.value" />
+            <input class="subject-input" id="subject-new" name="subject-new" required [value]="newSubject" (input)="newSubject = $event.target.value" />
+            <input class="url-input" id="url-new" name="url-new" required [value]="newUrl" (input)="newUrl = $event.target.value" />
+            <button ion-button outline type="submit" (click)="addData(newRecorded, newSubject, newUrl)">Save</button>
+            <button ion-button outline type="submit" class="not-visible">Delete</button>
+          </div>
           <div class="item-container" *ngFor="let item of items; let i=index">
             <div class="form-grid">
-              <input class="recorded-input" id="recorded-{{i}}" name="recorded-{{i}}" required [value]="item.recorded" (input)="item.recorded = $event.target.value"
-              />
-              <input class="subject-input" id="subject-{{i}}" name="subject-{{i}}" required [value]="item.subject" (input)="item.subject = $event.target.value"
-              />
-              <input class="url-input" id="url-{{i}}" name="url-{{i}}" required [value]="item.url" (input)="item.url = $event.target.value"
-              />
+              <input class="recorded-input" id="recorded-{{i}}" name="recorded-{{i}}" required [value]="item.recorded"
+                (input)="item.recorded = $event.target.value" />
+              <input class="subject-input" id="subject-{{i}}" name="subject-{{i}}" required [value]="item.subject"
+                (input)="item.subject = $event.target.value" />
+              <input class="url-input" id="url-{{i}}" name="url-{{i}}" required [value]="item.url" (input)="item.url = $event.target.value" />
               <span class="clicks-span">{{item.clicks}}</span>
               <button ion-button outline class="save-btn" *ngIf="!item.deleting" type="submit" (click)="updateData(item.id, item.recorded, item.subject, item.url)">Save</button>
               <button class="delete-btn" *ngIf="!item.deleting" ion-button outline type="submit" (click)="confirmDelete(i)">Delete</button>
               <button class="yes-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="deleteData(item.id, item.category)">Confirm</button>
               <button class="no-btn" *ngIf="item.deleting" ion-button outline type="submit" (click)="cancelDelete(i)">Cancel</button>
             </div>
-          </div>
-          <div class="form-grid">
-            <input class="recorded-input" id="recorded-new" name="recorded-new" required [value]="newRecorded" (input)="newRecorded = $event.target.value"
-            />
-            <input class="subject-input" id="subject-new" name="subject-new" required [value]="newSubject" (input)="newSubject = $event.target.value"
-            />
-            <input class="url-input" id="url-new" name="url-new" required [value]="newUrl" (input)="newUrl = $event.target.value" />
-            <button ion-button outline type="submit" (click)="addData(newRecorded, newSubject, newUrl)">Save</button>
-            <button ion-button outline type="submit" class="not-visible">Delete</button>
           </div>
         </section>
       </div>
